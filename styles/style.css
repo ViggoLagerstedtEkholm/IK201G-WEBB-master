@@ -50,6 +50,56 @@ img{
     width: 90%;
 }
 
+
+#startSidaOmOssContainer{
+    text-align: center;
+    width: 80%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 0.2em;
+    margin-bottom: 10%;
+}
+
+#startSidaPortContainer{
+    text-align: center;
+    width: 80%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 0.2em;
+    margin-bottom: 10%;
+}
+
+
+#startSidaKontaktContainer{
+    text-align: center;
+    width: 80%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 0.2em;
+    margin-bottom: 10%;
+}
+
+.bildIstartSidoContainer{
+    width: 70%;
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bildIstartSidoContainer img{
+    width: 90%;
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
 @media screen and (min-width: 768px)
 {
     .imageContainer{

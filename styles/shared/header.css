@@ -15,7 +15,7 @@ header
 }
 
 /* Varje knapp är en attribute, denna del ställer in hur alla knappar ska se ut. */
-a{
+nav a{
     background-color: #f44336;
     color: white;
     padding: 14px 30px;
@@ -23,6 +23,12 @@ a{
     text-decoration: none;
     display: inline-block;
     border-radius: 6px;
+}
+
+
+a{
+   text-decoration: none;
+  
 }
 
 /* När fönstret är mindre än 761 pixlar så övergår listan med knappar till en så kallad "hamburger menu". Detta för att underlätta navigation */
@@ -59,7 +65,7 @@ a.logo:hover
 }
 
 /* Inställningarna för listan med knappar. */
-#navBar ul li
+nav ul li
 {
     background-color: #ac6b66;
     text-align: center;
@@ -82,7 +88,7 @@ a.logo:hover
         margin: 10px 100px 0 0;
     }
 
-    #navBar ul li
+    nav ul li
     {
         display: none;
     }
