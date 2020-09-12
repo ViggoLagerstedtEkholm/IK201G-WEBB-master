@@ -36,12 +36,17 @@ html, body
     padding: 2.9em;
 }
 
+.imageContainer:hover{
+    overflow: hidden
+}
+
 img{
     height: auto;
     padding: 0;
     background-color: blueviolet;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     width: 90%;
 }
 
