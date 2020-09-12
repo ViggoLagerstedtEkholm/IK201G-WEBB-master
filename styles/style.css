@@ -1,0 +1,57 @@
+html, body
+{
+    /* Välj en font. */
+    font-family: Arial;
+    /* Gör så att det inte finns något avstånd till hemsidans topp.*/
+    margin: 0;
+}
+
+/*  */
+.boxShadow 
+{
+    -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+/* Denna div placeras under bilden så man kan sätta in text. */
+.textAreaIMG {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Denna div centrerar allt innehåll till mitten av skärmen. */
+.center{
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imageContainer{
+    height: auto;
+    width: auto;
+    padding: 2.9em;
+}
+
+img{
+    height: auto;
+    padding: 0;
+    background-color: blueviolet;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+@media screen and (min-width: 768px)
+{
+    .imageContainer{
+        float: left;
+    }
+
+    .smallContainer{
+        height: 90%;
+    }
+}
