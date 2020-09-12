@@ -109,4 +109,28 @@ img{
     .smallContainer{
         height: 90%;
     }
+
+    #startSidaOmOssContainer{
+        float: left;
+
+        width: 25%;
+        height: auto;
+
+    }
+
+    #startSidaPortContainer{
+        float: left;
+        
+        width: 25%;
+        height: auto;
+    }
+
+    #startSidaKontaktContainer{
+        float: left;
+        
+        width: 25%;
+        height: auto;
+    }
+
+
 }
