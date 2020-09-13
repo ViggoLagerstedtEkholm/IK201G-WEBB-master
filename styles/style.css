@@ -4,6 +4,17 @@ html, body
     font-family: Arial;
     /* Gör så att det inte finns något avstånd till hemsidans topp.*/
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure{
+    margin: 0;
+}
+
+
+section{
+    margin: 0;
 }
 
 /*  */
@@ -92,13 +103,86 @@ img{
     margin-bottom: 5%;
 }
 
-.bildIstartSidoContainer img{
-    width: 90%;
-    height: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+
+
+#headerForMain{
+width: 100%;
+height: auto;
+
+
 }
 
+#headerForMain {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px rgb(66, 62, 62);
+    letter-spacing: 0.02em;
+    
+    
+    }
+
+
+    
+
+#formContainer{
+
+    border-radius: 0.2em;
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: rgba(173, 169, 197, 0.87);
+    
+}
+
+
+#formContainer h1{
+    
+    color: white;
+    text-shadow: black 2px 2px;
+    margin-left: 20px;
+   
+}
+
+
+#formContainer  p{
+    
+    color: black;
+    
+    margin-left: 20px;
+
+    
+   
+}
+
+#fieldsetKontaktuppgifter{
+    border-style: none;
+    text-align: start;
+}
+
+.inputContainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
+textarea{
+    width: 70%;
+    height: 12em;
+}
+
+#formButton{
+    width: 70%;
+    height: 3em;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.inputForContact{
+    width: 70%;
+    height: 2em;
+}
 
 @media screen and (min-width: 768px)
 {
@@ -110,27 +194,134 @@ img{
         height: 90%;
     }
 
-    #startSidaOmOssContainer{
-        float: left;
-
-        width: 25%;
+    .bildIstartSidoContainer{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
         height: auto;
+    }
+
+    
+    #main{
+        display: flex;
+        height: 80vh;
+        width: 100%;
+        
+        flex-direction: row;
+    justify-content: center;
+
+    margin-top: 20vh;
+
+
+    }
+
+    #startSidaOmOssContainer{
+       
+        float: left;
+       
+        width: 25%;
+        height: min-content;
+        margin-left: 2%;
+        margin-right: 2%;
+
+       
 
     }
 
     #startSidaPortContainer{
-        float: left;
         
+        float: left;
         width: 25%;
-        height: auto;
+        height: min-content;
+        margin-left: 2%;
+        margin-right: 2%;
+       
+       
     }
 
     #startSidaKontaktContainer{
-        float: left;
         
+        float: left;
         width: 25%;
-        height: auto;
+        height: min-content;
+        margin-left: 2%;
+        margin-right: 2%;
+    
+     
+    }
+
+    
+    iframe{
+        float: left;
     }
 
 
+
+
+
+    #formContainer{
+
+        border-radius: 0.2em;
+        height: 70vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        background-color: rgba(173, 169, 197, 0.87);
+        float: left;
+        margin-top: 2em;
+        
+    }
+    
+    
+    #formContainer h1{
+        
+        color: white;
+        text-shadow: black 2px 2px;
+        margin-left: 20px;
+       
+    }
+    
+    
+    #formContainer  p{
+        
+        color: black;
+        
+        margin-left: 20px;
+    
+        
+       
+    }
+    
+    #fieldsetKontaktuppgifter{
+        border-style: none;
+        text-align: start;
+    }
+    
+    .inputContainer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        
+    }
+    
+    textarea{
+        width: 20%;
+        height: 12em;
+    }
+    
+    #formButton{
+        width: 20%;
+        height: 3em;
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .inputForContact{
+        width: 20%;
+        height: 2em;
+    }
+
+
+
+  
 }

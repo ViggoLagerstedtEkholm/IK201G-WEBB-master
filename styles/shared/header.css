@@ -52,7 +52,7 @@ a.logo
 }
 
 /* Om man sätter musen över knappen så ändrar den färg. */
-a:hover{
+nav a:hover{
     background-color: dodgerblue;
     color: white;
 }
