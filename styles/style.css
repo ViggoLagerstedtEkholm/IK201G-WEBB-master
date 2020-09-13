@@ -63,6 +63,8 @@ img{
 
 
 #startSidaOmOssContainer{
+
+
     text-align: center;
     width: 80%;
     height: 50vh;
@@ -324,4 +326,26 @@ textarea{
 
 
   
+
+    .column{
+        width: 50.00%;
+    }
+
+
+@media (min-width: 700px) {
+    /*  2 stycken kvadrater på samma "row"   */
+    .rectangles 
+    { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1000px) 
+{
+    /*  3 stycken kvadrater på samma "row" */
+    .rectangles 
+    { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
 }

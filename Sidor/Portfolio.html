@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- <script src="portfolio.js"></script> -->
     <!-- Importera CSS fil innan allt annat. -->
     <link rel="stylesheet" type= text/css href="/styles/style.css">
     <link rel="stylesheet" type= text/css href="/styles/shared/footer.css">
@@ -12,7 +12,8 @@
     <title> Portfolio </title>
   </head>
 
-  <body>
+  <body class="fadedBackground">
+
     <header>
       <a href="#default" class="logo">Bästa hemsidan</a>
       <div class="hamburger"> test </div>
@@ -40,10 +41,61 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <h1>PORTFOLIO</h1>
+<!--     <div class="center"> 
+        <h1>TEST</h1>
+          <div class = "imageContainer">
+            <div class="boxShadow">
+              <img src="/Images/fezbot2000-nahUo1GhcrA-unsplash.jpg">
+              <div class="textAreaIMG">
+                En bild!
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
 
-    <footer>
-      <h2>test</h2>
-    </footer>
+    <h1 >Tidigare projekt</h1>
+    
+  <!--   <div class = "imageContainer">
+      <div class="boxShadow2">
+        <canvas id="myCanvas" width="270" height="500" style="border:1px solid #ffffff;"></canvas>
+      </div>
+    </div> -->
+    <div class="rectangles">
+      <div class="boxShadow3"><div class="rectangle-grid"><img class="img2" src="/Images/fezbot2000-nahUo1GhcrA-unsplash.jpg"></img><div class="textAreaIMG"> <div class="center">Här kan man skriva text.</div></div></div></div>
+      <div class="boxShadow3"><div class="rectangle-grid"><img class="img2" src="/Images/pexels-photo-3274903.jpeg"></img><div class="textAreaIMG"> <div class="center">Här kan man skriva text.</div></div></div></div>
+      <div class="boxShadow3"><div class="rectangle-grid"><img class="img2" src="/Images/pexels-photo-1114690.jpeg"></img><div class="textAreaIMG"> <div class="center">Här kan man skriva text.</div></div></div></div>
+      <div class="boxShadow3"><div class="rectangle-grid"><img class="img2" src="/Images/pexels-photo-1408221.jpeg"></img><div class="textAreaIMG"> <div class="center">Här kan man skriva text.</div></div></div></div>
+      <div class="boxShadow3"><div class="rectangle-grid"><img class="img2" src="/Images/pexels-photo-2923402.jpeg"></img><div class="textAreaIMG"> <div class="center">Här kan man skriva text.</div></div></div></div>
+      <div class="boxShadow3"><div class="rectangle-grid">6</div></div>
+    </div>
+
+    <script>
+        /* const skills = ['C#', 'Java', 'SQL', 'CSS', 'HTML']; */
+      const test = [
+          ['C#', 33],
+          ['Java', 25],
+          ['SQL', 21],
+          ['JavaScript', 21]
+        ];
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+
+        for(var i = 1; i < test.length + 1; i++)
+        {
+          ctx.beginPath();
+          ctx.fillStyle = 'green';
+          ctx.arc(140, i * 95, test[i - 1][1], 0, 2 * Math.PI);
+          ctx.fillText(test[i - 1][0], 50, i * 95);
+          ctx.arc.fillStyle = 'green';
+          console.log(test[i - 1][1]);
+          ctx.stroke();
+        }
+    </script> 
+
+
+
   </body>
 </html>
