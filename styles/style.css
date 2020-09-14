@@ -334,9 +334,23 @@ textarea{
 
 }
 
+.imageSliderBox{
+    left: 35%; 
+    margin-left: -15%;
+    margin-top: 50px;
+    width :60%;
+    height : auto;
+    background : #F8F8F8;
+    position : absolute;
+    border-radius: 9px;
 
+    text-align : left;
+    background-color: lightgreen;
+}
 
-
+.imageSliderBox:hover{
+    transform: scale(1.01);
+}
 
 .rectangle-grid {
     background-color: rgb(35, 219, 158);
@@ -426,12 +440,11 @@ textarea{
 
 img{
     height: auto;
-    padding: 0;
-    background-color: blueviolet;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 10px;
-    width: 90%;
+    width: 95%;
+    border-radius: 10px;
 }
 
 /* Denna tag ska användas ifall man vill centrera bild i en så kallad grid box. Den  */
@@ -450,6 +463,13 @@ img{
     left: 10px;
 }
 
+.img3{
+    margin-right: -35px;
+    position : absolute;
+    margin-bottom: 50px;
+}
+
+
 .fadedBackground
 {
     background: linear-gradient(to right, #6fcef3, #0fa6ec);
@@ -465,6 +485,15 @@ img{
     padding: 10px 5px 0 5px;
 }
 
+/*     .imageSliderBox{
+        margin-left: -15%;
+    } */
+@media only screen and (max-width: 600px) {
+    .imageSliderBox{
+        margin-left: -20%;
+    }
+}
+
 @media screen and (min-width: 768px)
 {
     .imageContainer{
@@ -478,6 +507,7 @@ img{
     .column{
         width: 50.00%;
     }
+
 }
 
 @media (min-width: 700px) {

@@ -12,7 +12,7 @@
     <title> Portfolio </title>
   </head>
 
-  <body class="fadedBackground">
+  <body class="fadedBackground" onload="start()">
 
     <header>
       <a href="#default" class="logo">Bästa hemsidan</a>
@@ -56,11 +56,6 @@
 
     <h1 id="h1portfolio">Tidigare projekt</h1>
     
-  <!--   <div class = "imageContainer">
-      <div class="boxShadow2">
-        <canvas id="myCanvas" width="270" height="500" style="border:1px solid #ffffff;"></canvas>
-      </div>
-    </div> -->
     <div class="rectangles">
       <div class="boxShadow3"><div class="rectangle-grid"><img class="img2" src="/Images/fezbot2000-nahUo1GhcrA-unsplash.jpg"></img><div class="textAreaIMG"> <div class="center">Här kan man skriva text.</div></div></div></div>
       <div class="boxShadow3"><div class="rectangle-grid"><img class="img2" src="/Images/pexels-photo-3274903.jpeg"></img><div class="textAreaIMG"> <div class="center">Här kan man skriva text.</div></div></div></div>
@@ -71,6 +66,50 @@
     </div>
 
     <script>
+      var images = [
+        '/Images/pexels-photo-3274903.jpeg',
+        '/Images/pexels-photo-2923402.jpeg',
+        '/Images/pexels-photo-1408221.jpeg'
+      ];
+
+      var index = 0;
+
+      function createImage()
+      {
+        var img = document.getElementById('imgSlider');
+        img.setAttribute('src', images[index]);
+        index++;
+        console.log("Fired! " + index)
+        if(index == images.length)
+        {
+          console.log("test")
+          index = 0;
+        }
+      }
+
+      function start()
+      {
+        createImage();
+        /* JQuery för att kalla på createImage() med 5 sekunders intervall. */
+        window.setInterval(function(){
+          createImage();
+        }, 5000);
+      }
+    </script>
+
+
+    <div class="boxShadow3" >
+      <div class="imageSliderBox">
+        <!-- <button onclick="createImage()"></button> -->
+      
+          <div class="img3">
+            <img id="imgSlider"></img>
+          </div>
+      
+      </div>
+    </div>
+
+    <!-- <script>
         /* const skills = ['C#', 'Java', 'SQL', 'CSS', 'HTML']; */
       const test = [
           ['C#', 33],
@@ -93,7 +132,7 @@
           console.log(test[i - 1][1]);
           ctx.stroke();
         }
-    </script> 
+    </script>  -->
 
 
 
