@@ -8,11 +8,11 @@
     <link rel="stylesheet" type= text/css href="/styles/style.css">
     <link rel="stylesheet" type= text/css href="/styles/shared/footer.css">
     <link rel="stylesheet" type= text/css href="/styles/shared/header.css">
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <title> Portfolio </title>
   </head>
 
-  <body class="fadedBackground" onload="start()">
+  <body class="fadedBackground" onload="start(), createImage()">
 
     <header>
       <a href="#default" class="logo">Bästa hemsidan</a>
@@ -87,16 +87,71 @@
         }
       }
 
+      var interval = null;
+
       function start()
       {
-        createImage();
-        /* JQuery för att kalla på createImage() med 5 sekunders intervall. */
-        window.setInterval(function(){
-          createImage();
-        }, 5000);
+        $(document).ready(function(){
+            interval = setInterval(createImage, 3000);
+        });
       }
-    </script>
 
+      function stop()
+      {
+        clearInterval(interval); // stop the interval
+      }
+
+      var pausa = false;
+      var hover = false;
+
+      $(document).ready(function() { 
+          $("#imgSlider").hover(function() { 
+              //Musen är över bilden.
+              hover = true;
+
+              /* console.log($('#imgSlider').attr('id')); */
+
+              //Musen är placerad på bilden, stoppa bildvisningen.
+              stop(); 
+          }, function() 
+          { 
+            //Musen är inte över bilden, men kolla ifall man har pausat.
+            hover = false;
+            if(!pausa && !hover)
+            {
+              //Har man inte pausat och man har inte musen över bilden fortsätt bildspel.
+              start();
+            }
+          }); 
+
+          var toggle = 0;
+          $("#imgSlider").click(function()
+          {
+            toggle++;
+            /* Kolla ifall talet är udda eller jämt, detta kan vara tex 1, dvs udda (pausa), 2 innebär då (spela) */
+            if (checkToggleState(toggle) === false) 
+            {
+              /* Pause. */
+              console.log("pause");
+              stop(); // stop the interval
+              pausa = true;
+            } 
+            else if (checkToggleState(toggle) === true) 
+            {
+              /* Resume. */
+              
+                console.log("resume");
+
+                pausa = false;
+            }
+          })
+        }); 
+
+        var checkToggleState = function(toggleValue) 
+        {
+          return (toggleValue % 2 === 0) ? true : false;
+        };
+    </script>
 
     <div class="boxShadow3" >
       <div class="imageSliderBox">
