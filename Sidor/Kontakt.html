@@ -3,6 +3,8 @@
 
 <head>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -65,26 +67,36 @@
  <fieldset id="fieldsetKontaktuppgifter"> 
 
  <div class= "inputContainer">
-<label> Förnamn:</label><br />
+<label id="firstNameLabel"> *Förnamn:</label><label id="firstNameInfo" class="redLabel"></label> <br /> 
 
-<input type="text" name="surename" class="inputForContact"> </input>  <br />
+<input type="text" name="firstname" class="inputForContact" id="firstname"> </input> <br />
  </div>
 
-<div class="inputContainer">
-<label> Efternamn:</label><br />
 
-<input type="text" name="lastname" class="inputForContact"> </input>  <br />
+
+<div class="inputContainer">
+<label id="lastNameLabel"> *Efternamn:</label><label id="lastNameInfo" class="redLabel"></label><br />
+
+<input type="text" name="lastname" class="inputForContact" id ="lastname"> </input> <br />
 </div>
 
 
 <div class="inputContainer">
-<label> E-post: </label> <br />
+<label id="mailLabel"> *E-post: </label> <label id="mailInfo" class="redLabel"></label> <br />
    
-<input type="text" name="mail" class="inputForContact"></input> <br />
+<input type="text" name="mail" class="inputForContact" id="userMail"></input> <br />
 </div> 
 
 <div class="inputContainer">
-<textarea name="kommentar"> Förnamn skriv din text här</textarea>
+  <label id="phoneNumberLabel"> *Telefonnummer: </label> <label id="phoneNumberInfo" class="redLabel"></label> <br />
+     
+  <input type="text" name="phoneNumber" class="inputForContact" id="phoneNumber"></input> <br />
+  </div> 
+
+
+
+<div class="inputContainer">
+<textarea name="kommentar" id ="textComment"> Förnamn skriv din text här</textarea> <label id="commentInfo" class="redLabel"></label>
 </div> 
 </fieldset>
 
@@ -100,5 +112,6 @@
   <footer>
     <h2>test</h2>
   </footer>
+  <script src="/script/validering.js"></script>
   </body>
 </html>

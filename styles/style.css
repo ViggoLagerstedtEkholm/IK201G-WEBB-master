@@ -186,6 +186,22 @@ textarea{
     height: 2em;
 }
 
+.redLabel{
+    color: red;
+}
+
+#firstNameInfo, #lastNameInfo, #mailInfo, #phoneNumberInfo, #commentInfo{
+    font-size: 0.7em;
+}
+
+
+.ready{
+    background-color: chartreuse;
+}
+
+.notReady{
+    background-color: rgb(53, 53, 53);
+}
 
 
 
