@@ -41,6 +41,12 @@ section{
     justify-content: center;
 }
 
+canvas {
+    width: 90%;
+    min-height: 200px;
+    border: solid 2px red;
+}
+
 .imageContainer{
     height: auto;
     width: auto;
@@ -318,10 +324,6 @@ textarea
 
     text-align : left;
     background-color: lightgreen;
-}
-
-.imageSliderBox:hover{
-    transform: scale(1.01);
 }
 
 .rectangle-grid {
