@@ -113,6 +113,7 @@
 
               //Musen är placerad på bilden, stoppa bildvisningen.
               stop(); 
+              $(".imageSliderBox").css({"filter": "grayscale(66%)"});
           }, function() 
           { 
             //Musen är inte över bilden, men kolla ifall man har pausat.
@@ -121,6 +122,7 @@
             {
               //Har man inte pausat och man har inte musen över bilden fortsätt bildspel.
               start();
+              $(".imageSliderBox").css({"filter": "grayscale(0%)"});
             }
           }); 
 
@@ -133,16 +135,16 @@
             {
               /* Pause. */
               console.log("pause");
-              stop(); // stop the interval
+              stop(); 
               pausa = true;
+              $(".imageSliderBox").css({"filter": "grayscale(100%)"});
             } 
             else if (checkToggleState(toggle) === true) 
             {
-              /* Resume. */
-              
+                /* Resume. */
                 console.log("resume");
-
                 pausa = false;
+                $(".imageSliderBox").css({"filter": "grayscale(0%)"});
             }
           })
         }); 
