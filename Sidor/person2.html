@@ -10,22 +10,20 @@
     <link rel="stylesheet" type= text/css href="/styles/style.css">
     <link rel="stylesheet" type= text/css href="/styles/shared/footer.css">
     <link rel="stylesheet" type= text/css href="/styles/shared/header.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
 
-    <title> Om oss </title>
 
-    <!-- Importera footer och header med hjälp av JQuery-->
-    
-    </script> 
+    <title> Person 2 </title>
 
 </head>
 
-<body>
+<body onload="drawShape()">
   <header>
     <a href="#default" class="logo">Bästa hemsidan</a>
     <div class="hamburger"> test </div>
     <!-- Placera alla links till höger med denna div -->
     <div class="header-right">
-        <nav>
+        <div id="navBar">
             <ul>
                 <li>
                 <a href="Startsida.html">Startsida</a>
@@ -43,39 +41,73 @@
                 </li>
             </ul>
         </div>
-      </nav>
+    </div>
   </header>
-
-  <!-- MAIN CONTENT -->
-
-  
 
   <div class="center"> 
     <div class = "smallContainer">
-        <h1>Välkommen till mitt webbgalleri</h1>
+        <h1>Hej detta är person 1</h1>
         
           <div class = "imageContainer">
             <div class="boxShadow">
-              <a href="person1.html"><img src="/Images/fezbot2000-nahUo1GhcrA-unsplash.jpg"></a>
+              <img src="/Images/fezbot2000-nahUo1GhcrA-unsplash.jpg">
               <div class="textAreaIMG">
                 En bild!
               </div>
             </div>
           </div>
-        
-          <div class = "imageContainer">
-            <div class="boxShadow">
-              <a href="person2.html"><img src="/Images/fezbot2000-nahUo1GhcrA-unsplash.jpg"></a>
-              <div class="textAreaIMG">
-                En bild!
-              </div>
-            </div>
-          </div>
-          
         </div>
     </div>
+    
   </div>
 
+  <div class="center">
+     <h1>Kunskaper</h1>
+    <canvas id="myCanvas" width="1000" height="600"></canvas>
+  </div>
+  
+  
+  <script>
+    function drawShape()
+    {
+        const test = [
+            ['C#', 33],
+            ['Java', 25],
+            ['SQL', 21],
+            ['JavaScript', 21]
+        ];
+
+        const colors = [
+          ['#0000FF'],
+          ['#5F9EA0'],
+          ['#DC143C'],
+          ['#00008B']
+        ]
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        for(var i = 0; i < test.length; i++)
+        {
+            /* Rita texten för över och under.  */
+            ctx.font = "30px Verdana";
+            ctx.fillStyle = colors[i];
+            ctx.fillText(test[i][0], (i * 215) + 150 + -i*6, 50);
+            ctx.fillText(test[i][1] + " %", (i * 215) + 150, 370)
+
+            /* Rita circlarna. */
+            ctx.beginPath();
+            ctx.arc((i * 215) + 180, 200, (test[i][1]) * 3 , 0, 2 * Math.PI);
+            ctx.fillStyle = colors[i];
+            ctx.stroke();
+            ctx.closePath();
+            ctx.fill();
+        }
+    }
+
+    </script>
+
+    
   <footer>
     <h2>Footer</h2>
   </footer>

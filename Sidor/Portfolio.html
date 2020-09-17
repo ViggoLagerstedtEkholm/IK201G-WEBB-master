@@ -113,6 +113,7 @@
 
               //Musen är placerad på bilden, stoppa bildvisningen.
               stop(); 
+              $(".imageSliderBox").css({"filter": "grayscale(66%)"});
           }, function() 
           { 
             //Musen är inte över bilden, men kolla ifall man har pausat.
@@ -121,6 +122,7 @@
             {
               //Har man inte pausat och man har inte musen över bilden fortsätt bildspel.
               start();
+              $(".imageSliderBox").css({"filter": "grayscale(0%)"});
             }
           }); 
 
@@ -133,16 +135,16 @@
             {
               /* Pause. */
               console.log("pause");
-              stop(); // stop the interval
+              stop(); 
               pausa = true;
+              $(".imageSliderBox").css({"filter": "grayscale(100%)"});
             } 
             else if (checkToggleState(toggle) === true) 
             {
-              /* Resume. */
-              
+                /* Resume. */
                 console.log("resume");
-
                 pausa = false;
+                $(".imageSliderBox").css({"filter": "grayscale(0%)"});
             }
           })
         }); 
@@ -163,33 +165,5 @@
       
       </div>
     </div>
-
-    <!-- <script>
-        /* const skills = ['C#', 'Java', 'SQL', 'CSS', 'HTML']; */
-      const test = [
-          ['C#', 33],
-          ['Java', 25],
-          ['SQL', 21],
-          ['JavaScript', 21]
-        ];
-
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-
-
-        for(var i = 1; i < test.length + 1; i++)
-        {
-          ctx.beginPath();
-          ctx.fillStyle = 'green';
-          ctx.arc(140, i * 95, test[i - 1][1], 0, 2 * Math.PI);
-          ctx.fillText(test[i - 1][0], 50, i * 95);
-          ctx.arc.fillStyle = 'green';
-          console.log(test[i - 1][1]);
-          ctx.stroke();
-        }
-    </script>  -->
-
-
-
   </body>
 </html>
