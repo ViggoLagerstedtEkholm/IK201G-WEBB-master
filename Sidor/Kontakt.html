@@ -3,153 +3,119 @@
 
 <head>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    
-  
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Importera CSS fil innan allt annat. -->
-    <link rel="stylesheet" type= text/css href="/styles/style.css">
-    <link rel="stylesheet" type= text/css href="/styles/shared/footer.css">
-    <link rel="stylesheet" type= text/css href="/styles/shared/header.css">
-    
+    <link rel="stylesheet" type=text/css href="/styles/style.css">
+    <link rel="stylesheet" type=text/css href="/styles/shared/footer.css">
+    <link rel="stylesheet" type=text/css href="/styles/shared/header.css">
+
     <!-- Importera footer och header med hjälp av JQuery-->
-    
+
 
     <title> Kontakt </title>
 </head>
 
 <body>
-  <header>
-    <a href="#default" class="logo">Bästa hemsidan</a>
-    <div class="hamburger"> test </div>
-    <!-- Placera alla links till höger med denna div -->
-    <div class="header-right">
-        <nav>
-            <ul>
-                <li>
-                <a href="Startsida.html">Startsida</a>
-                </li>
-                
-                <li>
-                    <a href="Portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                <a href="OmOss.html">Om oss</a>
-                </li>
-                
-                <li>
-                <a href="Kontakt.html">Kontakt</a>
-                </li>
-            </ul>
+    <header>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="/Sidor/Startsida.html">Hem</a></li>
+                            <li><a href="/Sidor/OmOss.html">Om oss</a></li>
+                            <li><a href="/Sidor/Portfolio.html">Portfolio</a></li>
+                            <li><a href="/Sidor/Kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-  </header>
+    </header>
 
 
-  <!-- INPUT FIELDS -->
-  <div id= "mainContact">
 
-  <div id="formContainer" class="boxShadow">
+    <!-- INPUT FIELDS -->
+    <div id="mainContact">
 
-  <h1 id="contactFormHeader">Kontaktformulär</h1> 
+        <div id="formContainer" class="boxShadow">
 
-  <form action="" method="" id="formKontaktuppgifter" >
+            <h1 id="contactFormHeader">Kontaktformulär</h1>
 
-  <fieldset id="fieldsetKontaktuppgifter"> 
+            <form action="" method="" id="formKontaktuppgifter">
 
-<<<<<<< HEAD
- <div class= "inputContainer">
-<label id="firstNameLabel" > *Förnamn:</label> <br /> 
+                <fieldset id="fieldsetKontaktuppgifter">
 
-<input type="text" name="firstname" class="regularFormBorder" id="firstname" class="formInputFromUser"> </input> <br />
-<label id="firstNameInfo" class="redLabel"></label>
- </div>
+                    <div class="inputContainer">
+                        <label id="firstNameLabel"> *Förnamn:</label><label id="firstNameInfo" class="redLabel"></label>
+                        <br />
 
-<div class="inputContainer">
-<label id="lastNameLabel"> *Efternamn:</label><br />
+                        <input type="text" name="firstname" class="regularFormBorder" id="firstname"
+                            class="formInputFromUser"> </input> <br />
+                    </div>
 
-<input type="text" name="lastname" class="regularFormBorder" id ="lastname" class="formInputFromUser"> </input> <br />
-<label id="lastNameInfo" class="redLabel"></label>
-</div>
+                    <div class="inputContainer">
+                        <label id="lastNameLabel"> *Efternamn:</label><label id="lastNameInfo"
+                            class="redLabel"></label><br />
 
-
-<div class="inputContainer">
-<label id="mailLabel" class=".regularFormBorder"> *E-post: </label> <br />
-   
-<input type="text" name="mail" class="regularFormBorder" id="userMail" class="formInputFromUser"></input> <br />
-<label id="mailInfo" class="redLabel"></label>
-</div> 
-
-<div class="inputContainer">
-  <label id="phoneNumberLabel" class=".regularFormBorder"> *Telefonnummer: </label><br />
-     
-=======
-  <div class= "inputContainer">
-  <label id="firstNameLabel" > *Förnamn:</label><label id="firstNameInfo" class="redLabel"></label> <br /> 
-
-  <input type="text" name="firstname" class="regularFormBorder" id="firstname" class="formInputFromUser"> </input> <br />
-  </div>
-
-  <div class="inputContainer">
-  <label id="lastNameLabel"> *Efternamn:</label><label id="lastNameInfo" class="redLabel"></label><br />
-
-  <input type="text" name="lastname" class="regularFormBorder" id ="lastname" class="formInputFromUser"> </input> <br />
-  </div>
+                        <input type="text" name="lastname" class="regularFormBorder" id="lastname"
+                            class="formInputFromUser"> </input> <br />
+                    </div>
 
 
-  <div class="inputContainer">
-  <label id="mailLabel" class=".regularFormBorder"> *E-post: </label> <label id="mailInfo" class="redLabel"></label> <br />
-    
-  <input type="text" name="mail" class="regularFormBorder" id="userMail" class="formInputFromUser"></input> <br />
-  </div> 
+                    <div class="inputContainer">
+                        <label id="mailLabel" class=".regularFormBorder"> *E-post: </label> <label id="mailInfo"
+                            class="redLabel"></label> <br />
 
-  <div class="inputContainer">
-  <label id="phoneNumberLabel" class=".regularFormBorder"> *Telefonnummer: </label> <label id="phoneNumberInfo" class="redLabel"></label> <br />
-    
->>>>>>> de13f24ab46e0f3a7a124e6fbe66008d221f3ed2
-  <input type="text" name="phoneNumber" class="regularFormBorder" id="phoneNumber" class="formInputFromUser"></input> <br />
-  <label id="phoneNumberInfo" class="redLabel"></label>
-  </div> 
+                        <input type="text" name="mail" class="regularFormBorder" id="userMail"
+                            class="formInputFromUser"></input> <br />
+                    </div>
 
-<<<<<<< HEAD
-<div class="inputContainer" class="regularFormBorder">
-<textarea name="kommentar" id ="textComment" class="regularFormTextareaWithBorder"> Skriv din text här</textarea><br />
-<label id="commentInfo" class="redLabel"></label>
-</div> 
-</fieldset>
+                    <div class="inputContainer">
+                        <label id="phoneNumberLabel" class=".regularFormBorder"> *Telefonnummer: </label> <label
+                            id="phoneNumberInfo" class="redLabel"></label> <br />
 
-<button id="formButton" > Skicka meddelande</button>
+                        <input type="text" name="phoneNumber" class="regularFormBorder" id="phoneNumber"
+                            class="formInputFromUser"></input> <br />
+                        <label id="phoneNumberInfo" class="redLabel"></label>
+                    </div>
 
-    </form>
-  
- 
-  </div>
+                    <div class="inputContainer" class="regularFormBorder">
+                        <textarea name="kommentar" id="textComment"
+                            class="regularFormTextareaWithBorder"> Skriv din text här</textarea> <label id="commentInfo"
+                            class="redLabel"></label>
+                    </div>
+                </fieldset>
 
-=======
-  <div class="inputContainer" class="regularFormBorder">
-  <textarea name="kommentar" id ="textComment" class="regularFormTextareaWithBorder"> Skriv din text här</textarea> <label id="commentInfo" class="redLabel"></label>
-  </div> 
-  </fieldset>
->>>>>>> de13f24ab46e0f3a7a124e6fbe66008d221f3ed2
+                <button id="formButton"> Skicka meddelande</button>
+            </form>
 
-  <button id="formButton" > Skicka meddelande</button>
-  </form>
-  
-  <!-- MAP -->
+            <!-- MAP -->
+        </div>
+        <div id="iframeContainer"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2339.926549934843!2d15.241819251759384!3d59.25278648154193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c145c9a7235a3%3A0x47e9a481ea7ab24f!2sStudentgatan%208%2C%20702%2081%20%C3%96rebro!5e1!3m2!1ssv!2sse!4v1600275410844!5m2!1ssv!2sse"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <h2>Ni kan nå oss här <br />
+                blavlala
+                blavlala
+                13141
+            </h2>
+        </div>
+
     </div>
-      <div id ="iframeContainer"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2339.926549934843!2d15.241819251759384!3d59.25278648154193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c145c9a7235a3%3A0x47e9a481ea7ab24f!2sStudentgatan%208%2C%20702%2081%20%C3%96rebro!5e1!3m2!1ssv!2sse!4v1600275410844!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <h2>Ni kan nå oss här <br />
-          blavlala
-          blavlala
-          13141
-      </h2>
-    </div>
+    <footer>
+        <h2>test</h2>
+    </footer>
+    <script src="/script/validering.js"></script>
+</body>
 
-</div>
-  <footer>
-    <h2>test</h2>
-  </footer>
-  <script src="/script/validering.js"></script>
-  </body>
 </html>
