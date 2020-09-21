@@ -66,6 +66,22 @@ img{
     width: 90%;
 }
 
+.imgStartsida{
+    position:relative; 
+    border-radius: 10%;
+    align-items: center;
+    width: 130%;
+    height: 130%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    float:top;
+    
+    top: -40px;
+    right: 45px;
+}
+
 #startSidaOmOssContainer{
     text-align: center;
     width: 80%;
@@ -97,13 +113,6 @@ img{
     background-color: white;
     border-radius: 0.2em;
     margin-bottom: 10%;
-}
-
-.bildIstartSidoContainer{
-    width: 70%;
-    height: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 #headerForMain{
@@ -387,8 +396,8 @@ iframe{
     background-color: lightgreen;
 }
 
-.rectangle-grid {
-    background-color: rgb(35, 219, 158);
+.rectangle-grid-startsida {
+    background-color: rgb(255, 255, 255);
     color: white;
     padding: 5rem;
     height: 15rem;
@@ -396,9 +405,22 @@ iframe{
     justify-content: center;
   }
 
-  .rectangle-grid:hover{
-      transform: scale(1.01);
+  .rectangle-grid-portfolio{
+    background-color: rgb(39, 177, 135);
+    color: white;
+    padding: 5rem;
+    height: 15rem;
+    border-radius: 9px;
+    justify-content: center;
   }
+
+    .rectangle-grid-startsida:hover{
+        transform: scale(1.01);
+    }
+
+    .rectangle-grid-portfolio:hover{
+        transform: scale(1.01);
+    }
   
   .rectangles {
     max-width: 1200px;
@@ -539,6 +561,7 @@ img{
 
 }
 
+/* Portfolio sidan. */
 @media (min-width: 700px) {
     /*  2 stycken kvadrater på samma "row"   */
     .rectangles 
