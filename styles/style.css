@@ -66,6 +66,22 @@ img{
     width: 90%;
 }
 
+.imgStartsida{
+    position:relative; 
+    border-radius: 10%;
+    align-items: center;
+    width: 130%;
+    height: 130%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    float:top;
+    
+    top: -40px;
+    right: 45px;
+}
+
 #startSidaOmOssContainer{
     text-align: center;
     width: 80%;
@@ -97,13 +113,6 @@ img{
     background-color: white;
     border-radius: 0.2em;
     margin-bottom: 10%;
-}
-
-.bildIstartSidoContainer{
-    width: 70%;
-    height: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 #headerForMain{
@@ -388,7 +397,7 @@ iframe{
 }
 
 .rectangle-grid {
-    background-color: rgb(35, 219, 158);
+    background-color: rgb(255, 255, 255);
     color: white;
     padding: 5rem;
     height: 15rem;
@@ -539,6 +548,7 @@ img{
 
 }
 
+/* Portfolio sidan. */
 @media (min-width: 700px) {
     /*  2 stycken kvadrater på samma "row"   */
     .rectangles 
