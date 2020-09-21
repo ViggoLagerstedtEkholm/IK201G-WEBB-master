@@ -396,7 +396,7 @@ iframe{
     background-color: lightgreen;
 }
 
-.rectangle-grid {
+.rectangle-grid-startsida {
     background-color: rgb(255, 255, 255);
     color: white;
     padding: 5rem;
@@ -405,9 +405,22 @@ iframe{
     justify-content: center;
   }
 
-  .rectangle-grid:hover{
-      transform: scale(1.01);
+  .rectangle-grid-portfolio{
+    background-color: rgb(39, 177, 135);
+    color: white;
+    padding: 5rem;
+    height: 15rem;
+    border-radius: 9px;
+    justify-content: center;
   }
+
+    .rectangle-grid-startsida:hover{
+        transform: scale(1.01);
+    }
+
+    .rectangle-grid-portfolio:hover{
+        transform: scale(1.01);
+    }
   
   .rectangles {
     max-width: 1200px;
