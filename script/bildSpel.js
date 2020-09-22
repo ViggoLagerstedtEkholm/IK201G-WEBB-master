@@ -1,6 +1,9 @@
 var img = $('#imgSlider');
-var imgBox = $('.imgSliderBox');
-
+var imgBox = $('.imageSliderBox');
+var nxtImg = $("#nextImg");
+var prvImg = $("#prevImg");
+var pausBtn = $("#pausBtn");
+var toggle = 0;
 $(function(){
 start() 
 createImage()
@@ -8,7 +11,6 @@ createImage()
 
 var images = [
   '/Images/pexels-photo-3274903.jpeg',
-  '/Images/pexels-photo-2923402.jpeg',
   '/Images/pexels-photo-1408221.jpeg'
 ];
 
@@ -18,17 +20,30 @@ function createImage() {
   img.attr('src', images[index]);
   index++;
   console.log("Fired! " + index)
-  if (index == images.length) {
+  if (index === images.length) {
     console.log("test")
     index = 0;
   }
 }
 
+function createReverseImage() {
+  img.attr('src', images[index]);
+  index--;
+  console.log("Fired! " + index)
+  if (index < 0) {
+    console.log("test")
+    index = images.length-1;
+    console.log("TEst " + index)
+  }
+}
+
+
+
 var interval = null;
 
 function start() {
   $(document).ready(function () {
-    interval = setInterval(createImage, 3000);
+    interval = setInterval(createImage, 25000);
   });
 }
 
@@ -57,9 +72,11 @@ $(document).ready(function () {
       start();
       imgBox.css({ "filter": "grayscale(0%)" });
     }
+
+    
   });
 
-  var toggle = 0;
+  
  img.click(function () {
     toggle++;
     /* Kolla ifall talet är udda eller jämt, detta kan vara tex 1, dvs udda (pausa), 2 innebär då (spela) */
@@ -69,16 +86,56 @@ $(document).ready(function () {
       stop();
       pausa = true;
       imgBox.css({ "filter": "grayscale(100%)" });
+      pausBtn.attr("src", "/images/playButton.png")
     }
     else if (checkToggleState(toggle) === true) {
       /* Resume. */
       console.log("resume");
       pausa = false;
       imgBox.css({ "filter": "grayscale(0%)" });
+      pausBtn.attr("src", "/images/pausButton.png")
     }
+  
+    
+
   })
+
+
+ pausBtn.click(function () {
+
+    toggle++;
+    /* Kolla ifall talet är udda eller jämt, detta kan vara tex 1, dvs udda (pausa), 2 innebär då (spela) */
+    if (checkToggleState(toggle) === false) {
+      /* Pause. */
+      console.log("pause");
+      stop();
+      pausa = true;
+      imgBox.css({ "filter": "grayscale(100%)" });
+      pausBtn.attr("src", "/images/playButton.png")
+    }
+    else if (checkToggleState(toggle) === true) {
+      /* Resume. */
+      console.log("resume");
+      pausa = false;
+      imgBox.css({ "filter": "grayscale(0%)" });
+      pausBtn.attr("src", "/images/pausButton.png")
+    }
+    
+    
+
+  })
+
+
+  nxtImg.click(function () {
+    createImage();
 });
 
+prvImg.click(function () {
+  createReverseImage();
+});
+
+})
 var checkToggleState = function (toggleValue) {
   return (toggleValue % 2 === 0) ? true : false;
 };
+
