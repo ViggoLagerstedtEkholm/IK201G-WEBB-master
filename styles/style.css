@@ -11,7 +11,6 @@ html, body
 }
 
 
-
 figure{
     margin: 0;
 }
@@ -24,8 +23,9 @@ section{
 
 /* Denna div placeras under bilden så man kan sätta in text. */
 .textAreaIMG {
+    position: relative;
   text-align: center;
-  padding: 10px 20px;
+  padding: 14% 0;
 }
 /* Denna div centrerar allt innehåll till mitten av skärmen. */
 .center{
@@ -247,8 +247,6 @@ iframe{
 
 @media screen and (min-width: 600px)
 {
-
-
     #indexBackgroundImage{
         width: 100%;
         height:90%;
@@ -418,10 +416,11 @@ iframe{
   }
 
   .rectangle-grid-portfolio{
-    background-color: rgb(39, 177, 135);
+    background-color: rgb(11, 111, 192);
     color: white;
-    padding: 5rem;
-    height: 15rem;
+    padding: 3%;
+    height: 95%;
+    width: 90%;
     border-radius: 9px;
     justify-content: center;
   }
@@ -435,10 +434,10 @@ iframe{
     }
   
   .rectangles {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 
 
@@ -517,20 +516,31 @@ img{
 
 /* Denna tag ska användas ifall man vill centrera bild i en så kallad grid box. Den  */
 .img2{
-    position:relative; 
     border-radius: 50%;
     align-items: center;
-    height:280px;
+    height:80%;
+    width: 80%;
     display:flex;
     flex-direction: column;
     justify-content:center;
     text-align: center;
     float:top;
     
-    top: -70px;
-    left: 10px;
+    margin-top: 0;
 }
 
+
+.img4{
+    align-items: center;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    float:top;
+    border-radius: 6px;
+    
+}
 
 .fadedBackground
 {
