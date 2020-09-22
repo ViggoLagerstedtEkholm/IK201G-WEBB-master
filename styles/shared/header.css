@@ -2,11 +2,14 @@ header
 {
     height: 10%;
     width: 100%;
-    background-color: rgba(173, 169, 197, 0.87);
+    background-color: #1c4966;
     text-align: center;
     display: inline-block;
     overflow:hidden;
+  
 }
+
+
 
 /* Placera allt inom denna tag till höger med 20px offset. */
 .menu 

@@ -3,16 +3,14 @@ html, body
     /* Välj en font. */
     font-family: Arial;
     /* Gör så att det inte finns något avstånd till hemsidans topp.*/
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
     width: 100%;
+   
 }
 
-.toggler{
-    display: none;
-}
+
 
 figure{
     margin: 0;
@@ -103,14 +101,28 @@ canvas {
 
 
 #headerForMain{
+    position: relative;
     display: none;
     width: 100%;
     height: auto;
-    font-size: 2.5em;
-    color: #0fa6ec;
-    text-align: center;
-   
+    font-size: 5.5em;
+    color: white;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 2%;
     }
+
+
+ 
+#textForMain{
+    display: none;
+    width: 100%;
+    height: auto;
+    font-size: 3.5em;
+    color: #0fa6ec;
+    margin-left: 15%;
+    margin-top: 2%;
+    }   
 
    
 #formContainer{
@@ -223,9 +235,29 @@ iframe{
 }
 
 
+#indexBackgroundImage{
+    width: 100%;
+    height:50%;
+    background-image: url("/Images/backgroundIndex.jpg");
+    background-repeat: no-repeat;
+    
+    
+}
+
 
 @media screen and (min-width: 600px)
 {
+
+
+    #indexBackgroundImage{
+        width: 100%;
+        height:90%;
+        background-image: url("/Images/backgroundIndex.jpg");
+        background-repeat: no-repeat;
+        
+        
+    }
+
     #iframeContainer{
         height: 68%;
         margin: 2%;
@@ -369,13 +401,13 @@ iframe{
     left: 35%; 
     margin-left: -15%;
     margin-top: 50px;
-    width :60%;
+    width :40%;
     height : auto;
     background : #F8F8F8;
-    position : absolute;
     border-radius: 9px;
     text-align : left;
     background-color: lightgreen;
+    float:left;
 }
 
 .rectangle-grid-startsida {
@@ -532,29 +564,49 @@ img{
 
    
     #headerForMain{
-        width: 100%;
-        height: auto;
-        text-align: center;
-        font-size: 2.2em;
-        color: #0fa6ec;
-            }
-
-    #textForMain{
-        width: 100%;
         display: none;
-        height: auto;
-        text-align: center;
-        font-size: 1.2em;
-        color: #0fa6ec;
-        margin-top: 10%;
-                    }        
-
-    #backgroundMain{
-        height: 80%;
         width: 100%;
-        background-image: url("/Images/minBild.png");
+        height: auto;
+        font-size: 3.5em;
+        color: white;
+        margin-left: 15%;
+        margin-top: 10%;
+        margin-bottom: 2%;
+        }
+    
+    
+     
+    #textForMain{
+        display: none;
+        width: 100%;
+        height: auto;
+        font-size: 1.5em;
+        color: white;
+        margin-left: 15%;
+        margin-top: 2%;
+        }        
+
+    #backgroundMainLeft{
+        height: 90%;
+        width: 50%;
+        float: left;
+        color: white;
+        margin-top: 0; 
+        z-index: 200;
     }        
 
+    #backgroundMainRight{
+        height: 90%;
+        width: 50%;
+        float: right;
+        margin-top: 0;
+        
+    }    
+
+    .textAreaIndex{
+        color: black;
+        text-align: center;
+    }
     
 
 
