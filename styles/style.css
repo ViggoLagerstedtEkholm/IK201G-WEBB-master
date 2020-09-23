@@ -130,7 +130,7 @@ canvas {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 60%;
     background-color: rgb(188, 214, 248);  
 }
 
@@ -141,7 +141,6 @@ canvas {
 
 #formContainer h1{ 
     color: white;
-    text-shadow: black 2px 2px;
     margin-left: 20px;
 }
 
@@ -161,20 +160,29 @@ canvas {
 }
 
 textarea{
-    width: 70%;
+    width: 40%;
     height: 12em;
 }
 
 #formButton{
-    width: 70%;
-    height: 3em;
+    width: 30%;
+    height: 3.5em;
     margin-left: 15px;
     margin-bottom: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+   
 }
 
 .inputForContact{
-    width: 70%;
+    width: 40%;
     height: 2em;
+}
+
+label{
+    font-weight:bold;
+    color: #1c4966;
 }
 
 .redLabel{
@@ -186,7 +194,7 @@ textarea{
     border-color: red;
     border-width: 2px;
     border-radius: 0.2em;
-    width: 80%;
+    width: 40%;
     height: 2em;
 }
 
@@ -204,15 +212,15 @@ textarea{
 }
 
 .ready{
-    background-color: chartreuse;
+    background-color: #1c4966;
 }
 
 .notReady{
-    background-color: rgb(53, 53, 53);
+    background-color:  #344652;
 }
 
 #mainContact{
-    background-color:rgba(173, 169, 197, 0.87); 
+    
     width:100%;
     height: 100%;
     margin-bottom: 5%;
@@ -231,7 +239,7 @@ iframe{
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 
 
@@ -257,7 +265,7 @@ iframe{
     }
 
     #iframeContainer{
-        height: 68%;
+        height: 90%;
         margin: 2%;
         margin-right: auto;
         margin-left: auto;
@@ -317,10 +325,10 @@ iframe{
     
     #formContainer{
         border-radius: 0.2em;
-        height: 60%;
+        height: 70%;
         margin-left: 2.5%;
         width: 40%;
-        background-color: rgb(188, 214, 248);
+        background-color: rgb(200, 214, 233);
         float: left;
         margin-top: 2em;
         padding: 2%;   
@@ -338,8 +346,7 @@ iframe{
     }
     
     #formContainer h1{
-        color: white;
-        text-shadow: black 2px 2px;
+        color:  #1c4966;
         margin-left: 20px;
     }
     
@@ -355,7 +362,9 @@ iframe{
     
     .inputContainer{
         margin-top: 20px;
-        margin-bottom: 20px;  
+        margin-bottom: 20px; 
+        
+
     }
     
     textarea{
@@ -365,28 +374,28 @@ iframe{
     }
     
     #formButton{
-        width: 78%;
-        height: 3em;
+        width: 30%;
+        height: 3.5em;
         margin-left: 15px;
         margin-bottom: 25px;
     }
 
     .regularFormBorder{
         border-style: solid;
-        border-color: black;
+        border-color: rgb(255, 255, 255);
         border-width: 2px;
         border-radius: 0.2em;
-        width: 80%;
-        height: 2em;
+        width: 70%;
+        height: 3em;
     }
 
     .regularFormTextareaWithBorder{
         border-style: solid;
-        border-color: black;
+        border-color: rgb(255, 255, 255);
         border-width: 2px;
         border-radius: 0.2em;
-        width: 80%;
-        height: 10em;
+        width: 70%;
+        height: 12em;
     }
     
     #contactFormHeader{
@@ -638,6 +647,8 @@ img{
        background-color: black;
        
    }
+
+
 
 /* Portfolio sidan. */
 @media (min-width: 700px) {
