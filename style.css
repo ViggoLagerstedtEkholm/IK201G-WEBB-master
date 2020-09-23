@@ -5,6 +5,8 @@ html, body
     /* Gör så att det inte finns något avstånd till hemsidans topp.*/
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     height: 100%;
     width: 100%;
    
@@ -17,6 +19,10 @@ figure{
 
 section{
     margin: 0;
+}
+
+h1{
+   margin: 0; 
 }
 /*  */
 
@@ -131,10 +137,12 @@ canvas {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    background-color: rgb(188, 214, 248);  
+    background-color: rgb(188, 214, 248);
+    margin-top: 1%;  
 }
 
 #mainContact{
+    margin-bottom: 0;
     width: 100%;
     height: 100%;
 }
@@ -223,16 +231,12 @@ label{
     
     width:100%;
     height: 100%;
-    margin-bottom: 5%;
 }
 
 #iframeContainer{
-  
-    margin-top: 20%;
     height: 90vh;
     width: 100%;
-   
-    
+    float: left;
 }
 
 iframe{
@@ -261,7 +265,26 @@ iframe{
 
 
 @media screen and (min-width: 600px)
+
+
+
+
 {
+
+
+    #visitUs{
+        font-size: 2.8em;
+        color: teal;
+        border-radius: 2%;
+        margin-left: 15%;
+    }
+
+    h1{
+        margin: 0; 
+     }
+
+
+
     #indexBackgroundImage{
         width: 100%;
         height:90%;
@@ -271,13 +294,11 @@ iframe{
 
     #iframeContainer{
         height: 90%;
-        margin: 2%;
         margin-right: auto;
         margin-left: auto;
         background-color: white;
         border-radius: 0.2em;
         width: 90%;
-        margin-top: 2em;
     }
 
     .imageContainer{
@@ -329,24 +350,21 @@ iframe{
     
     #formContainer{
         border-radius: 0.2em;
-        height: 70%;
+        height: 76%;
         margin-left: 2.5%;
         width: 40%;
         background-color: rgb(200, 214, 233);
         float: left;
-        margin-top: 2em;
         padding: 2%;   
     }
 
     #iframeContainer{
-        float:left;
-        height: 68%;
-        margin: 2%;
-        margin-right: 2.5%;
+        float:right;
+        height: 99%;
         background-color: white;
         border-radius: 0.2em;
-        width: 45%;
-        margin-top: 2em;
+        width: 49.5%;
+        
     }
     
     #formContainer h1{
@@ -660,7 +678,46 @@ img
  
    }
 
+   #rightContactInfo{
+       width: 50.1%;
+       height: 90%;
+       background-color: rgba(223, 230, 230, 0.678);
+       float: right;
+       margin-top: 0;
+       border-left: 1.2em solid rgb(188, 214, 248);
+       
+   }
+   
+   #leftContactInfo{
+    width: 49%;
+    height: 100%;
+    background-color: rgba(223, 230, 230, 0.678);
+    float: left;
+    margin-top: 0;
+    border-right: 1.2em solid rgb(188, 214, 248);
+    clear: left;
+    
+    
+}
 
+
+   #subHeadingContact{
+       display: none;
+       font-size: 4.5em;
+       font-weight: bolder;
+       color: rgb(98, 149, 214);
+       margin-left: 14%;
+       margin-top: 6%;
+   }
+
+   #subHeadingContact2{
+    display: none;
+    font-size: 4.5em;
+    font-weight: bolder;
+    color: rgb(98, 149, 214);
+    margin-left: 14%;
+    margin-top: 6%;
+}
 
 /* Portfolio sidan. */
 @media (min-width: 700px) {
