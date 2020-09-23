@@ -10,8 +10,12 @@ createImage()
 })
 
 var images = [
-  '/Images/pexels-photo-3274903.jpeg',
-  '/Images/pexels-photo-1408221.jpeg'
+  '/Images/sortingvisualizer.PNG',
+  '/Images/appen.PNG',
+  '/Images/sparkollen.PNG',
+  '/Images/87883813-44bde200-ca0a-11ea-8e7b-557276b8917a.png',
+  '/Images/88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png',
+  '/Images/88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png'
 ];
 
 var index = 0;
