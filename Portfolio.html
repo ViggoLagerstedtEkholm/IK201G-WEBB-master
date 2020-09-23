@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="portfolio.js"></script> -->
+  <!-- Importera CSS fil innan allt annat. -->
+  <link rel="stylesheet" type=text/css href="style.css">
+  <link rel="stylesheet" type=text/css href="footer.css">
+  <link rel="stylesheet" type=text/css href="header.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <title> Portfolio </title>
+</head>
+
+<body>
+
+  <header>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="Startsida.html">Hem</a></li>
+              <li><a href="OmOss.html">Om oss</a></li>
+              <li><a href="Portfolio.html">Portfolio</a></li>
+              <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <h1 id="h1portfolio">Tidigare projekt</h1>
+
+  <div class="rectangles">
+
+    <div class="rectangle-grid-portfolio"><iframe width="600" height="600"
+        src="https://www.youtube.com/embed/i845p47_5kA">
+      </iframe>
+      <div class="textAreaIMG">
+        <div class="center">Visualisera olika algoritmer, projektet är skrivet i C#.<a href="https://github.com/ViggoLagerstedtEkholm/SortingVisualizer"> GitHub </a></a> </div>
+      </div>
+    </div>
+
+    <div class="rectangle-grid-portfolio">
+      <a href="https://wordpress.com/view/grupp1interaktionsdesign.wordpress.com"><img class="img4" src="WordPress-logotype-standard-white.png"></img></a>
+      <div class="textAreaIMG">
+        <div class="center">Projekt i interaktionsdesign, resultatet av projektet blev en modell av en mobilapp gjord i Adobe XD.</div>
+      </div>
+    </div>
+
+    <div class="rectangle-grid-portfolio">
+      <a href="https://github.com/ViggoLagerstedtEkholm/Sparkoll"><img class="img2" src="GitHub-Mark.png"></img></a>
+      <div class="textAreaIMG">
+        <div class="center">Visualisera ekonomisk utveckling från olika investeringar, valutakonverterare, börsindex och mera. Projektet är skrivet i JavaScript med hjälp av React biblioteket.</div>
+      </div>
+    </div>
+
+    <div class="rectangle-grid-portfolio">
+      <a href="https://github.com/ViggoLagerstedtEkholm/dataVisualizer"><img class="img2" src="GitHub-Mark.png"></img></a>
+      <div class="textAreaIMG">
+        <div class="center">Visualisera coronavirusets utveckling från land till land. Projekt är skrivet i ASP.NET där Entity framework lagrar data och Chart.js för att visa data.</div>
+      </div>
+    </div>
+
+
+    <div class="rectangle-grid-portfolio">
+      <a href="https://github.com/ViggoLagerstedtEkholm/COLLISIONWORK"><img class="img2" src="GitHub-Mark.png"></img></a>
+      <div class="textAreaIMG">
+        <div class="center">Ett enkelt spel som går ut på att överleva från fallande objekt. I spelet finns kollisionsdetektering, inmatning, nivåsystem. Projektet är skrivet i C# med enkel 2D grafik från ett grafik-bibliotek.</div>
+      </div>
+    </div>
+
+
+    <div class="rectangle-grid-portfolio">
+        <a href="https://github.com/ViggoLagerstedtEkholm"><img class="img2" src="GitHub-Mark.png"></img></a>
+      <div class="textAreaIMG">
+        <div class="center">En mobilapp utvecklad i Xamarin med hjälp av C#, appens betydelse bygger på konceptet "secret santa". Projektet har för nuvarande ingen GitHub repo.</div>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="h1portfolio">Bilder</h1>
+
+  <div class="centreraBildspel">
+    
+    <div class="imageSliderBox">
+      <img id="imgSlider"></img>
+      <div id="imgSliderControlPnl" class="boxShadow3">
+        <img id="prevImg" src="icons8-back-48 (1).png"></img>
+        <img id="pausBtn" src="pausButton.png" alt="a paus button for the image slider">
+        <img id="nextImg" src="icons8-forward-48.png"></img>
+      </div>
+    </div>
+  </div>
+
+  <h1>test</h1>
+  
+ 
+</div>
+<script src="bildSpel.js"></script>
+</body>
+
+</html>
