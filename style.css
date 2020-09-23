@@ -242,6 +242,13 @@ iframe{
     height: 100%;
 }
 
+.iframeVideo{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 50%;
+}
+
 
 #indexBackgroundImage{
     width: 100%;
@@ -260,8 +267,6 @@ iframe{
         height:90%;
         background-image: url("backgroundIndex.jpg");
         background-repeat: no-repeat;
-        
-        
     }
 
     #iframeContainer{
@@ -404,15 +409,23 @@ iframe{
 
 }
 
-.imageSliderBox{
-    
-    width :100%;
-    height : 70%;
-    border-radius: 9px;
-    background-color: black;
-    text-align: center;
-    margin-right: 0;
+#yttre_div {
+    display: table;
+    margin: 0 auto;
+}
   
+#inre_div {
+    width:100%
+}
+
+.imageSliderBox
+{
+    width :70%;
+    height : 70%;
+    border-radius: 10px;
+    /* background-color: black; */
+    text-align: center;
+    margin-bottom: 10%;
 }
 
 .rectangle-grid-startsida {
@@ -511,11 +524,10 @@ iframe{
     overflow: hidden
 }
 
-
-img{
+img
+{
     height: auto;
     padding: 0;
-   
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -566,9 +578,6 @@ img{
     padding: 10px 5px 0 5px;
 }
 
-/*     .imageSliderBox{
-        margin-left: -15%;
-    } */
 
 
    
@@ -634,18 +643,22 @@ img{
        float: left;
    }
 
-   #imgSlider {
-       width: 95%;
-       height:90%;
-       border-style:solid ;
-       border-color: black;
+   #imgSlider
+   {
+        border-style:solid ;
+        border-color: black;
+        margin-left: 20%;
+        width: 100%; height: 30vw;
+        border-radius: 10px;
+
    }
 
    #imgSliderControlPnl{
        width: 100%;
        height: 15%;
        background-color: black;
-       
+       margin-left: 20.2%;
+ 
    }
 
 
