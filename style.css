@@ -572,7 +572,7 @@ img
 
 /* Denna tag ska användas ifall man vill centrera bild i en så kallad grid box. Den  */
 .img2{
-    border-radius: 50%;
+    border-radius: 20%;
     align-items: center;
     height:80%;
     width: 80%;
@@ -744,24 +744,13 @@ img
     background-repeat: no-repeat;
 }
 
-#headertextForPortfolio{
-        width: 50%;
-        height: auto;
-        font-size: 2.5em;
-        color: white;
-        margin-left: 2%;
-        margin-top: 5%;
-        margin-bottom: 2%;
-        margin-right: 0;
 
-}
 
 #headertextForPortfolio{
     width: 50%;
     height: auto;
     font-size: 2.5em;
     color: white;
-    margin-top: 5%;
     margin-bottom: 2%;
     margin-right: 0;
     text-align: left;

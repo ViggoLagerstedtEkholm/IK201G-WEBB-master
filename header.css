@@ -23,8 +23,10 @@ h1{
 
 /* Varje knapp är en attribute, denna del ställer in hur alla knappar ska se ut. */
 .menu a{
-    background-color: #f44336;
+  
     color: white;
+    font-size: 1.8em;
+    font-size: bold;
     padding: 14px 30px;
     text-align: center;
     text-decoration: none;
@@ -68,7 +70,8 @@ a.logo:hover
 /* Inställningarna för listan med knappar. */
 .menu ul li
 {
-    background-color: #ac6b66;
+   
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
