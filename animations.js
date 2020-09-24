@@ -35,4 +35,15 @@ $(function(){
       });
 
 
+      var text5 = $(".barMeterQuarter");
+      text5.animate({width: "+=25%"}, 3000);
+      
+      var text6 = $(".barMeterHalf");
+      text6.animate({width: "+=50%"}, 3000);
+
+      var text7 = $(".barMeterFull");
+      text7.animate({width: "+=95%"},3000);
+
+
+
     })
