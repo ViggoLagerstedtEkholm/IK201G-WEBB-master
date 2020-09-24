@@ -22,10 +22,20 @@ section{
 
 
 /* Denna div placeras under bilden så man kan sätta in text. */
-.textAreaIMG {
+.textAreaIMG-Omoss{
+    font-family: cursive;
+    color:black;
+    margin-top: 2%;
+    text-align: left;
+    padding: 2% 0;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.textAreaIMG-Portfolio{
     position: relative;
-  text-align: center;
-  padding: 14% 0;
+    text-align: center;
 }
 /* Denna div centrerar allt innehåll till mitten av skärmen. */
 .center{
@@ -447,6 +457,20 @@ iframe{
     justify-content: center;
   }
 
+  .rectangle-grid-omoss{
+    background-color: rgb(164, 236, 206);
+    color: white;
+    padding: 1%;
+    width: 100%;
+    border-radius: 9px;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+    .rectangle-grid-omoss:hover{
+        transform: scale(1.005);
+    }
+
     .rectangle-grid-startsida:hover{
         transform: scale(1.01);
     }
@@ -462,6 +486,12 @@ iframe{
     grid-gap: 2rem;
   }
 
+  .rectangles-omoss{
+    max-width: 1500px;
+    margin: 60px auto;
+    display: grid;
+    grid-gap: 6rem;
+  }
 
 #h1portfolio{
     height: 10em;
@@ -496,14 +526,7 @@ iframe{
     border-radius: 10px;
 }
 /* Denna div placeras under bilden så man kan sätta in text. */
-.textAreaIMG {
 
-  opacity: .8;
-  grid-row: 1; /* place in first row */
-  grid-column: 1;  /* place in first column */
-  align-self: flex-start; /* take auto-width */
-  margin-top: -50px;
-}
 /* Denna div centrerar allt innehåll till mitten av skärmen. */
 .center{
     text-align: center;
@@ -670,6 +693,10 @@ img
     { 
         grid-template-columns: repeat(2, 1fr); 
     }
+    
+    .rectangles-omoss{
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
 
 @media (min-width: 1000px) 
@@ -678,5 +705,9 @@ img
     .rectangles 
     { 
         grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .rectangles-omoss{
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
