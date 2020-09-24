@@ -1,0 +1,73 @@
+.animatedBar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:50%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+}
+
+.FullPercent 
+{
+    position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+}
+
+.quarterPercent{
+    position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:25%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+}
+
+.animatedBar-title {
+	position:absolute;
+	top:0;
+	left:0;
+    width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.animatedBar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.animatedBar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.animatedBar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}

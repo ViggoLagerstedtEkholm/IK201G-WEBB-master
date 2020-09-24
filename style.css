@@ -24,7 +24,13 @@ section{
 h1{
    margin: 0; 
 }
-/*  */
+
+#rightContentForUs{
+    float:left;
+    width: 50%;
+    height: auto;
+    margin-top: 1%;
+}
 
 
 /* Denna div placeras under bilden så man kan sätta in text. */
@@ -43,15 +49,6 @@ h1{
     position: relative;
     text-align: center;
 }
-/* Denna div centrerar allt innehåll till mitten av skärmen. */
-.center{
-    text-align: center;
-    align-items: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 canvas {
     width: 90%;
@@ -60,15 +57,10 @@ canvas {
 }
 
 .imageContainer{
+    width: 50%;
     height: auto;
-    width: auto;
-    padding: 2.9em;
+    float:left;
 }
-
-.imageContainer:hover{
-    overflow: hidden
-}
-
 
 .imgStartsida{
     border-radius: 10%;
@@ -315,10 +307,6 @@ iframe{
         float: left;
     }
 
-    .smallContainer{
-        height: 90%;
-    }
-
     .bildIstartSidoContainer{
         margin-left: auto;
         margin-right: auto;
@@ -546,12 +534,8 @@ iframe{
 
 /* Denna div centrerar allt innehåll till mitten av skärmen. */
 .center{
-    text-align: center;
-    align-items: center;
-    min-height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
 .imageContainer{
