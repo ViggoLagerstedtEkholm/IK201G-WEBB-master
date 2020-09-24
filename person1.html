@@ -10,13 +10,13 @@
   <link rel="stylesheet" type=text/css href="skills.css">
   <link rel="stylesheet" type=text/css href="footer.css">
   <link rel="stylesheet" type=text/css href="header.css">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
   <title> Person 1 </title>
 
 </head>
 
-<body onload="drawShape()">
+<body>
   <header>
     <div class="menu-wrap">
       <input type="checkbox" class="toggler">
@@ -38,17 +38,17 @@
     </div>
   </header>
 
-  <div class="center">
+  <div class="center" >
     <div class="imageContainer">
-      <div class="boxShadow3">
+      <div>
         <img class="img2" src="fezbot2000-nahUo1GhcrA-unsplash.jpg">
       </div>
     </div>
-  </div>
-  </div>
-  <div id="rightContentForUs">
+  
+ 
+   <div id="rightContentForUs">
     <div id="textForRightContentForUs">
-      <div class="boxShadow3">
+      <div>
         <h2>Hej detta är person 1.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta gravida dui, ut placerat quam consequatin.
           Ut maximus semper pretium. Integer sodales mauris neque, ac fermentum lorem vestibulum placerat. Praesentlorem
@@ -58,41 +58,60 @@
           faucibus mi non odio sodales cursus. Vivamus eu nisi malesuada libero faucibus dictum ultricies nec nisi.
         </p>
       </div>
-    </div> 
-    <h2>Färdigheter och egenskaper</h2>
+     </div> 
+     <h2>Färdigheter och egenskaper</h2>
+
       <div id="statsForUs">
 
-        <!-- DESIGN -->
-        <h4>Design</h4>
-        <div class="animatedBar clearfix" data-percent="20%">
-          
-          <div class="animatedBar-title" style="background: #55f05d;"><span>100%</span></div>
-          <div class="FullPercent" style="background: #55f05d;"></div>
-          <div class="animatedBar-percent">100%</div>
-        </div> <!-- End Skill Bar -->
-  
 
       <!-- DESIGN - UNDER -->
 
+      <h4>Design</h4>
+      <div class="bar">
+        <div class = "barMeterFull" >
+          <span>100%</span>
+        </div> 
+        <!-- End Skill Bar -->
+      </div>
+
       <h4>HTML</h4>
-      <div class="animatedBar clearfix" data-percent="20%">
-        <div class="animatedBar-title" style="background: #d35400;"><span>50%</span></div>
-        <div class="animatedBar" style="background: #e67e22;"></div>
-        <div class="animatedBar-percent">50%</div>
-        </div> <!-- End Skill Bar -->
+      <div class="bar">
+        <div class = "barMeterHalf" >
+          <span>50%</span>
+        </div> 
+        <!-- End Skill Bar -->
+      </div>
+      
+      <h4>CSS</h4>
+      <div class="bar">
+        <div class = "barMeterHalf" >
+          <span>50%</span>
+        </div> 
+        <!-- End Skill Bar -->
       </div>
 
 
-      <!-- PROGRAMMERING -->
       <h4>Programmering</h4>
-      <div class="animatedBar clearfix" data-percent="20%">
-          
-        <div class="animatedBar-title" style="background: #62b8ce;"><span>25%</span></div>
-        <div class="quarterPercent" style="background: #62b8ce;"></div>
-        <div class="animatedBar-percent">25%</div>
-      </div> <!-- End Skill Bar -->
+      <div class="bar">
+        <div class = "barMeterQuarter" >
+          <span>25%</span>
+        </div> 
+        <!-- End Skill Bar -->
+      </div>
+
+      <h4>JS</h4>
+      <div class="bar">
+        <div class = "barMeterQuarter" >
+          <span>25%</span>
+        </div> 
+        <!-- End Skill Bar -->
+      </div>
+      
     </div>
   </div>
+
+
+
 
   <script src="animations.js"></script>
 
