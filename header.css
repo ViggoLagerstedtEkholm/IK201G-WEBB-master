@@ -1,11 +1,11 @@
 header
 {
-    height: 10%;
+    height: 50%;
     width: 100%;
-    background-image: url("/BakgrundHeader.jpg");
+    background-image: url("/backgroundIndex.jpg");
     text-align: center;
     overflow:hidden;
-    margin: 0;
+    margin-bottom: 5%;
   
 }
 

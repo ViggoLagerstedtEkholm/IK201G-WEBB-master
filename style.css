@@ -719,6 +719,78 @@ img
     margin-top: 6%;
 }
 
+#portfolioBackground{
+    width: 100%;
+    height: 20%;
+    background-image: url("BakgrundPortfolio.jpg");
+    background-repeat: no-repeat;
+}
+
+#headertextForPortfolio{
+        width: 50%;
+        height: auto;
+        font-size: 2.5em;
+        color: white;
+        margin-left: 2%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        margin-right: 0;
+
+}
+
+#headertextForPortfolio{
+    width: 50%;
+    height: auto;
+    font-size: 2.5em;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 0;
+    text-align: left;
+
+}#subtextForPortfolio{
+    width: 50%;
+    height: auto;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    text-align: left;
+
+}
+
+#sortingVisualizer{
+    background-image: url(sortingvisualizer.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rectangle-grid-portfolio:hover{
+    background-color: teal;
+}
+
+.headingForIndividualProject{
+    display: none;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: white;
+
+}
+
+.subHeadingForIndividualProject{
+    display: none;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+
+.descriptionForIndividualProject{
+    display: none;
+    font-size: 1.2em;
+    color: white;
+}
+
 /* Portfolio sidan. */
 @media (min-width: 700px) {
     /*  2 stycken kvadrater på samma "row"   */

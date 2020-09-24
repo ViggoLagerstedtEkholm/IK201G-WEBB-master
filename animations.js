@@ -12,5 +12,27 @@ $(function(){
     var text4 = $("#subHeadingContact2");
     text4.fadeIn(4550);
 
+    
+    var test = $("#sortingVisualizer");
+
+    
+    test.mouseenter(function () {
+        
+        test.removeAttr("id")
+        $(".headingForIndividualProject").show();
+        $(".descriptionForIndividualProject").show();
+        $(".subHeadingForIndividualProject").show();
+        
+        }
+    )
+
+
+    test.mouseleave(function() {
+        test.attr("id", "sortingVisualizer")
+        $(".headingForIndividualProject").hide();
+        $(".descriptionForIndividualProject").hide();
+        $(".subHeadingForIndividualProject").hide();
+      });
+
 
     })
