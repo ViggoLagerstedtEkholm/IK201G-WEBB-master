@@ -30,6 +30,7 @@ h1{
     width: 50%;
     height: auto;
     margin-top: 1%;
+    padding: 2%;
 }
 
 
@@ -534,13 +535,23 @@ iframe{
 
 /* Denna div centrerar allt innehåll till mitten av skärmen. */
 .center{
-    width: 100%;
-    height: auto;
+    width: 74%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15%;
+    background-color: white;
+    -webkit-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    
+    
 }
 
 .imageContainer{
     height: auto;
-    width: auto;
+    width: 30%;
     padding: 2.9em;
 }
 
