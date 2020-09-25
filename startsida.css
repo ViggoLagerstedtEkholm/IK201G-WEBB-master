@@ -48,10 +48,10 @@ nav ul li a:hover{
 }
 
 #innerMain{
-    border-radius: 12%;
-    padding-top: 10%;
+    border-radius: 1%;
+    padding-bottom: 15%;
     width: 80%;
-    height: 100%;
+    min-height: 70vh;
     background-color: rgb(255, 255, 255);
     z-index: 999999;
     position: relative;
@@ -60,6 +60,13 @@ nav ul li a:hover{
 
 #main{
     background-color: rgba(235, 229, 229, 0.966);
+}
+
+#indexBackgroundImage{
+    width: 100%;
+    height:100%;
+    background-image: url("backgroundIndex.jpg");
+    background-repeat: no-repeat; 
 }
 
 
@@ -88,9 +95,86 @@ font-weight: bold;
 .rectangle-grid-startsida{
     border-left: 6px, dotted, rgb(26, 21, 21);
     border-right: 6px, dotted, rgb(26, 21, 21);
-    
-   
 }
 
+#nextImg{
+    width: 8vh;
+    height: 8vh;
+    margin-right: 5%;
+    float: right;
+}
 
+#pausBtn{
+    width: 8vh;
+    height: 8vh;
+}
 
+#prevImg{
+    width: 8vh;
+    height: 8vh;
+    margin-left: 5%;
+    float: left;
+}
+
+.imageSliderBox
+{
+    width :70%;
+    border-radius: 10px;
+    /* background-color: black; */
+    text-align: center;
+}
+
+#imgSlider
+{
+    border-style:solid ;
+    border-color: black;
+    margin-left: 20%;
+    width: 100%; height: 60vh;
+    border-radius: 10px;
+}
+
+#imgSliderControlPnl{
+    width: 100%;
+    background-color: black;
+    margin-left: 20.2%;
+    height: 12vh;
+}
+
+@media screen and (max-width: 1000px)
+{
+    #nextImg{
+        width: 15%;
+    }
+
+    #prevImg{
+        width: 15%;
+    }
+    
+    #pausBtn{
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #innerMain
+    {
+        width: 100%;
+    }
+
+    #imgSlider
+    {
+        height: 50vw;
+        margin-left: 0;
+    }
+
+    #imgSliderControlPnl{
+        margin-left: 0;
+    }
+
+    
+    .imageSliderBox{
+        width: 100%;
+        height: 100%;
+    }
+}
