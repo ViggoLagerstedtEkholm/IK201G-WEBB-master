@@ -13,26 +13,30 @@ $(function(){
     text4.fadeIn(4550);
 
     
-    var test = $("#sortingVisualizer");
-
+    var sortingVis = $("#sortingVisualizer");
+    var interActiveDes = $("interActiveDesign");
     
-    test.mouseenter(function () {
-        
-        test.removeAttr("id")
-        $(".headingForIndividualProject").show();
-        $(".descriptionForIndividualProject").show();
-        $(".subHeadingForIndividualProject").show();
-        
-        }
-    )
+    function mouseHoverOverProject(projectId){
+    $(projectId).mouseenter(function() {
+       var $projectDiv= $(projectId);
+       $projectDiv.css("background-image", "none");
+       $projectDiv.css("background-color", "teal");
+       $projectDiv.children().removeClass("notVisible");
+       $projectDiv.children().addClass("visible");
 
-
-    test.mouseleave(function() {
-        test.attr("id", "sortingVisualizer")
-        $(".headingForIndividualProject").hide();
-        $(".descriptionForIndividualProject").hide();
-        $(".subHeadingForIndividualProject").hide();
+      
+     
       });
+    }
+    function mouseLeavingProject(projectId, backgroundImage){
+      $(projectId).mouseleave(function() {
+        var $projectDiv= $(projectId);
+        $projectDiv.css("background-image", backgroundImage);
+        $projectDiv.css("background-color", "teal");
+        $projectDiv.children().removeClass("visible");
+        $projectDiv.children().addClass("notVisible");
+      });
+    }
 
 
       var text5 = $(".barMeterQuarter");
@@ -43,7 +47,31 @@ $(function(){
 
       var text7 = $(".barMeterFull");
       text7.animate({width: "+=95%"},3000);
+     
+      mouseLeavingProject("#sortingVisualizer", "url(sortingvisualizer.PNG)")
+      mouseHoverOverProject("#sortingVisualizer")
+      mouseLeavingProject("#interActiveDesign", "url(cykelApp.jpg")
+      mouseHoverOverProject("#interActiveDesign")
+      
+      mouseLeavingProject("#sparKoll", "url(sparKollen.PNG)")
+      
+      mouseHoverOverProject("#sparKoll")
+      
+      mouseLeavingProject("#dataVisualizer", "url(dataVi.png)")
+      
+      mouseHoverOverProject("#dataVisualizer")
+      
+      mouseLeavingProject("#collision", "url(88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png)")
+      
+      mouseHoverOverProject("#collision")
+      
+      mouseLeavingProject("#inDev", "url(inDevImg.jpg)")
+      
+      mouseHoverOverProject("#inDev", "#sortingVisualizer")
+     
 
 
 
     })
+
+      
