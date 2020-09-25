@@ -22,8 +22,15 @@ section{
 }
 
 h1{
-   margin: 0; 
+   margin-right: 0;
+   margin-left: 0;
+   margin-bottom: 0;
+   margin-top: 0; 
 }
+
+
+
+
 
 #rightContentForUs{
     float:left;
@@ -767,18 +774,12 @@ img
 
 }
 
-#sortingVisualizer{
-    background-image: url(sortingvisualizer.PNG);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .rectangle-grid-portfolio:hover{
     background-color: teal;
 }
 
 .headingForIndividualProject{
-    display: none;
+    visibility: hidden;
     font-size: 1.6em;
     font-weight: bold;
     color: white;
@@ -786,19 +787,148 @@ img
 }
 
 .subHeadingForIndividualProject{
-    display: none;
+    visibility: hidden;
     font-size: 1.2em;
     color: white;
     font-weight: bold;
 }
 
 .descriptionForIndividualProject{
-    display: none;
+    visibility: hidden;
     font-size: 1.2em;
     color: white;
 }
 
+.notVisible{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+/*Portfolio specific id and classes*/
+
+#portfolioMain{
+    position: relative;
+    top:-22%;
+    width: 60%;
+    height: 45%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+#portfolioMainRight{
+    display: flex;
+    float:left;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#portfolioMainRight > div > a{
+  font-size: 1.9em;
+  font-weight: bolder;
+  color: #0fa6ec;
+  line-height: 1.8em;
+
+}
+
+#portfolioMainLeft{
+    float:left;
+    background-color: steelblue;
+    width: 50%;
+    height: 100%;
+    -webkit-box-shadow: 2px 4px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px  -4px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+#portfolioMainLeft > span >h2{
+    margin-left: 4%;
+    margin-top: 4%;
+    display: inline-block;
+    width:80%;
+    font-size: 2.4em;
+    color: white;
+    line-height: 1.8em;
+}
+
+#portfolioMainLeftSharpRightEdge{
+
+    background-color: steelblue;
+    height: 100%;
+    width: 4%;
+    float: right;
+}
+
+
+#notFinishedProjects{
+    margin-top: 10%;
+    margin-bottom: 4%;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 3%;
+    color: #0fa6ec;
+}
+
+#finishedProjects{
+    margin-top: 1%;
+    margin-bottom: 4%;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 3%;
+    color: #0fa6ec;
+}
+
+
+/*  Id:s for the diffrent projects represented on the portfolio site*/
+#sortingVisualizer{
+    background-image: url("sortingvisualizer.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#interActiveDesign{
+    background-image: url("cykelApp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sparKoll{
+    background-image: url("sparkollen.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#dataVisualizer{
+    background-image: url("dataVi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#collision{
+    background-image: url("88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#inDev{
+    background-image: url("inDevImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* Portfolio sidan. */
+
 @media (min-width: 700px) {
     /*  2 stycken kvadrater på samma "row"   */
     .rectangles 
