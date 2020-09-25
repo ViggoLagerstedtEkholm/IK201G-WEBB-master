@@ -10,12 +10,10 @@ createImage()
 })
 
 var images = [
-  'sortingvisualizer.PNG',
-  'appen.PNG',
-  'sparkollen.PNG',
-  '87883813-44bde200-ca0a-11ea-8e7b-557276b8917a.png',
-  '88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png',
-  '88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png'
+  'BILD1.jpg',
+  'BILD2.jpg',
+  'BILD3.jpg',
+  'BILD4.jpg'
 ];
 
 var index = 0;
