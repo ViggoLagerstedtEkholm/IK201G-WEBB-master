@@ -1,15 +1,16 @@
 .bar{
-	height: 30px;
+	height: 1.5em;
 	width: 40%;
 	background-color: rgba(202, 232, 241, 0.76);
 	border-radius: 20px;
 	border-style: ridge;
-	border-color: slategray;
+	border-color: rgb(172, 177, 182);
+	margin-bottom: 4%;
 }
 
 
 .barMeterHalf{
-	height: 30px;
+	height: 100%;
 	width:5%;
 	background-color: rgb(112, 4, 94);
 	border-radius: 20px;
@@ -17,7 +18,7 @@
 }
 
 .barMeterQuarter{
-	height: 30px;
+	height: 100%;
 	width:5%;
 	background-color: aqua;
 	border-radius: 20px;
@@ -43,9 +44,13 @@
 }
 
 .barMeterFull{
-	height: 30px;
+	height: 100%;
 	width:5%;
 	background-color: rgb(0, 255, 98);
 	border-radius: 20px;
 	text-align: right;
+}
+
+h4{
+	margin: 0;
 }
