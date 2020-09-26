@@ -1,3 +1,5 @@
+/* Mobile size */
+
 html, body
 {
     /* Välj en font. */
@@ -9,12 +11,49 @@ html, body
     margin-bottom: 0;
     height: 100%;
     width: 100%;
-   
+    
+}
+
+#iframeContainer{
+    height: 100%;
+    width: 100%;
+    float: left;
+  }
+
+.teamMemberText{
+    display: grid;
+    grid-template-columns: minmax(50%, 100%);
+    font-size: 1.2em;
+  
+    color:black;
+    padding: 10%;
+}
+
+header{
+    height: 10%;
+    width: 100%;
+}
+
+.imgRadius{
+    border-radius: 5%;
+}
+
+#mainOmOss{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    bottom: 20%;
+    background-color: white;
+    margin-bottom: 8%;
 }
 
 
 figure{
     margin: 0;
+    color: black;
+    text-align: center;
+    font-weight: bold;
 }
 
 section{
@@ -63,9 +102,8 @@ canvas {
 }
 
 .imageContainer{
-    width: 50%;
+    width: 100%;
     height: auto;
-    float:left;
 }
 
 .imgStartsida{
@@ -116,11 +154,7 @@ canvas {
 #formContainer{
     border-radius: 0.2em;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
     background-color: rgb(188, 214, 248);
-    margin-top: 1%;  
 }
 
 #mainContact{
@@ -215,11 +249,6 @@ label{
     height: 100%;
 }
 
-#iframeContainer{
-    height: 90vh;
-    width: 100%;
-    float: left;
-}
 
 iframe{
     margin-right: auto;
@@ -228,23 +257,10 @@ iframe{
     height: 100%;
 }
 
-.iframeVideo{
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    height: 50%;
-}
 
-
-
+/* Widescreen size */
 @media screen and (min-width: 600px)
-
-
-
-
 {
-
-
     #visitUs{
         font-size: 2.8em;
         color: teal;
@@ -254,18 +270,6 @@ iframe{
 
     h1{
         margin: 0; 
-     }
-
-    
-
-
-    #iframeContainer{
-        height: 90%;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: white;
-        border-radius: 0.2em;
-        width: 90%;
     }
 
     .imageContainer{
@@ -301,25 +305,6 @@ iframe{
         height: min-content;
         margin-left: 2%;
         margin-right: 2%;
-    }
-    
-    #formContainer{
-        border-radius: 0.2em;
-        height: 76%;
-        margin-left: 2.5%;
-        width: 40%;
-        background-color: rgb(200, 214, 233);
-        float: left;
-        padding: 2%;   
-    }
-
-    #iframeContainer{
-        float:right;
-        height: 99%;
-        background-color: white;
-        border-radius: 0.2em;
-        width: 49.5%;
-        
     }
     
     #formContainer h1{
@@ -388,6 +373,7 @@ iframe{
     height: 20rem;
     border-radius: 9px;
     justify-content: center;
+    color:black;
   }
 
   .rectangle-grid-portfolio{
@@ -400,6 +386,54 @@ iframe{
     justify-content: center;
   }
 
+  .rectangle-grid-personligaSidan{
+    background-color: rgb(255, 255, 255);
+    height: 95%;
+    width: 100%;
+    border-radius: 9px;
+    justify-content: center;
+    grid-gap: 7rem;
+  }
+
+  .rectangle-grid-kontakt{
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    justify-content: center;
+    grid-gap: 7rem;
+  }
+
+  .rectangle-grid-omoss1{
+    color: white;
+    height: 100%;
+    width: 50%;
+    border-radius: 9px;
+    margin: auto;
+  }
+
+
+  .rectangle-grid-omoss2{
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+
+  #rightTextOmOss{
+    background-color: rgb(0, 99, 180);
+    border-radius: right;
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 1.2em;
+  }
+
+  #leftTextOmOss{
+    background-color: rgb(142, 192, 233);  
+    border-radius: left;
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 1.2em;
+  }
 
 
     .rectangle-grid-startsida:hover{
@@ -417,7 +451,28 @@ iframe{
     grid-gap: 2rem;
   }
 
-  
+  .rectangles-omoss {
+    margin: 0 auto;
+    display: grid;
+    width: 100%;
+    height: auto;
+  }
+
+  .rectangles-personligaSidan {
+    margin: 0 auto;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-gap: 5rem;
+  }
+
+  .rectangles-kontakt {
+    margin: 0 auto;
+    display: grid;
+    height: auto;
+    grid-gap: 9rem;
+    padding: 10%;
+  }
 
 #h1portfolio{
     height: 10em;
@@ -456,8 +511,9 @@ iframe{
 
 /* Denna div centrerar allt innehåll till mitten av skärmen. */
 .center{
+   display: flex;
     width: 74%;
-    height: 80%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: -15%;
@@ -466,16 +522,14 @@ iframe{
     -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
     box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
     border-radius: 10px;
-    
-    
 }
 
 
 
 .imageContainer{
-    height: auto;
-    width: 30%;
-    padding: 2.9em;
+    
+    width: auto;
+    padding: 10%;
 }
 
 .imageContainer:hover{
@@ -509,6 +563,13 @@ img
     
     margin-top: 0;
 }
+
+    .imgPersonalPage
+    {
+        border-radius: 20%;
+        height:100%;
+        width:100%;
+    }
 
 
 .img4{
@@ -764,44 +825,6 @@ img
     margin-bottom: 3%;
 }
 
-/* Om oss sidan */
-.rectangles-omoss{
-    width: 50%;
-    height:75%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-gap: 8rem;
-  }
-
-    .rectangle-grid-omoss:hover{
-        transform: scale(1.005);
-    }
-
-    .rectangle-grid-omoss > a > figure > img{  
-       background-color: white;
-        height: 100%;
-        -webkit-box-shadow: 2px 4px  24px -4px rgba(0,0,0,0.75);
-        -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
-        box-shadow: 2px 4px  24px -4px rgba(0,0,0,0.75);
-        border-radius: 12px; 
-      }
-
-      .rectangle-grid-omoss > a > figure{    
-        height: 100%;
-        width: 100%;  
-      }
-
-      .rectangle-grid-omoss > a{  
-       
-        font-weight: bold;
-        font-size: 1.1em;
-        color: black;
-      }
-      
-      .rectangle-grid-omoss > a:hover {color: #1d7197;}   
-      
-      .rectangle-grid-omoss >a:active {color:black;}  
   
 #upperWrapperCenterOmOss
 {
@@ -855,7 +878,7 @@ background-color: #1c4966;
 
 #omOssHeading{
     font-size: 2.4em;
-    width: 100%;
+    width: 80%;
     display: flex;
     color: white;
     height: 50%;
@@ -950,9 +973,25 @@ background-color: #1c4966;
     .rectangles-omoss{
         grid-template-columns: repeat(1, 1fr); 
     }
+
+    .rectangles-personligaSidan{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .rectangles-kontakt{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
 }
 
-@media (min-width: 1000px) 
+@media (min-width: 1100px) 
+{
+    .rectangles-personligaSidan{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1300px) 
 {
     /*  3 stycken kvadrater på samma "row" */
     .rectangles 
@@ -962,5 +1001,42 @@ background-color: #1c4966;
 
     .rectangles-omoss{
         grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .rectangles-personligaSidan{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .rectangles-kontakt{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* mobil? */
+@media screen and (min-width: 600px)
+{
+    header{
+        height: 50%;
+    }
+}
+@media screen and (max-width: 1300px)
+{
+    #iframeContainer{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #mainOmOss{
+        position: relative;
+        top: 15%;
+        width: 100%;
+        
+    }
+
+    .boxShadow3{
+        -webkit-box-shadow: 2px 4px 24px -4px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 2px 4px 24px -4px rgba(255, 255, 255, 0.75);
+        box-shadow: 2px 4px 24px -4px rgba(255, 255, 255, 0.75);
     }
 }
