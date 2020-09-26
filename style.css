@@ -112,32 +112,6 @@ canvas {
     border-radius: 0.2em;
     margin-bottom: 10%;
 }
-
-
-#headerForMain{
-    position: relative;
-    
-    width: 100%;
-    height: auto;
-    font-size: 5.5em;
-    color: white;
-    margin-left: 15%;
-    margin-top: 10%;
-    margin-bottom: 2%;
-    }
-
-
- 
-#textForMain{
-    
-    width: 100%;
-    height: auto;
-    font-size: 3.5em;
-    color: white;
-    margin-left: 15%;
-    margin-top: 2%;
-    }   
-
    
 #formContainer{
     border-radius: 0.2em;
@@ -305,14 +279,6 @@ iframe{
         height: auto;
     }
     
-    #main{
-        display: flex;
-        height: 100vh;
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        }
-
     #startSidaOmOssContainer{
         float: left;
         width: 25%;
@@ -572,55 +538,7 @@ img
     padding: 10px 5px 0 5px;
 }
 
-
-
-   
-    #headerForMain{
-        display: none;
-        width: 50%;
-        height: auto;
-        font-size: 2.5em;
-        color: white;
-        margin-left: 15%;
-        margin-top: 10%;
-        margin-bottom: 2%;
-        margin-right: 0;
-        }
-    
-    
-     
-    #textForMain{
-        display: none;
-        width: 100%;
-        height: auto;
-        font-size: 1.1em;
-        color: white;
-        margin-left: 15%;
-        margin-top: 2%;
-        }        
-
-    #backgroundMainLeft{
-        height: 90%;
-        width: 30%;
-        float: left;
-        color: white;
-        margin-top: 0; 
-       
-    }        
-
-    #backgroundMainRight{
-        height: 100%;
-        width: 70%;
-        float: right;
-      
-        
-    }    
-
-    .textAreaIndex{
-        color: black;
-        text-align: center;
-    }
-
+ 
    #rightContactInfo{
        width: 50.1%;
        height: 90%;
@@ -846,13 +764,7 @@ img
     margin-bottom: 3%;
 }
 
-
-
-
-
 /* Om oss sidan */
-
-
 .rectangles-omoss{
     width: 50%;
     height:75%;
@@ -860,17 +772,6 @@ img
     margin-right: auto;
     display: grid;
     grid-gap: 8rem;
-    
-  }
-
-
-.rectangle-grid-omoss{  
-    background-color: transparent;
-    height: auto;
-    width: 100%;
-    
-    
-   
   }
 
     .rectangle-grid-omoss:hover{
@@ -880,25 +781,16 @@ img
     .rectangle-grid-omoss > a > figure > img{  
        background-color: white;
         height: 100%;
-        width: 100%;
         -webkit-box-shadow: 2px 4px  24px -4px rgba(0,0,0,0.75);
         -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
         box-shadow: 2px 4px  24px -4px rgba(0,0,0,0.75);
-        border-radius: 12px;
-        
-        
-       
+        border-radius: 12px; 
       }
 
-
-      .rectangle-grid-omoss > a > figure{  
-       
+      .rectangle-grid-omoss > a > figure{    
         height: 100%;
-        width: 100%;
-      
-       
+        width: 100%;  
       }
-
 
       .rectangle-grid-omoss > a{  
        
@@ -906,15 +798,11 @@ img
         font-size: 1.1em;
         color: black;
       }
-
-      .rectangle-grid-omoss > a:visited {color:black;}
       
       .rectangle-grid-omoss > a:hover {color: #1d7197;}   
       
       .rectangle-grid-omoss >a:active {color:black;}  
   
-
-
 #upperWrapperCenterOmOss
 {
     
@@ -925,10 +813,6 @@ img
     margin-bottom: 3%;
     margin-top: 3px;
 }
-
-
-
-
 
 .centerOmOss{
     width: 60%;
@@ -944,50 +828,30 @@ img
     
 }
 
-
-
-
-
 #underWrapperCenterOmOss
 {
-    
-    width: 100%;
     height: 60%;
-    background-color: #1d7197;
     -webkit-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
     box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
     border-radius: 10px;
 }
-
 
 #rightSideunderWrapperCenterOmOss{
 float: left;
 width:50%;
 height: 100%;
 background-color: #1c4966;
--webkit-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
-    box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
     border-radius: 10px;
 }
-
-
-
-    
-
 
 #leftSideunderWrapperCenterOmOss{
     float: left;
     width: 50%;
     height: 100%;
     background-color: rgb(224, 222, 217);
-    -webkit-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
-    box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
     border-radius: 10px;
 }
-
 
 #omOssHeading{
     font-size: 2.4em;
@@ -995,9 +859,7 @@ background-color: #1c4966;
     display: flex;
     color: white;
     height: 50%;
-    align-items: center;
-    
-    
+    align-items: center;   
 }
 
 #leftSideunderWrapperCenterOmOssText{
@@ -1005,22 +867,18 @@ background-color: #1c4966;
     width: 90%;
     height: auto;
     padding: 4%;
-   
 }
 
 #leftSideunderWrapperCenterOmOssText > h2{
     color: #1c4966;
-    font-size: 2.2em;
-   
+    font-size: 2.2em; 
 }
 
 #leftSideunderWrapperCenterOmOssText > p{
     color: #1c4966;
     font-size: 1.3em;
-    line-height: 1.4em;
-   
+    line-height: 1.4em;  
 }
-
 
 #rightSideunderWrapperCenterOmOssText{
     display: inline-block;
@@ -1069,7 +927,6 @@ background-color: #1c4966;
         background-color: rgb(224, 222, 217);
         }
     
-
 /* Person site*/
 
 #headertextForPerson{
