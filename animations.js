@@ -13,9 +13,6 @@ $(function(){
     text4.fadeIn(4550);
 
     
-    var sortingVis = $("#sortingVisualizer");
-    var interActiveDes = $("interActiveDesign");
-    
     function mouseHoverOverProject(projectId){
     $(projectId).mouseenter(function() {
        var $projectDiv= $(projectId);
@@ -47,6 +44,19 @@ $(function(){
 
       var text7 = $(".barMeterFull");
       text7.animate({width: "+=95%"},3000);
+
+
+      var text8 = $("#omOssHeading");
+      text8.animate({
+        "marginLeft": "+=20%"}, 1000);
+
+      var text9 = $("#headertextForPerson");
+      text9.animate({
+        "marginLeft": "+=13%"}, 1000);  
+        
+      var text10 = $(".centerOmOss");
+      text10.animate({
+          "marginTop": "+=-15%"}, 1000);  
      
       mouseLeavingProject("#sortingVisualizer", "url(sortingvisualizer.PNG)")
       mouseHoverOverProject("#sortingVisualizer")
