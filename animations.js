@@ -83,6 +83,14 @@ $(function(){
       var text10 = $(".centerOmOss");
       text10.animate({
           "marginTop": "+=-15%"}, 1000);  
+
+          var text11 = $("#headertextForKontakt");
+      text11.animate({
+        "marginLeft": "+=16%"}, 1000);
+
+        var text12 = $("#mainOmOssContact");
+        text12.animate({
+          "marginTop": "+=-4%"}, 1000);
      
       mouseLeavingProject("#sortingVisualizer", "url(sortingvisualizer.PNG)")
       mouseHoverOverProject("#sortingVisualizer")
