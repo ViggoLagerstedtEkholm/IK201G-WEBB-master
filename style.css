@@ -386,6 +386,11 @@ iframe{
     width: 90%;
     border-radius: 9px;
     justify-content: center;
+    margin-left: auto;    
+    -webkit-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+
   }
 
   .rectangle-grid-personligaSidan{
@@ -446,12 +451,12 @@ iframe{
         transform: scale(1.01);
     }
   
-  .rectangles {
-    max-width: 1800px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 2rem;
-  }
+    .rectangles {
+        max-width: 1800px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 5rem;
+    }
 
   .rectangles-omoss {
     margin: 0 auto;
@@ -1157,8 +1162,6 @@ background-color: #1c4966;
         gap: 4%;
     }
     .rectangle-grid-portfolio{
-        border-style: solid;
-        border-color: black;
         margin-left: auto;
         margin-right: auto;
     }
