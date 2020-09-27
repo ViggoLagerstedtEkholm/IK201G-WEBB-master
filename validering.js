@@ -1,12 +1,9 @@
 
 var clickedOnTextArea = false;
 
-
-
-
-
+/*function thats gets input from the user and then checks the input with regExp and returns true value if all variables are validated 
+or returns a false value if varibles are not validated*/
 function validateForm() {
-
     var validated = false;
     var $textFirstName = $("#firstname").val();
     var $textLastName = $("#lastname").val();
@@ -29,143 +26,119 @@ function validateForm() {
     return validated;
 }
 
+/* Under these comments are similar method that adds a class to a input so the user gets a error/warning in realtime*/
 
-
-        function addWarningToTextBoxWhenLoading(textBox){
-            if(($(textBox).val()) && !(validateInputName(textBox))){
-        
-            $(textBox).removeClass("regularFormBorder");  
-            $(textBox).addClass("redBorder");
-            }
-        }
-        
-        function addWarningToMailTextBoxWhenLoading(textBox){
-            if(($(textBox).val()) && !validateInputMail(textBox)){
-        
-            $(textBox).removeClass("regularFormBorder");  
-            $(textBox).addClass("redBorder");
-            }
-        }
-        
-        function addWarningToPhoneNumberTextBoxWhenLoading(textBox){
-            if(($(textBox).val()) && !validateInputPhoneNumber(textBox)){
-        
-            $(textBox).removeClass("regularFormBorder");  
-            $(textBox).addClass("redBorder");
-            }
-        }
-        
-        function addWarningToCommentAreaWhenLoading(textBox){
-            if(($(textBox).val()) && !validateInputComment(textBox)){
-        
-            $(textBox).removeClass("regularFormTextareaWithBorder");  
-            $(textBox).addClass("redBorderForTextarea");
-            }
-        }
-
-
-        
-
-function addWarningToTextBox(textBox){
-    if(!validateInputName(textBox)){
-
-    $(textBox).removeClass("regularFormBorder");  
-    $(textBox).addClass("redBorder");
+function addWarningToTextBoxWhenLoading(textBox) {
+    if (($(textBox).val()) && !(validateInputName(textBox))) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function addWarningToMailTextBox(textBox){
-    if(!validateInputMail(textBox)){
-
-    $(textBox).removeClass("regularFormBorder");  
-    $(textBox).addClass("redBorder");
+function addWarningToMailTextBoxWhenLoading(textBox) {
+    if (($(textBox).val()) && !validateInputMail(textBox)) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function addWarningToPhoneNumberTextBox(textBox){
-    if(!validateInputPhoneNumber(textBox)){
-
-    $(textBox).removeClass("regularFormBorder");  
-    $(textBox).addClass("redBorder");
+function addWarningToPhoneNumberTextBoxWhenLoading(textBox) {
+    if (($(textBox).val()) && !validateInputPhoneNumber(textBox)) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function addWarningToCommentArea(textBox){
-    if(!validateInputComment(textBox)){
-
-    $(textBox).removeClass("regularFormTextareaWithBorder");  
-    $(textBox).addClass("redBorderForTextarea");
+function addWarningToCommentAreaWhenLoading(textBox) {
+    if (($(textBox).val()) && !validateInputComment(textBox)) {
+        $(textBox).removeClass("regularFormTextareaWithBorder");
+        $(textBox).addClass("redBorderForTextarea");
     }
 }
 
-
-
-function addWarningToTextBox(textBox){
-    if(!validateInputName(textBox)){
-
-    $(textBox).removeClass("regularFormBorder");  
-    $(textBox).addClass("redBorder");
+function addWarningToTextBox(textBox) {
+    if (!validateInputName(textBox)) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function addWarningToMailTextBox(textBox){
-    if(!validateInputMail(textBox)){
-
-    $(textBox).removeClass("regularFormBorder");  
-    $(textBox).addClass("redBorder");
+function addWarningToMailTextBox(textBox) {
+    if (!validateInputMail(textBox)) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function addWarningToPhoneNumberTextBox(textBox){
-    if(!validateInputPhoneNumber(textBox)){
-
-    $(textBox).removeClass("regularFormBorder");  
-    $(textBox).addClass("redBorder");
+function addWarningToPhoneNumberTextBox(textBox) {
+    if (!validateInputPhoneNumber(textBox)) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function addWarningToCommentArea(textBox){
-    if(!validateInputComment(textBox)){
-
-    $(textBox).removeClass("regularFormTextareaWithBorder");  
-    $(textBox).addClass("redBorderForTextarea");
+function addWarningToCommentArea(textBox) {
+    if (!validateInputComment(textBox)) {
+        $(textBox).removeClass("regularFormTextareaWithBorder");
+        $(textBox).addClass("redBorderForTextarea");
     }
 }
 
-function removeWarningToTextBox(textBox){
-    if(validateInputName(textBox)){
-
-    $(textBox).removeClass("redBorder");  
-    $(textBox).addClass("regularFormBorder");
+function addWarningToTextBox(textBox) {
+    if (!validateInputName(textBox)) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function removeWarningToMailTextBox(textBox){
-    if(validateInputMail(textBox)){
-
-    $(textBox).removeClass("redBorder");  
-    $(textBox).addClass("regularFormBorder");
+function addWarningToMailTextBox(textBox) {
+    if (!validateInputMail(textBox)) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function removeWarningToPhoneNumberTextBox(textBox){
-    if(validateInputPhoneNumber(textBox)){
-
-    $(textBox).removeClass("redBorder");  
-    $(textBox).addClass("regularFormBorder");
+function addWarningToPhoneNumberTextBox(textBox) {
+    if (!validateInputPhoneNumber(textBox)) {
+        $(textBox).removeClass("regularFormBorder");
+        $(textBox).addClass("redBorder");
     }
 }
 
-function removeWarningToCommentArea(textBox){
-    if(validateInputComment(textBox)){
-
-    $(textBox).removeClass("redBorderForTextarea");  
-    $(textBox).addClass("regularFormTextareaWithBorder");
+function addWarningToCommentArea(textBox) {
+    if (!validateInputComment(textBox)) {
+        $(textBox).removeClass("regularFormTextareaWithBorder");
+        $(textBox).addClass("redBorderForTextarea");
     }
 }
 
+function removeWarningToTextBox(textBox) {
+    if (validateInputName(textBox)) {
+        $(textBox).removeClass("redBorder");
+        $(textBox).addClass("regularFormBorder");
+    }
+}
 
+function removeWarningToMailTextBox(textBox) {
+    if (validateInputMail(textBox)) {
+        $(textBox).removeClass("redBorder");
+        $(textBox).addClass("regularFormBorder");
+    }
+}
 
+function removeWarningToPhoneNumberTextBox(textBox) {
+    if (validateInputPhoneNumber(textBox)) {
+        $(textBox).removeClass("redBorder");
+        $(textBox).addClass("regularFormBorder");
+    }
+}
+
+function removeWarningToCommentArea(textBox) {
+    if (validateInputComment(textBox)) {
+        $(textBox).removeClass("redBorderForTextarea");
+        $(textBox).addClass("regularFormTextareaWithBorder");
+    }
+}
 
 function checkReadyToSendComment() {
     if (!validateForm()) {
@@ -179,7 +152,6 @@ function checkReadyToSendComment() {
         $("#formButton").addClass("ready")
     }
 }
-
 
 function validateInputName(inputObject) {
     var validated = false;
@@ -234,12 +206,11 @@ function validateInputNameAtStart(inputObject) {
     var $inputValueName = $(inputObject).val();
     var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
     var validatedName = regExLenghtAndValidSigns.test($inputValueName);
-    if ($inputValueName === "" ||validatedName) {
+    if ($inputValueName === "" || validatedName) {
         validated = true;
     }
     return validated;
 }
-
 
 function validateInputCommentAtStart(inputObject) {
     var validated = false;
@@ -278,298 +249,276 @@ function validateInputPhoneNumberAtStart(inputObject) {
 }
 
 
-
-
-function storeFormData(){
+/* Store data as a JSON-file*/
+function storeFormData() {
     var storedData = $("#firstname").val();
     localStorage.setItem("localData", JSON.stringify(storedData));
 }
+/*Get data and parse it to JSON-format then inserts data into the loaded form*/
+function getFormData() {
+    var storageFormData = (localStorage.getItem("localData"));
+    var storageFormDatatoJson = JSON.parse(storageFormData);
 
-function getFormData(){
-var storageFormData = (localStorage.getItem("localData"));
-var storageFormDatatoJson = JSON.parse(storageFormData);
+    $("#firstname").val(storageFormDatatoJson.formInfo[0].formFirstName);
+    {
+        $("#lastname").val(storageFormDatatoJson.formInfo[0].formLastName);
+    }
 
-console.log(storageFormDatatoJson.formInfo[0].formLastName);
+    $("#userMail").val(storageFormDatatoJson.formInfo[0].formMail);
 
+    $("#phoneNumber").val(storageFormDatatoJson.formInfo[0].formPhoneNumber);
 
-$("#firstname").val(storageFormDatatoJson.formInfo[0].formFirstName);
-
-
-{
-$("#lastname").val(storageFormDatatoJson.formInfo[0].formLastName);
-}
-
-$("#userMail").val(storageFormDatatoJson.formInfo[0].formMail);
-
-
-$("#phoneNumber").val(storageFormDatatoJson.formInfo[0].formPhoneNumber);
-
-
-$("#textComment").val(storageFormDatatoJson.formInfo[0].formComment);
+    $("#textComment").val(storageFormDatatoJson.formInfo[0].formComment);
 
 }
 
+function storeFormData() {
+    if ($("#firstname").val().length > 0) {
+        $firstName = $("#firstname").val()
+    }
+    else {
 
+        $firstName = ""
+    }
 
-function storeFormData(){
-    
-    if($("#firstname").val().length > 0){
-        firstName = $("#firstname").val()
-    }   
+    if ($("#lastname").val().length > 0) {
+        $lastName = $("#lastname").val()
+    }
 
-    else{
+    else {
 
-       firstName = ""
+        $lastName = ""
+    }
+
+    if ($("#userMail").val().length > 0) {
+        $mail = $("#userMail").val()
+    }
+
+    else {
+
+        $mail = ""
     }
 
 
-    if($("#lastname").val().length > 0){
-        lastName = $("#lastname").val()
-    }   
+    if ($("#textComment").val().length > 0) {
+        $comment = $("#textComment").val()
+    }
 
-    else{
+    else {
 
-       lastName = ""
+        $comment = ""
     }
 
 
-    if($("#userMail").val().length > 0){
-        mail = $("#userMail").val()
-    }   
-
-    else{
-
-        mail = ""
+    if ($("#phoneNumber").val().length > 0) {
+        $phoneNumber = $("#phoneNumber").val()
     }
 
+    else {
 
-    if($("#textComment").val().length > 0){
-        comment = $("#textComment").val()
-    }   
-
-    else{
-
-        comment = ""
+        $phoneNumber = ""
     }
 
-
-    if($("#phoneNumber").val().length > 0){
-        phoneNumber = $("#phoneNumber").val()
-    }   
-
-    else{
-
-        phoneNumber = ""
-    }
-
-    
     var jsonObj = {
-        
-     
+        formInfo: [
+            {
+                formLastName: $lastName,
+                formFirstName: $firstName,
+                formMail: $mail,
+                formPhoneNumber: $phoneNumber,
+                formComment: $comment
+            }
+        ]
 
-    formInfo: [
-        {
-         formLastName: lastName,
-         formFirstName: firstName,
-         formMail: mail,
-         formPhoneNumber: phoneNumber,
-         formComment: comment 
-        }
-    ]
-    
     }
     localStorage.setItem("localData", JSON.stringify(jsonObj));
 
 };
 
-$(window).on("unload",storeFormData);
-$(window).on("load",  getFormData)
+$(window).on("unload", storeFormData);
+$(window).on("load", getFormData)
 
-$(function(){
-getFormData()
-checkReadyToSendComment() 
-addWarningToTextBoxWhenLoading("#firstname")
-addWarningToTextBoxWhenLoading("#lastname")
-addWarningToMailTextBoxWhenLoading("#userMail")
-addWarningToPhoneNumberTextBoxWhenLoading("#phoneNumber")
-addWarningToCommentAreaWhenLoading("#textComment")
+$(function () {
+    getFormData()
+    checkReadyToSendComment()
+    addWarningToTextBoxWhenLoading("#firstname")
+    addWarningToTextBoxWhenLoading("#lastname")
+    addWarningToMailTextBoxWhenLoading("#userMail")
+    addWarningToPhoneNumberTextBoxWhenLoading("#phoneNumber")
+    addWarningToCommentAreaWhenLoading("#textComment")
 
-$("form").on('submit', function (e) {
-    e.preventDefault();
-    if (validateForm()) {
-        $("#firstname").val("");
-        $("#lastname").val("");
-        $("#userMail").val("");
-        $("#phoneNumber").val("");
-        $("#textComment").val("Skriv din text här");
-        checkReadyToSendComment()
-    }
-    else {
-        
-        addWarningToTextBox("#firstname")
-        addWarningToTextBox("#lastname")
-        addWarningToMailTextBox("#userMail")
-        addWarningToPhoneNumberTextBox("#phoneNumber")
-        addWarningToCommentArea("#textComment")
-
-
+    $("form").on('submit', function (e) {
+        e.preventDefault();
+        if (validateForm()) {
+            $("#firstname").val("");
+            $("#lastname").val("");
+            $("#userMail").val("");
+            $("#phoneNumber").val("");
+            $("#textComment").val("Skriv din text här");
+            checkReadyToSendComment()
         }
-     
-        });
+        else {
 
-        $("#textComment").focus(function () {
-            if(!clickedOnTextArea){
-            $("#textComment").val("");}
-            if (!validateInputComment("#textComment")) {
-                $("#textComment").addClass("redLabel");
-                $("#commentInfo").text("Meddelandet måste vara längre");
-            }
-        })
-        
-        $("#userMail").focus(function () {
-            if (!validateInputMail("#userMail")) {
-                $("#mailLabel").addClass("redLabel");
-                $("#mailInfo").text("Skriv in giltig email");
-            }
-        })
-        
-        $("#phoneNumber").focus(function () {
-            if (!validateInputPhoneNumber("#phoneNumber")) {
-                $("#phoneNumberLabel").addClass("redLabel");
-                $("#phoneNumberInfo").text("Skriv i format XXX-XXX-XX-XX");
-            }
-        })
-        
-        $("#firstname").focus(function () {
-            if (!validateInputName("#firstname")) {
-                $("#firstNameLabel").addClass("redLabel");
-                $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
-            }
-        })
-        
-        $("#lastname").focus(function () {
-            if (!validateInputName("#lastname")) {
-                $("#lastNameLabel").addClass("redLabel");
-                $("#lastNameInfo").text("Efternamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
-            }
-        })
-        
-        $("#firstname").blur(function () {
             addWarningToTextBox("#firstname")
-            $("#firstNameInfo").text("");
-            checkReadyToSendComment()
-            removeWarningToTextBox("#firstname");
-        })
-        
-        $("#lastname").blur(function () {
             addWarningToTextBox("#lastname")
-            $("#lastNameInfo").text("");
-            checkReadyToSendComment()
-            removeWarningToTextBox("#lastname");
-        })
-        
-        $("#phoneNumber").blur(function () {
-            addWarningToPhoneNumberTextBox("#phoneNumber")
-            $("#phoneNumberInfo").text("");
-            checkReadyToSendComment()
-            removeWarningToPhoneNumberTextBox("#phoneNumber");
-        })
-        
-        $("#userMail").blur(function () {
             addWarningToMailTextBox("#userMail")
-            $("#mailInfo").text("");
-            checkReadyToSendComment()
-            removeWarningToMailTextBox("#userMail")
-        })
-        
-        $("#textComment").blur(function () {
-            clickedOnTextArea = true;
+            addWarningToPhoneNumberTextBox("#phoneNumber")
             addWarningToCommentArea("#textComment")
-            $("#commentInfo").text("");
-            checkReadyToSendComment()
-            removeWarningToCommentArea("#textComment")
-        })
-        
-        $("#lastname").keyup(function () {
-        
-        
-            if (validateInputName("#lastname")) {
-                $("#lastNameLabel").removeClass("redLabel");
-                $("#lastNameInfo").text("");
-            }
-        
-            else if (!validateInputName("#lastname")) {
-                $("#lastNameLabel").addClass("redLabel");
-                $("#lastNameInfo").text("Efternamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
-            }
-        
-            checkReadyToSendComment()
-        })
-        
-        $("#firstname").keyup(function () {
-        
-        
-            if (validateInputName("#firstname")) {
-                $("#firstNameLabel").removeClass("redLabel");
-                $("#firstNameInfo").text("");
-            }
-        
-            else if (!validateInputName("#firstname")) {
-                $("#firstNameLabel").addClass("redLabel");
-                $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
-            }
-        
-            
-            checkReadyToSendComment()
-        })
-        
-        $("#userMail").keyup(function () {
-        
-            if (validateInputMail("#userMail")) {
-                $("#mailLabel").removeClass("redLabel");
-                $("#mailInfo").text("");
-            }
-        
-            else if (!validateInputMail("#userMail")) {
-                $("#mailLabel").addClass("redLabel");
-                $("#mailInfo").text("Skriv in giltig email");
-            }
-        
-            checkReadyToSendComment()
-        })
-        
-        $("#textComment").keyup(function () {
-        
-        
-            if (validateInputComment("#textComment")) {
-                $("#textComment").removeClass("redLabel");
-                $("#commentInfo").text("");
-            }
-        
-            else if (!validateInputComment("#textComment")) {
-                $("#textComment").addClass("redLabel");
-                $("#commentInfo").text("Skriv mer text");
-            }
-        
-            checkReadyToSendComment()
-        })
-        
-        $("#phoneNumber").keyup(function () {
-        
-            if (validateInputPhoneNumber("#phoneNumber")) {
-                $("#phoneNumberLabel").removeClass("redLabel");
-                $("#phoneNumberInfo").text("");
-            }
-        
-            else if (!validateInputPhoneNumber("#phoneNumber")) {
-                $("#phoneNumberLabel").addClass("redLabel");
-                $("#phoneNumberInfo").text("Ange giltigt nr");
-            }
-        
-            checkReadyToSendComment()
-        })
-        
+        }
 
+    });
+
+    $("#textComment").focus(function () {
+        if (!clickedOnTextArea) {
+            $("#textComment").val("");
+        }
+        if (!validateInputComment("#textComment")) {
+            $("#textComment").addClass("redLabel");
+            $("#commentInfo").text("Meddelandet måste vara längre");
+        }
+    })
+
+    $("#userMail").focus(function () {
+        if (!validateInputMail("#userMail")) {
+            $("#mailLabel").addClass("redLabel");
+            $("#mailInfo").text("Skriv in giltig email");
+        }
+    })
+
+    $("#phoneNumber").focus(function () {
+        if (!validateInputPhoneNumber("#phoneNumber")) {
+            $("#phoneNumberLabel").addClass("redLabel");
+            $("#phoneNumberInfo").text("Skriv i format XXX-XXX-XX-XX");
+        }
+    })
+
+    $("#firstname").focus(function () {
+        if (!validateInputName("#firstname")) {
+            $("#firstNameLabel").addClass("redLabel");
+            $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+        }
+    })
+
+    $("#lastname").focus(function () {
+        if (!validateInputName("#lastname")) {
+            $("#lastNameLabel").addClass("redLabel");
+            $("#lastNameInfo").text("Efternamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+        }
+    })
+
+    $("#firstname").blur(function () {
+        addWarningToTextBox("#firstname")
+        $("#firstNameInfo").text("");
+        checkReadyToSendComment()
+        removeWarningToTextBox("#firstname");
+    })
+
+    $("#lastname").blur(function () {
+        addWarningToTextBox("#lastname")
+        $("#lastNameInfo").text("");
+        checkReadyToSendComment()
+        removeWarningToTextBox("#lastname");
+    })
+
+    $("#phoneNumber").blur(function () {
+        addWarningToPhoneNumberTextBox("#phoneNumber")
+        $("#phoneNumberInfo").text("");
+        checkReadyToSendComment()
+        removeWarningToPhoneNumberTextBox("#phoneNumber");
+    })
+
+    $("#userMail").blur(function () {
+        addWarningToMailTextBox("#userMail")
+        $("#mailInfo").text("");
+        checkReadyToSendComment()
+        removeWarningToMailTextBox("#userMail")
+    })
+
+    $("#textComment").blur(function () {
+        clickedOnTextArea = true;
+        addWarningToCommentArea("#textComment")
+        $("#commentInfo").text("");
+        checkReadyToSendComment()
+        removeWarningToCommentArea("#textComment")
+    })
+
+    $("#lastname").keyup(function () {
+
+
+        if (validateInputName("#lastname")) {
+            $("#lastNameLabel").removeClass("redLabel");
+            $("#lastNameInfo").text("");
+        }
+
+        else if (!validateInputName("#lastname")) {
+            $("#lastNameLabel").addClass("redLabel");
+            $("#lastNameInfo").text("Efternamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+        }
+
+        checkReadyToSendComment()
+    })
+
+    $("#firstname").keyup(function () {
+
+
+        if (validateInputName("#firstname")) {
+            $("#firstNameLabel").removeClass("redLabel");
+            $("#firstNameInfo").text("");
+        }
+
+        else if (!validateInputName("#firstname")) {
+            $("#firstNameLabel").addClass("redLabel");
+            $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+        }
+
+
+        checkReadyToSendComment()
+    })
+
+    $("#userMail").keyup(function () {
+
+        if (validateInputMail("#userMail")) {
+            $("#mailLabel").removeClass("redLabel");
+            $("#mailInfo").text("");
+        }
+
+        else if (!validateInputMail("#userMail")) {
+            $("#mailLabel").addClass("redLabel");
+            $("#mailInfo").text("Skriv in giltig email");
+        }
+
+        checkReadyToSendComment()
+    })
+
+    $("#textComment").keyup(function () {
+
+
+        if (validateInputComment("#textComment")) {
+            $("#textComment").removeClass("redLabel");
+            $("#commentInfo").text("");
+        }
+
+        else if (!validateInputComment("#textComment")) {
+            $("#textComment").addClass("redLabel");
+            $("#commentInfo").text("Skriv mer text");
+        }
+
+        checkReadyToSendComment()
+    })
+
+    $("#phoneNumber").keyup(function () {
+
+        if (validateInputPhoneNumber("#phoneNumber")) {
+            $("#phoneNumberLabel").removeClass("redLabel");
+            $("#phoneNumberInfo").text("");
+        }
+
+        else if (!validateInputPhoneNumber("#phoneNumber")) {
+            $("#phoneNumberLabel").addClass("redLabel");
+            $("#phoneNumberInfo").text("Ange giltigt nr");
+        }
+
+        checkReadyToSendComment()
+    })
 
 })
-
