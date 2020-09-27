@@ -10,10 +10,10 @@ $(function () {
 })
 
 var images = [
-  'BILD1.jpg',
-  'BILD2.jpg',
-  'BILD3.jpg',
-  'BILD4.jpg'
+  'img/BILD1.jpg',
+  'img/BILD2.jpg',
+  'img/BILD3.jpg',
+  'img/BILD4.jpg'
 ];
 
 var index = 0;
@@ -67,9 +67,7 @@ $(document).ready(function () {
       imgBox.css({ "filter": "grayscale(0%)" });
     }
 
-
   });
-
 
   img.click(function () {
     toggle++;
@@ -79,14 +77,14 @@ $(document).ready(function () {
       stop();
       pausa = true;
       imgBox.css({ "filter": "grayscale(100%)" });
-      pausBtn.attr("src", "playButton.png")
+      pausBtn.attr("src", "img/playButton.png")
     }
     else if (checkToggleState(toggle) === true) {
       /* Resume. */
       console.log("resume");
       pausa = false;
       imgBox.css({ "filter": "grayscale(0%)" });
-      pausBtn.attr("src", "pausButton.png")
+      pausBtn.attr("src", "img/pausButton.png")
     }
 
   })
@@ -101,14 +99,14 @@ $(document).ready(function () {
       stop();
       pausa = true;
       imgBox.css({ "filter": "grayscale(100%)" });
-      pausBtn.attr("src", "playButton.png")
+      pausBtn.attr("src", "img/playButton.png")
     }
     else if (checkToggleState(toggle) === true) {
       /* Resume. */
       console.log("resume");
       pausa = false;
       imgBox.css({ "filter": "grayscale(0%)" });
-      pausBtn.attr("src", "pausButton.png")
+      pausBtn.attr("src", "img/pausButton.png")
     }
 
   })

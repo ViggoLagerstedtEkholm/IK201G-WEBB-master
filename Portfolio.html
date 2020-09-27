@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type=text/css href="header.css">
-  <link rel="stylesheet" type=text/css href="style.css">
+  <link rel="stylesheet" type=text/css href="css/header.css">
+  <link rel="stylesheet" type=text/css href="css/style.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <title> Portfolio </title>
 </head>
@@ -14,99 +14,106 @@
 
   <header>
     <nav>
-    <div class="menu-wrap">
-      <input type="checkbox" class="toggler">
-      <div class="hamburger">
-        <div></div>
-      </div>
-      <div class="menu">
-        <div>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
           <div>
-            <ul>
-              <li><a href="Startsida.html">Hem</a></li>
-              <li><a href="OmOss.html">Om oss</a></li>
-              <li><a href="Portfolio.html">Portfolio</a></li>
-              <li><a href="Kontakt.html">Kontakt</a></li>
-            </ul>
+            <div>
+              <ul>
+                <li><a href="Startsida.html">Hem</a></li>
+                <li><a href="OmOss.html">Om oss</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
     <div id="headertextForPortfolio">
       <h1>Portfolio</h1>
-      
     </div>
-    
   </header>
-  
-  <div id = "portfolioMain" class="boxShadow3"> 
-  <div id="portfolioMainLeft"><span><h2>Här kan ni se våra tidigare samt <br/> pågående projekt</h2></span>
-  </div>
-  <div id="portfolioMainRight">
-  <div>
-    <a href="#finishedProjects">Avklarade projekt</a> <br/>
-    <a href="#notFinishedProjects">Pågående projekt</a> 
-  </div>  
-  </div>
-  </div>
 
-  
-  <div id= "finishedProjects"><h2 >Avklarade projekt</h2></div>  
+
+</header>
+
+<div id="portfolioMain" class="boxShadow3">
+  <h2>Här kan ni se våra tidigare samt <br /> pågående projekt</h2>
+
+        <br />
+            <a href="#finishedProjects">Avklarade projekt</a> <br />
+        <a href="#notFinishedProjects">Pågående projekt</a>
+</div>
+
+  <div id="finishedProjects">
+    <h2>Avklarade projekt</h2>
+  </div>
   <div class="rectangles" id="wrapperForFinishedProjects">
 
-    <div  class="rectangle-grid-portfolio"  id= "sortingVisualizer">
-       <h2 class="headingForIndividualProject" > Sorting Visualizer</h2>
-      <h3 class="subHeadingForIndividualProject" >Visualisera olika algoritmer</h3>
-      <p  class="descriptionForIndividualProject" >Projektet visualiserar 12 olika sorteringsalgoritmer<br /> är skrivet i C#</p>
+    <div class="rectangle-grid-portfolio" id="sortingVisualizer">
+      <h2 class="headingForIndividualProject"> Sorting Visualizer</h2>
+      <h3 class="subHeadingForIndividualProject">Visualisera olika algoritmer</h3>
+      <p class="descriptionForIndividualProject">Projektet visualiserar 12 olika sorteringsalgoritmer<br /> är skrivet i
+        C#</p>
     </div>
 
-    <div class="rectangle-grid-portfolio" id= "interActiveDesign">
+    <div class="rectangle-grid-portfolio" id="interActiveDesign">
       <h2 class="headingForIndividualProject">CykelApp</h2>
       <h3 class="subHeadingForIndividualProject">En interaktiv cykelapp</h3>
-      <p  class="descriptionForIndividualProject">Appen har designats och prototypats till en hiFi-prototyp<br /> Appen ska kunna förenkla en cyklist val av rutt samt<br /> förhindra olyckor i trafiken </p>
+      <p class="descriptionForIndividualProject">Appen har designats och prototypats till en hiFi-prototyp<br /> Appen
+        ska kunna förenkla en cyklist val av rutt samt<br /> förhindra olyckor i trafiken </p>
     </div>
 
-    <div class="rectangle-grid-portfolio" id= "sparKoll">
+    <div class="rectangle-grid-portfolio" id="sparKoll">
       <h2 class="headingForIndividualProject">SparKollen</h2>
-      <h3 class="subHeadingForIndividualProject">En hemsida som visualisera ekonomisk utveckling från olika investeringar</h3>
-      <p  class="descriptionForIndividualProject"> På hemsidan finns bl.a. valutakonverterare, börsindex.<br /> Projektet är skrivet i JavaScript med hjälp av React biblioteket </p>
-    </div>  
-   
-    <div class="rectangle-grid-portfolio" id= "dataVisualizer">
-      <h2 class="headingForIndividualProject">DataVisualizer</h2>
-      <h3 class="subHeadingForIndividualProject">En hemsida som visualisera coronavirusets utveckling från land till land.</h3>
-      <p  class="descriptionForIndividualProject"> Projekt är skrivet i ASP.NET där Entity framework lagrar data och Chart.js för att visa data.</p> 
+      <h3 class="subHeadingForIndividualProject">En hemsida som visualisera ekonomisk utveckling från olika
+        investeringar</h3>
+      <p class="descriptionForIndividualProject"> På hemsidan finns bl.a. valutakonverterare, börsindex.<br /> Projektet
+        är skrivet i JavaScript med hjälp av React biblioteket </p>
     </div>
-   
-    <div class="rectangle-grid-portfolio" id= "collision">
-       <h2 class="headingForIndividualProject">Collision</h2>
+
+    <div class="rectangle-grid-portfolio" id="dataVisualizer">
+      <h2 class="headingForIndividualProject">DataVisualizer</h2>
+      <h3 class="subHeadingForIndividualProject">En hemsida som visualisera coronavirusets utveckling från land till
+        land.</h3>
+      <p class="descriptionForIndividualProject"> Projekt är skrivet i ASP.NET där Entity framework lagrar data och
+        Chart.js för att visa data.</p>
+    </div>
+
+    <div class="rectangle-grid-portfolio" id="collision">
+      <h2 class="headingForIndividualProject">Collision</h2>
       <h3 class="subHeadingForIndividualProject"> Ett enkelt spel som går ut på att överleva från fallande objekt</h3>
-      <p  class="descriptionForIndividualProject"> I spelet finns kollisionsdetektering, inmatning, nivåsystem. <br/> Projektet är skrivet i C# med enkel 2D grafik från ett grafik-bibliotek.</p> 
-    
+      <p class="descriptionForIndividualProject"> I spelet finns kollisionsdetektering, inmatning, nivåsystem. <br />
+        Projektet är skrivet i C# med enkel 2D grafik från ett grafik-bibliotek.</p>
+
     </div>
 
   </div>
-  
-  <h2 id = "notFinishedProjects">Pågående projekt</h2>
+
+  <h2 id="notFinishedProjects">Pågående projekt</h2>
   <div class="rectangles" id="wrapperForNotFinishedProjects">
 
     <div class="rectangle-grid-portfolio" id="inDev">
       <h2 class="headingForIndividualProject">Slumpgenerator</h2>
       <h3 class="subHeadingForIndividualProject"> en app som ska kunna slumpmässigt sätta ihop grupper</h3>
-      <p  class="descriptionForIndividualProject"> Appen kan användas för grupparbete i skola men också för olika lekar<br/> projektet kommer bl.a att utveklas med hjälp av i Xamarin och C#.</p> 
-      
+      <p class="descriptionForIndividualProject"> Appen kan användas för grupparbete i skola men också för olika
+        lekar<br /> projektet kommer bl.a att utveklas med hjälp av i Xamarin och C#.</p>
+
     </div>
   </div>
-  
+
 
   </div>
 
-  
- 
-</div>
-<script src="bildSpel.js"></script>
-<script src="animations.js"></script>
+
+
+  </div>
+  <script src="js/bildSpel.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 
 </html>

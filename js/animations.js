@@ -1,11 +1,4 @@
 $(function () {
-  var size = $(window).width();
-  $(window).on('resize', function () {
-    var $screenSize = $(window).width();
-
-    console.log("Storlek" + size);
-  });
-
   function mouseHoverOverProject(projectId) {
     $(projectId).mouseenter(function () {
       var $projectDiv = $(projectId);
@@ -68,32 +61,42 @@ $(function () {
     "marginLeft": "+=16%"
   }, 1000);
 
+  var $headerTextForPortfolio = $("#headertextForPortfolio");
+  $headerTextForPortfolio.animate({
+    "marginLeft": "+=16%"
+  }, 1000);
+
   var $mainOmOssContact = $("#mainOmOssContact");
   $mainOmOssContact.animate({
     "marginTop": "+=-4%"
   }, 1000);
 
-  mouseLeavingProject("#sortingVisualizer", "url(sortingvisualizer.PNG)");
+  var $portfolioMain = $("#portfolioMain");
+  $portfolioMain.animate({
+    "marginTop": "+=-4%"
+  }, 1000);
+
+  mouseLeavingProject("#sortingVisualizer", "url(img/sortingvisualizer.PNG)");
 
   mouseHoverOverProject("#sortingVisualizer");
 
-  mouseLeavingProject("#interActiveDesign", "url(cykelApp.jpg");
+  mouseLeavingProject("#interActiveDesign", "url(img/cykelApp.jpg");
 
   mouseHoverOverProject("#interActiveDesign");
 
-  mouseLeavingProject("#sparKoll", "url(sparKollen.PNG)");
+  mouseLeavingProject("#sparKoll", "url(img/sparKollen.PNG)");
 
   mouseHoverOverProject("#sparKoll");
 
-  mouseLeavingProject("#dataVisualizer", "url(dataVi.png)");
+  mouseLeavingProject("#dataVisualizer", "url(img/dataVi.png)");
 
   mouseHoverOverProject("#dataVisualizer");
 
-  mouseLeavingProject("#collision", "url(88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png)");
+  mouseLeavingProject("#collision", "url(img/88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png)");
 
   mouseHoverOverProject("#collision");
 
-  mouseLeavingProject("#inDev", "url(inDevImg.jpg)");
+  mouseLeavingProject("#inDev", "url(img/inDevImg.jpg)");
 
   mouseHoverOverProject("#inDev", "#sortingVisualizer");
 })
