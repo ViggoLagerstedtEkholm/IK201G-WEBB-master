@@ -53,10 +53,10 @@ header{
     margin: auto;
     position: relative;
     bottom: 20%;
-    background-color: rgb(191, 204, 216);
+    background-color: steelblue;
     padding: 4%;
     font-size: 1em;
-    color: rgb(105, 112, 117);
+    color: white;
     margin-bottom: 8%;
 }
 
@@ -73,7 +73,7 @@ header{
 
 #mainOmOssContact > h2 >span {
     font-weight: bold;
-    color: rgb(11, 111, 192);
+    color: rgb(16, 76, 206);
 }
 
 
@@ -455,7 +455,7 @@ iframe{
 
 
   #rightTextOmOss{
-    background-color: rgb(0, 99, 180);
+    background-color: steelblue;
     border-radius: right;
     text-align: center;
     padding-bottom: 5%;
@@ -805,21 +805,19 @@ img
 #notFinishedProjects{
     margin-top: 10%;
     margin-bottom: 4%;
-    font-size: 2.4em;
+    font-size: 1.8em;
     font-weight: bold;
-    text-decoration: underline;
     margin-left: 3%;
-    color: #0fa6ec;
+    color: black;
 }
 
 #finishedProjects{
     margin-top: 1%;
     margin-bottom: 4%;
-    font-size: 2.4em;
+    font-size: 1.6em;
     font-weight: bold;
-    text-decoration: underline;
     margin-left: 3%;
-    color: #0fa6ec;
+    color: black;
 }
 
 
@@ -933,7 +931,7 @@ background-color: #1c4966;
 
 #omOssHeading{
     font-size: 2.4em;
-    width: 80%;
+    width: 60%;
     display: flex;
     color: white;
     height: 50%;
@@ -1099,7 +1097,8 @@ background-color: #1c4966;
         height: fit-content;
         font-size: 1.2em;
         position: relative;
-        top: 60%; 
+        top: 60%;
+        left: 5.5%;
     }
 
     #rightImgOmOss{
@@ -1141,6 +1140,7 @@ background-color: #1c4966;
 
     #portfolioMainLeft{
         background-color: steelblue;
+        margin-top: 12%;
         clear: both;
         width: 100%;
         height: 20vh;
@@ -1222,6 +1222,7 @@ background-color: #1c4966;
       #formContainer{
           width: 100%;
           margin-top: 20%;
+          background-color: rgb(142, 192, 233);
       }
     
       .redBorder{
@@ -1254,10 +1255,10 @@ background-color: #1c4966;
     }
    
     #headertextForKontakt{
-        width: 60%;
-        font-size: 1.6em;
+        width: 70%;
+        font-size: 1.4em;
         position: relative;
-        top: 45%;
+        top: 50%;
         text-align: center;
         display: inline-block;
         color: white;
@@ -1267,10 +1268,11 @@ background-color: #1c4966;
         width: 90%;
         margin-top: 2%;
         height: 40vh;
-        background-color: rgb(207, 219, 233);
+        background-color: steelblue;
+        font-weight: normal;
         padding: 2%;
         font-size: 0.8em;
-        color: rgb(88, 90, 97);
+        color: rgb(224, 227, 231);
         margin-bottom: 8%;
         position: relative;
         top: 6%;
@@ -1278,7 +1280,7 @@ background-color: #1c4966;
     
     #mainOmOssContact > h2 >span {
         font-weight: bold;
-        color: rgb(11, 111, 192);
+        color:rgb(16, 76, 206);
     }
 
 
@@ -1294,7 +1296,110 @@ background-color: #1c4966;
         width:auto;
     }
 
-    
+    .rectangle-grid-omoss2{
+        margin-top: 0;  
+    }
 
+    .rectangle-grid-omoss1{
+        margin-top: 5%;
+    }
+    
+#finishedProjects{
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+}
+#finishedProjects > h2{
+    margin-bottom: 30%;
+}
+
+#notFinishedProjects{
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+}
+
+.rectangles-kontakt{
+    margin-bottom: 0; 
+}
+
+
+
+#headertextForPerson{
+    display: flex;
+    position: relative;
+    right: 6%;
 
 }
+}
+   
+@media (max-height: 400px) and (max-width: 900px){
+
+     #mainOmOss{
+        width: 100%;
+        position: static;
+    }
+
+    .menu{
+        margin-right: 13%;
+        z-index: 1;
+    }
+    #omOssHeading{
+        position: relative;
+        left: 16%;
+        font-size: 1.4em;
+        width:60%;
+    }
+
+    #portfolioMain{
+        font-size: 0.6em;
+        position: relative;
+        top: -10%;
+        width: 100%;
+        height: 50%;
+    }
+
+    #headertextForPortfolio{
+        text-align: center;
+        margin-left: 24%;
+        font-size: 1.4em;
+        position: relative;
+        top: 19%;
+        height: min-content;
+    }
+
+    #mainOmOssContact{
+        position: static;
+        width:90%;
+    }
+
+    #headertextForKontakt{
+        font-size: 1.4em;
+        position: relative;
+        top: 29%;
+        margin-left: 4%;
+    }
+
+    #iframeContainer{
+        height: 90vh;
+    }
+    .redBorder{
+        width: 90%;
+        height: 4em;
+    }
+
+    .regularFormBorder{
+        width: 90%;
+        height: 4em;
+    }
+
+    .regularFormTextareaWithBorder{
+        width: 90%;
+    } 
+
+    #headertextForPerson{
+        display: inline-block;
+        position: static;
+    }
+}
+

@@ -50,7 +50,7 @@ $(function () {
 
   var $animatedOmOssHeading = $("#omOssHeading");
   $animatedOmOssHeading.animate({
-    "marginLeft": "+=20%"
+    "marginLeft": "+=15%"
   }, 1000);
 
   var $animatedHeaderTextForPerson = $("#headertextForPerson");

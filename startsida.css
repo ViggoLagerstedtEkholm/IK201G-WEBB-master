@@ -253,5 +253,21 @@ img {
         top:-10%;
         height: 60vh;
     }
+
+
+
 }
+
+    
+@media (max-height: 400px) and (max-width: 900px){
+
+    #backgroundMainRight{
+       align-items: flex-start;
+    }
+    #backgroundMainLeft{
+        margin-top: 0;
+     }
+     
+}
+
 
