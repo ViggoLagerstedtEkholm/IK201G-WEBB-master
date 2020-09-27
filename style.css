@@ -246,8 +246,8 @@ label{
     border-color: red;
     border-width: 2px;
     border-radius: 0.2em;
-    width: 40%;
-    height: 2em;
+    width: 70%;
+    height: 3em;
 }
 
 .redBorderForTextarea{
@@ -255,7 +255,7 @@ label{
     border-color: red;
     border-width: 2px;
     border-radius: 0.2em;
-    width: 80%;
+    width: 70%;
     height: 10em;
 }
 

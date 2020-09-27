@@ -12,7 +12,7 @@ function validateForm() {
     var $textComment = $("#textComment").val();
     var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
     var regExLenghtAndValidSignsForComment = /^[a-zA-Z0-9\-]{3,}$/;
-    var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z]+)*$/;
+    var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;
     var regExPhoneNumber = /^(^070|^073|^076|^072|^079)\d{7}$/;
     var textWholeName = $textFirstName + "" + $textLastName;
     var validatedName = regExLenghtAndValidSigns.test(textWholeName);
@@ -180,7 +180,7 @@ function validateInputComment(inputObject) {
 function validateInputMail(inputObject) {
     var validated = false;
     var $inputValueMail = $(inputObject).val();
-    var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z]+)*$/;
+    var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;
     var validatedMail = regExMail.test($inputValueMail);
     if (validatedMail) {
         validated = true;
@@ -227,7 +227,7 @@ function validateInputCommentAtStart(inputObject) {
 function validateInputMailAtStart(inputObject) {
     var validated = false;
     var $inputValueMail = $(inputObject).val();
-    var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z]+)*$/;
+    var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;
     var validatedMail = regExMail.test($inputValueMail);
     if (validatedMail) {
         validated = true;
