@@ -14,6 +14,10 @@ html, body
     
 }
 
+#layer{
+    display: none;
+}
+
 #iframeContainer{
     height: 100%;
     width: 100%;
@@ -30,7 +34,7 @@ html, body
 }
 
 header{
-    height: 10%;
+    height: 30%;
     width: 100%;
 }
 
@@ -363,6 +367,7 @@ iframe{
     #contactFormHeader{
         margin: 0;
     }
+
 
 }
 
@@ -885,6 +890,25 @@ background-color: #1c4966;
     align-items: center;   
 }
 
+#headerForPortfolio{
+    font-size: 2.4em;
+    width: 80%;
+    display: flex;
+    color: white;
+    height: 50%;
+    align-items: center;   
+}
+
+
+#omOssHeading{
+    font-size: 2.4em;
+    width: 80%;
+    display: flex;
+    color: white;
+    height: 50%;
+    align-items: center;   
+}
+
 #leftSideunderWrapperCenterOmOssText{
     display: inline-block;
     width: 90%;
@@ -1029,7 +1053,7 @@ background-color: #1c4966;
 {
     #mainOmOss{
         position: relative;
-        top: 15%;
+        top: 4%;
         width: 100%;
         
     }
@@ -1039,4 +1063,130 @@ background-color: #1c4966;
         -moz-box-shadow: 2px 4px 24px -4px rgba(255, 255, 255, 0.75);
         box-shadow: 2px 4px 24px -4px rgba(255, 255, 255, 0.75);
     }
+
+    #omOssHeading{
+        height: fit-content;
+        font-size: 1.2em;
+        position: relative;
+        top: 60%; 
+    }
+
+    #rightImgOmOss{
+        order:2;
+    }
+
+    #leftImgOmOss{
+        order:4;
+    }
+
+    #leftTextOmOss{
+        order:3
+    }
+
+    #rightTextOmOss{
+        order:1
+    }
+
+    .rectangle-grid-omoss1{
+        
+        margin-top: 20%;
+    }
+
+    #portfolioMain{
+        width: 100%;
+        position: relative;
+        top: -1%;
+        height: fit-content;
+        font-size: 0.4em;
+        border-radius: 12%;
+        background-color:steelblue ;
+    }
+    #portfolioMainRight{
+        background-color: rgb(173, 195, 212);
+        clear: both;
+        width: 100%;
+        height: 14vh;
+    }
+
+    #portfolioMainLeft{
+        background-color: steelblue;
+        clear: both;
+        width: 100%;
+        height: 20vh;
+        border-radius: 0%;
+        text-align: center;
+    }
+
+    #portfolioMainLeft > span > h2{
+        font-size: 3.2em;
+    }
+
+
+    #portfolioMainLeftSharpRightEdge{
+        display: none;
+    }
+
+
+    #portfolioMainRight > div > a{
+        color: #1c4966;
+        font-weight: bolder;
+        font-size: 2.8em;
+        text-decoration: underline;
+    }
+
+    #headertextForPortfolio{
+        width: 100%;
+        font-size: 1.8em;
+        position: relative;
+        top: 45%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #finishedProjects{
+
+        width: 60%;
+        position: relative;
+        top:10%;
+     
+    }
+
+    #finishedProjects > h2{
+     font-size: 1.2em;
+     margin-bottom: 50%;
+    }
+
+    #wrapperForFinishedProjects{
+        gap: 4%;
+    }
+    .rectangle-grid-portfolio{
+        border-style: solid;
+        border-color: black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #wrapperForNotFinishedProjects{
+        margin-top: 80%;
+    }
+
+    #notFinishedProjects {
+        position: relative;
+        top: 33%;
+       }
+    
+       .layerForProjects{
+           display: block;
+           position: absolute;
+           background-color: rgba(31, 31, 34, 0.7);
+           position: absolute;
+           top: 70%;
+           left: 0;
+           width: 100%;
+           height: 30%;
+       }
+       .rectangle-grid-portfolio{
+           position: relative;
+       }
+      
 }

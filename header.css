@@ -255,7 +255,9 @@ a.logo:hover
 
 
 
-header{
+nav{
+    background-image: url("BakgrundHeader.jpg");
+    height: 10%;
     width: 100%;
     position: fixed;
     top: 0;
