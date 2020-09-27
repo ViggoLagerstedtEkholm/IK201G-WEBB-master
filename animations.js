@@ -6,7 +6,7 @@
 $(function(){
   var size = $(window).width();
   $(window).on('resize', function(){
-    size = $(window).width();
+    var size = $(window).width();
   
   console.log("Storlek" + size);
   });
@@ -27,13 +27,13 @@ $(function(){
     function mouseHoverOverProject(projectId){
       
       $(projectId).mouseenter(function() {
-        if(size > 600){
+       
        var $projectDiv= $(projectId);
        $projectDiv.css("background-image", "none");
        $projectDiv.css("background-color", "teal");
        $projectDiv.children().removeClass("notVisible");
        $projectDiv.children().addClass("visible");
-    }
+    
 
       
      
@@ -44,7 +44,7 @@ $(function(){
       
       
       $(projectId).mouseleave(function() {
-        if(size > 600){
+       
          console.log("MouseLeave"); 
         var $projectDiv= $(projectId);
         $projectDiv.css("background-image", backgroundImage);
@@ -52,34 +52,12 @@ $(function(){
         $projectDiv.children().removeClass("visible");
         $projectDiv.children().addClass("notVisible");
   
-      }
+      
         
     });
     }
 
     
-    function focus(projectId){
-      
-      $(projectId).mouseover(function() {
-        if(size <= 600){
-       $(projectId).children(".layerForProjects").css({height: "100%" ,  top: "0%"});
-
-        
-        }
-      });
-    
-        
-      }
-
-      function focusOut(projectId){
-        
-        $(projectId).mouseleave(function() {
-          if(size <= 600){
-           $(projectId).children(".layerForProjects").css({height: "30%" ,  top: "70%"});
-        }
-      }); 
-        
-      }
 
 
    
@@ -127,22 +105,6 @@ $(function(){
       
       mouseHoverOverProject("#inDev", "#sortingVisualizer")
      
-        focus("#sortingVisualizer");
-
-        focusOut("#sortingVisualizer");
-
-        focus("#interActiveDesign");
-
-        focusOut("#interActiveDesign");
-
-        focus("#sparKoll");
-
-        focusOut("#sparKoll");
-
-        focus("#dataVisualizer");
-
-        focusOut("#dataVisualizer");
-
   
 
        
