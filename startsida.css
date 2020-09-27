@@ -183,12 +183,21 @@ img {
    
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 1200px) 
 {
     #innerMain
     {
         width: 100%;
     }
+
+    #main{
+        height: min-content;
+    }
+
+}
+
+@media screen and (max-width: 768px)
+{
 
     #imgSlider
     {
@@ -244,12 +253,5 @@ img {
         top:-10%;
         height: 60vh;
     }
-
-    #main{
-        height: min-content;
-    }
-
-   
-
 }
 
