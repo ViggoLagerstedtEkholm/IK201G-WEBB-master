@@ -14,9 +14,6 @@ html, body
     
 }
 
-#layer{
-    display: none;
-}
 
 #iframeContainer{
     height: 100%;

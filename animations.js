@@ -1,5 +1,15 @@
 
+ 
+
+
+
 $(function(){
+  var size = $(window).width();
+  $(window).on('resize', function(){
+    size = $(window).width();
+  
+  console.log("Storlek" + size);
+  });
 
     var text1 = $("#headerForMain");
     text1.fadeIn(2750);
@@ -13,35 +23,66 @@ $(function(){
     var text4 = $("#subHeadingContact2");
     text4.fadeIn(4550);
 
-    console.log($(window).width())
     
     function mouseHoverOverProject(projectId){
-      if($(window).width() > 600){
       
-    $(projectId).mouseenter(function() {
+      $(projectId).mouseenter(function() {
+        if(size > 600){
        var $projectDiv= $(projectId);
        $projectDiv.css("background-image", "none");
        $projectDiv.css("background-color", "teal");
        $projectDiv.children().removeClass("notVisible");
        $projectDiv.children().addClass("visible");
-       })
+    }
+
       
      
-      }
+  });
     }
+   
     function mouseLeavingProject(projectId, backgroundImage){
-      if($(window).width() > 600){
-        console.log($(window).width())
+      
+      
       $(projectId).mouseleave(function() {
+        if(size > 600){
+         console.log("MouseLeave"); 
         var $projectDiv= $(projectId);
         $projectDiv.css("background-image", backgroundImage);
         $projectDiv.css("background-color", "teal");
         $projectDiv.children().removeClass("visible");
         $projectDiv.children().addClass("notVisible");
-      })
+  
+      }
+        
+    });
     }
-  }
 
+    
+    function focus(projectId){
+      
+      $(projectId).mouseover(function() {
+        if(size <= 600){
+       $(projectId).children(".layerForProjects").css({height: "100%" ,  top: "0%"});
+
+        
+        }
+      });
+    
+        
+      }
+
+      function focusOut(projectId){
+        
+        $(projectId).mouseleave(function() {
+          if(size <= 600){
+           $(projectId).children(".layerForProjects").css({height: "30%" ,  top: "70%"});
+        }
+      }); 
+        
+      }
+
+
+   
 
       var text5 = $(".barMeterQuarter");
       text5.animate({width: "+=25%"}, 3000);
@@ -86,9 +127,25 @@ $(function(){
       
       mouseHoverOverProject("#inDev", "#sortingVisualizer")
      
+        focus("#sortingVisualizer");
 
+        focusOut("#sortingVisualizer");
 
+        focus("#interActiveDesign");
 
+        focusOut("#interActiveDesign");
+
+        focus("#sparKoll");
+
+        focusOut("#sparKoll");
+
+        focus("#dataVisualizer");
+
+        focusOut("#dataVisualizer");
+
+  
+
+       
     })
 
       
