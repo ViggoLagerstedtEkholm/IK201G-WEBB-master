@@ -1,5 +1,6 @@
 
 $(function(){
+
     var text1 = $("#headerForMain");
     text1.fadeIn(2750);
     
@@ -12,28 +13,34 @@ $(function(){
     var text4 = $("#subHeadingContact2");
     text4.fadeIn(4550);
 
+    console.log($(window).width())
     
     function mouseHoverOverProject(projectId){
+      if($(window).width() > 600){
+      
     $(projectId).mouseenter(function() {
        var $projectDiv= $(projectId);
        $projectDiv.css("background-image", "none");
        $projectDiv.css("background-color", "teal");
        $projectDiv.children().removeClass("notVisible");
        $projectDiv.children().addClass("visible");
-
+       })
       
      
-      });
+      }
     }
     function mouseLeavingProject(projectId, backgroundImage){
+      if($(window).width() > 600){
+        console.log($(window).width())
       $(projectId).mouseleave(function() {
         var $projectDiv= $(projectId);
         $projectDiv.css("background-image", backgroundImage);
         $projectDiv.css("background-color", "teal");
         $projectDiv.children().removeClass("visible");
         $projectDiv.children().addClass("notVisible");
-      });
+      })
     }
+  }
 
 
       var text5 = $(".barMeterQuarter");
