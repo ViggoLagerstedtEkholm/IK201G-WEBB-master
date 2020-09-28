@@ -97,48 +97,70 @@ color: white;
     border-right: 6px dotted rgb(26, 21, 21);
 }
 
-#nextImg{
-    width: 8vh;
-    height: 8vh;
-    margin-right: 5%;
-    float: right;
-}
-
-#pausBtn{
-    width: 8vh;
-    height: 8vh;
-}
-
-#prevImg{
-    width: 8vh;
-    height: 8vh;
-    margin-left: 5%;
-    float: left;
-}
 
 .imageSliderBox
 {
-    width :80%;
-    padding-left: 10%;
-    padding-right: 10%;
+    width :60%;
+    height: 50%;
     border-radius: 10px;
-    text-align: center;
-
+    position: relative;
+    -webkit-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    top: -10%;
 }
 
 #imgSlider
 {
-    border-style:solid ;
-    border-color: black;
     width: 100%;
-    height: 60vh;
+    height: auto;
     border-radius: 10px;
+    position: absolute;
 }
 
-#imgSliderControlPnl{
+#imgSliderControlPnlLeft{
+    margin-top: 30%;
+    margin-right: 10%;
+    width: 7%;
+    height: auto;
+    background-color:transparent;
+    height:min-content;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+
+#imgSliderControlPnlLeft > img{
+
     width: 100%;
-    background-color: black;
-    height: 12vh;
+    height: auto;
+}
+
+#imgSliderControlPnlRight > img{
+
+    width: 100%;
+    height: auto;
+}
+
+
+#imgSliderControlPnlRight{
+    margin-top: 30%;
+    margin-left: 90%;
+    width: 7%;
+    height: auto;
+    background-color:transparent;
+    height:min-content;
+    position: absolute;
+    z-index: 1;
+
+}
+
+#test12{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 img {
@@ -167,28 +189,11 @@ img {
     width: 60%;
 }   
 
-@media screen and (max-width: 1000px)
-{
-    #nextImg{
-        width: 15%;
-    }
 
-    #prevImg{
-        width: 15%;
-    }
-    
-    #pausBtn{
-        width: 15%;
-    }
-   
-}
 
 @media screen and (max-width: 1200px) 
 {
-    #innerMain
-    {
-        width: 100%;
-    }
+
 
     #main{
         height: min-content;
@@ -201,17 +206,14 @@ img {
 
     #imgSlider
     {
-        height: 50vw;
-        margin-left: 0;
-    }
-
-    #imgSliderControlPnl{
+        height: auto;
+        width:100%;
         margin-left: 0;
     }
 
     
     .imageSliderBox{
-        width: auto;
+        width: 80%;
         height: auto;
     }
 
@@ -264,6 +266,21 @@ img {
         margin-top: 0;
      }
      
+
+     
+.imageSliderBox
+{
+    width :90%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    -webkit-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    top: -10%;
+}
+
 }
 
 

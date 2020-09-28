@@ -3,6 +3,7 @@ var imgBox = $('.imageSliderBox');
 var nxtImg = $("#nextImg");
 var prvImg = $("#prevImg");
 var pausBtn = $("#pausBtn");
+var $pauseBar = $("#imgSliderControlPnl");
 var toggle = 0;
 $(function () {
   start()
@@ -11,9 +12,7 @@ $(function () {
 
 var images = [
   'img/BILD1.jpg',
-  'img/BILD2.jpg',
-  'img/BILD3.jpg',
-  'img/BILD4.jpg'
+  'img/BILD2.jpg'
 ];
 
 var index = 0;
@@ -77,6 +76,7 @@ $(document).ready(function () {
       stop();
       pausa = true;
       imgBox.css({ "filter": "grayscale(100%)" });
+      pausBtn.show();
       pausBtn.attr("src", "img/playButton.png")
     }
     else if (checkToggleState(toggle) === true) {
@@ -84,7 +84,7 @@ $(document).ready(function () {
       console.log("resume");
       pausa = false;
       imgBox.css({ "filter": "grayscale(0%)" });
-      pausBtn.attr("src", "img/pausButton.png")
+      pausBtn.hide();
     }
 
   })
@@ -99,6 +99,7 @@ $(document).ready(function () {
       stop();
       pausa = true;
       imgBox.css({ "filter": "grayscale(100%)" });
+      pausBtn.show();
       pausBtn.attr("src", "img/playButton.png")
     }
     else if (checkToggleState(toggle) === true) {
@@ -106,10 +107,14 @@ $(document).ready(function () {
       console.log("resume");
       pausa = false;
       imgBox.css({ "filter": "grayscale(0%)" });
-      pausBtn.attr("src", "img/pausButton.png")
+      pausBtn.hide();
+      
     }
 
   })
+
+
+
 
   nxtImg.click(function () {
     createImage();

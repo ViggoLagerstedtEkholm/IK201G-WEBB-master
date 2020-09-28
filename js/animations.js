@@ -76,27 +76,27 @@ $(function () {
     "marginTop": "+=-4%"
   }, 1000);
 
-  mouseLeavingProject("#sortingVisualizer", "url(img/sortingvisualizer.PNG)");
+  mouseLeavingProject("#sortingVisualizer", "url(img/projects.jpg)");
 
   mouseHoverOverProject("#sortingVisualizer");
 
-  mouseLeavingProject("#interActiveDesign", "url(img/cykelApp.jpg");
+  mouseLeavingProject("#interActiveDesign", "url(img/projects.jpg)");
 
   mouseHoverOverProject("#interActiveDesign");
 
-  mouseLeavingProject("#sparKoll", "url(img/sparKollen.PNG)");
+  mouseLeavingProject("#sparKoll", "url(img/projects.jpg)");
 
   mouseHoverOverProject("#sparKoll");
 
-  mouseLeavingProject("#dataVisualizer", "url(img/dataVi.png)");
+  mouseLeavingProject("#dataVisualizer", "url(img/projects.jpg)");
 
   mouseHoverOverProject("#dataVisualizer");
 
-  mouseLeavingProject("#collision", "url(img/88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png)");
+  mouseLeavingProject("#collision", "url(img/projects.jpg)");
 
   mouseHoverOverProject("#collision");
 
   mouseLeavingProject("#inDev", "url(img/inDevImg.jpg)");
 
-  mouseHoverOverProject("#inDev", "#sortingVisualizer");
+  mouseHoverOverProject("#inDev");
 })

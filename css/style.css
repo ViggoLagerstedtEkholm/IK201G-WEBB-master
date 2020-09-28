@@ -785,31 +785,31 @@ iframe{
 
  /*  Id:s for the diffrent projects represented on the portfolio site*/
  #sortingVisualizer{
-    background-image: url("../img/sortingvisualizer.PNG");
+    background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
  }
 
  #interActiveDesign{
-    background-image: url("../img/cykelApp.jpg");
+    background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
  }
 
  #sparKoll{
-    background-image: url("../img/sparkollen.PNG");
+    background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
  }
 
  #dataVisualizer{
-    background-image: url("../img/dataVi.png");
+    background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
  }
 
  #collision{
-    background-image: url("../img/88412527-06457000-cdda-11ea-9f01-a69bc80b391c.png");
+    background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
  }
