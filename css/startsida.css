@@ -8,7 +8,6 @@ header{
     font-family: "rob";
 }
 
-
 h1{
     margin-right: 0;
     margin-left: 0;
@@ -44,21 +43,6 @@ nav ul li a:hover{
     text-decoration: underline;
 
    
-}
-
-.textAreaIndex{
-    color: #0fa6ec;
-    text-align: center;
-}
-
-#innerMain{
-    padding-bottom: 15%;
-    width: 80%;
-    min-height: 70vh;
-    background-color: rgb(255, 255, 255);
-    z-index: 999999;
-    position: relative;
-    bottom: 10%;
 }
 
 #main{
@@ -99,17 +83,10 @@ color: white;
        
     }
 
-.textAreaIndex{
-    height: auto;
-  font-size: 2.1em;
-    margin-top: 4%;
-} 
-
 .rectangle-grid-startsida{
     border-left: 6px dotted rgb(26, 21, 21);
     border-right: 6px dotted rgb(26, 21, 21);
 }
-
 
 .imageSliderBox
 {
@@ -144,7 +121,6 @@ color: white;
     
 }
 
-
 #imgSliderControlPnlRight{
     margin-top: 30%;
     margin-left: 93%;
@@ -154,18 +130,14 @@ color: white;
     height:min-content;
     position: absolute;
     z-index: 1;
-
 }
 
-
 #imgSliderControlPnlLeft > img{
-
     width: 100%;
     height: auto;
 }
 
 #imgSliderControlPnlRight > img{
-
     width: 100%;
     height: auto;
 }
@@ -175,7 +147,6 @@ color: white;
     float: left; 
     margin-top: 5%;
     width: 40%; 
-
 }   
 
 img {
@@ -187,14 +158,6 @@ img {
     width: 100%;
 }
 
-#backgroundMainLeft{
-    height: 90%;
-    float: left; 
-    margin-top: 5%;
-    width: 40%; 
-
-}        
-
 #backgroundMainRight{
     height: 100%;
     float: right;
@@ -204,12 +167,8 @@ img {
     width: 60%;
 }   
 
-
-
 @media screen and (max-width: 1200px) 
 {
-
-
     #main{
         height: min-content;
     }
@@ -218,7 +177,6 @@ img {
 
 @media screen and (max-width: 768px)
 {
-
     #imgSlider
     {
         height: auto;
@@ -226,7 +184,6 @@ img {
         margin-left: 0;
     }
 
-    
     .imageSliderBox{
         width: 80%;
         height: auto;
@@ -245,8 +202,7 @@ img {
         font-size: 1.8em;
         margin-top: 20vh;
         margin-left: 0;
-        text-align: center;
-       
+        text-align: center; 
     }
 
     #textForMain{
@@ -280,9 +236,7 @@ img {
     #backgroundMainLeft{
         margin-top: 0;
      }
-     
-
-     
+         
 .imageSliderBox
 {
     width :90%;
@@ -297,5 +251,3 @@ img {
 }
 
 }
-
-

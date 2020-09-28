@@ -80,20 +80,6 @@ a.logo:hover
     display: none;
 }  
 
-/* Responsiv design kan implementeras med en media query. */
-/* WIDTH */
-
-
-@media screen and (max-width: 380px) {
-    .logo
-    {
-        font-size: 10px;
-        background-color: red;
-    }
-}
-
-/* HEIGHT */
-
 
 
 @media only screen and (max-width: 768px) {
@@ -251,8 +237,6 @@ a.logo:hover
 .menu-wrap .menu > div > div > ul > li > a:hover {
     color: #7ab436;
 }
-
-
 
 nav{
     background-image: url("../img/BakgrundHeader.jpg");

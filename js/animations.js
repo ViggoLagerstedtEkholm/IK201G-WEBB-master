@@ -26,12 +26,6 @@ $(function () {
   var $animatedTextForMain = $("#textForMain");
   $animatedTextForMain.fadeIn(4550);
 
-  var $animatedSubHeadingContact1 = $("#subHeadingContact");
-  $animatedSubHeadingContact1.fadeIn(2750);
-
-  var $animatedSubHeadingContact2 = $("#subHeadingContact2");
-  $animatedSubHeadingContact2.fadeIn(4550);
-
   var $animatedBarMeterQuarter = $(".barMeterQuarter");
   $animatedBarMeterQuarter.animate({ width: "+=25%" }, 3000);
 
@@ -51,19 +45,14 @@ $(function () {
     "marginLeft": "+=13%"
   }, 1000);
 
-  var $animatedCenterOmOss = $(".centerOmOss");
-  $animatedCenterOmOss.animate({
-    "marginTop": "+=-15%"
-  }, 1000);
-
   var $headerTextForKontakt = $("#headertextForKontakt");
   $headerTextForKontakt.animate({
-    "marginLeft": "+=16%"
+    "marginLeft": "+=14%"
   }, 1000);
 
   var $headerTextForPortfolio = $("#headertextForPortfolio");
   $headerTextForPortfolio.animate({
-    "marginLeft": "+=16%"
+    "marginLeft": "+=14%"
   }, 1000);
 
   var $mainOmOssContact = $("#mainOmOssContact");
