@@ -24,7 +24,7 @@ h1{
   
     color: white;
     font-size: 1.8em;
-    font-size: bold;
+    font-weight: bold;
     padding: 14px 30px;
     text-align: center;
     text-decoration: none;
@@ -102,9 +102,8 @@ a.logo:hover
         display: inline-block;
 }  
 
-:root {
-    --overlay-color: rgba(24, 39, 51, 0.85);
-    --menu-speed: 0.75s;
+.menu{
+    background-color: rgba(34, 42, 78, 0.822);
 }
 
 .menu-wrap {
