@@ -763,7 +763,6 @@ iframe{
 
  #finishedProjects{
     margin-top: 1%;
-    margin-bottom: 4%;
     font-size: 1.6em;
     font-weight: bold;
     margin-left: 3%;
@@ -1059,7 +1058,6 @@ background-color: #1c4966;
         padding: 2%;
         font-size: 0.8em;
         color: rgb(224, 227, 231);
-        margin-bottom: 8%;
         position: relative;
         top: 6%;
     }
@@ -1258,7 +1256,6 @@ background-color: #1c4966;
         font-size: 1.4em;
         position: relative;
         top: 29%;
-        margin-left: 4%;
     }
 
     
