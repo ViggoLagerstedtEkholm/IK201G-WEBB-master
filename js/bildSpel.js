@@ -39,7 +39,7 @@ var interval = null;
 
 function start() {
   $(document).ready(function () {
-    interval = setInterval(createImage, 5000);
+    interval = setInterval(createImage, 8000);
   });
 }
 

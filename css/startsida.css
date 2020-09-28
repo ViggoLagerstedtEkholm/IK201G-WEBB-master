@@ -3,6 +3,19 @@ header{
     height: 100%;
 }
 
+@font-face{
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-family: "rob";
+}
+
+
+h1{
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0; 
+ }
+
 #imgStartsida{
     width:20%;
     height: min-content;
