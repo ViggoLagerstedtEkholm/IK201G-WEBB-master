@@ -82,6 +82,7 @@ a.logo:hover
 
 
 
+
 @media only screen and (max-width: 768px) {
 
 .toggler{
@@ -130,10 +131,10 @@ a.logo:hover
     width: 100%;
     height: 2px;
     background: #fff;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease;
+    /*transition: all 0.4s ease;*/
 
   }
 
@@ -147,6 +148,7 @@ a.logo:hover
     width: 100%;
     height: 2px;
     background: inherit;
+    left: 1px;
   }
 
   /* Moves Line Down */
@@ -157,19 +159,19 @@ a.logo:hover
   /* Toggler Animation */
 
   .menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
+    /*transform: rotate(135deg);*/
       background: #fff;
   }
 
   .menu-wrap .toggler:checked + .hamburger > div:before,
   .menu-wrap .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
+    top: 100;
+    /*transform: rotate(90deg);*/
 }
 
 /* Rotate on hover when checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
+    /*transform: rotate(225deg);*/
 }
 
 /* show menu */
@@ -203,8 +205,8 @@ a.logo:hover
 .menu-wrap .menu > div {
     background: var(--overlay-color);
     border-radius: 50%;
-    width: 300vw;
-    height: 300vw;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex: none;
     align-items: center;
@@ -237,6 +239,8 @@ a.logo:hover
 .menu-wrap .menu > div > div > ul > li > a:hover {
     color: #7ab436;
 }
+
+
 
 nav{
     background-image: url("../img/BakgrundHeader.jpg");

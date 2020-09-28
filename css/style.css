@@ -1,4 +1,36 @@
-/* Mobile size */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+{
+    .alignInBox {
+        flex: 1 1 auto !important;
+    }
+
+    .alignImgContent{
+        flex: 1 1 auto !important;
+    }
+
+    .alignTextContent{
+        flex: 1 1 auto !important;
+    }
+
+    .alignContentPerson{
+        flex: 1 1 auto !important;
+        width: 100%;
+    }
+
+    .grid-row{
+        width: 100%;
+        height: 60%;
+    }
+
+    .grid-content{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .alignKontakt{
+        flex: 1 1 auto !important;
+    }
+}
 
 html, body
 {
@@ -84,7 +116,7 @@ header{
 
 
 #mainOmOss{
-    width: 70%;
+    width: 65%;
     height: auto;
     margin: auto;
     position: relative;
@@ -104,6 +136,8 @@ figure{
     color: black;
     text-align: center;
     font-weight: bold;
+    width: 100%;
+    height: 100%;
 }
 
 /* Denna div placeras under bilden så man kan sätta in text. */
@@ -116,11 +150,11 @@ figure{
 #formContainer{
     border-radius: 0.2em;
     height: auto;
-    background-color: rgb(154, 183, 207);
+    background-color: rgb(6, 71, 124);
+    width: 100%;
 }
 
 #mainContact{
-    margin-bottom: 0;
     width: 100%;
     height: 100%;
 }
@@ -201,11 +235,6 @@ label{
     background-color:  #344652;
 }
 
-#mainContact{
-    
-    width:100%;
-    height: 100%;
-}
 
 
 iframe{
@@ -288,48 +317,6 @@ iframe{
     }
 }
 
-  .rectangle-grid-portfolio{
-    background-color: rgb(11, 111, 192);
-    color: white;
-    padding: 3%;
-    height: 95%;
-    width: 90%;
-    border-radius: 9px;
-    justify-content: center;
-    margin-left: auto;    
-    box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
-  }
-
-  .rectangle-grid-personligaSidan{
-    background-color: rgb(255, 255, 255);
-    height: 95%;
-    width: 100%;
-    border-radius: 9px;
-    justify-content: center;
-    grid-gap: 7rem;
-  }
-
-  .rectangle-grid-kontakt{
-    background-color: rgb(255, 255, 255);
-    border-radius: 9px;
-    justify-content: center;
-    grid-gap: 7rem;
-  }
-
-  .rectangle-grid-omoss1{
-    color: white;
-    height: 100%;
-    width: 50%;
-    border-radius: 9px;
-    margin: auto;
-  }
-
-  .rectangle-grid-omoss2{
-    color: white;
-    height: 100%;
-    width: 100%;
-    margin-top: 10%;
-  }
 
   #rightTextOmOss{
     background-color: rgb(59, 131, 190);
@@ -344,19 +331,118 @@ iframe{
     padding-bottom: 5%;
     font-size: 1.2em;
   }
-    .rectangle-grid-startsida:hover{
-        transform: scale(1.01);
+
+    .leftBox{
+        background-color:rgb(92, 188, 233);
+    }
+    .rightBox{
+        background-color:rgb(103, 103, 235);
     }
 
-    .rectangle-grid-portfolio:hover{
-        transform: scale(1.01);
+    #leftColor{
+        background-color: rgb(142, 192, 233);
+        color: white;
+        text-align: center;
+        padding-bottom: 5%;
+        font-size: 1.4em;
+        font-weight: bold;
     }
 
-    .rectangles {
-        max-width: 1800px;
-        margin: 0 auto;
-        display: grid;
-        grid-gap: 5rem;
+    #rightColor{
+        background-color: rgb(59, 131, 190);
+        color: white;
+        text-align: center;
+        padding-bottom: 5%;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    .alignContentPerson{
+        flex-basis: 40%;
+        
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Båda bilderna i OmOss placeras med 50% flex-basis, dvs tar upp 50% var på vardera sida av sin div. */
+    .alignImgContent{
+        flex-basis:100%;
+        box-sizing: border-box;
+        padding: 5%;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Placera texten på OmOss så att den tar upp 100% width. */
+    .alignTextContent{
+        flex-basis:50%;
+        position: relative;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* Placerar texten i boxen i OmOss. */
+    .alignInBox{
+        height: auto;
+        width: 100%;
+        border-radius: 2%;
+    }
+
+    .alignKontakt{
+        flex-basis: 100%;
+        position: relative;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .grid-row {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .grid-content {
+      flex-basis: 20%;
+      position: relative;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    .grid-items-content
+    {
+      height: 100%;
+      width: 100%;
+      border-radius: 2%;
+    }
+    
+    @media(max-width: 1300px)
+    {
+      .grid-content{
+        flex-basis: 25%;
+      }
+    }
+    
+    @media(max-width: 815px) 
+    {
+        .alignKontakt{
+            flex-direction: column;
+        }
+
+        .alignContentPerson{
+            flex-basis: 100%;
+        }
+
+        .grid-content
+        {
+            flex-basis: 75%;
+        }
+    }
+    
+    @media(max-width: 555px) 
+    {
+
+        .grid-row {
+            flex-direction: column;
+        }
     }
 
   .rectangles-omoss{
@@ -422,8 +508,7 @@ iframe{
     .imgPersonalPage
     {
         border-radius: 20%;
-        height:100%;
-        width:100%;
+
     }
 
  .rectangle-grid-portfolio:hover{
@@ -484,22 +569,12 @@ iframe{
  #portfolioMain > a:hover{
     color: white;
  }
-
- #notFinishedProjects{
-    margin-top: 10%;
-    margin-bottom: 4%;
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-left: 3%;
-    color: black;
- }
-
- #finishedProjects{
-    margin-top: 1%;
+ 
+ .projectHeader{
     font-size: 1.6em;
     font-weight: bold;
-    margin-left: 3%;
     color: black;
+    text-align: center;
  }
 
 
@@ -534,11 +609,13 @@ iframe{
     background-repeat: no-repeat;
  }
 
- #inDev{
+ #inDev
+ {
     background-image: url("../img/inDevImg.jpg");
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
-    margin-bottom: 3%;
+    margin-bottom: 10%;
+ 
  }
 
  #headerForPortfolio{
@@ -562,53 +639,6 @@ iframe{
     font-size: 1.3em;
 }
 
-@media (min-width: 700px) {
-    /*  2 stycken kvadrater på samma "row"   */
-    .rectangles 
-    { 
-        grid-template-columns: repeat(2, 1fr); 
-    }
-    
-    .rectangles-omoss{
-        grid-template-columns: repeat(1, 1fr); 
-    }
-
-    .rectangles-personligaSidan{
-        grid-template-columns: repeat(1, 1fr); 
-    }
-
-    .rectangles-kontakt{
-        grid-template-columns: repeat(1, 1fr); 
-    }
-
-}
-
-@media (min-width: 1100px) 
-{
-    .rectangles-personligaSidan{
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media (min-width: 1300px) 
-{
-    /*  3 stycken kvadrater på samma "row" */
-    .rectangles 
-    { 
-        grid-template-columns: repeat(3, 1fr); 
-    }
-
-    .rectangles-omoss{
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
-    .rectangles-personligaSidan{
-        grid-template-columns: repeat(3, 1fr); 
-    }
-    .rectangles-kontakt{
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
 
 /* mobil? */
 @media screen and (min-width: 768px)
@@ -626,11 +656,16 @@ iframe{
 
 @media screen and (max-width: 768px)
 {
+    #mainContact{
+        margin-top: 15%;
+    }
+    
     #mainOmOss{
         position: relative;
         top: 4%;
         width: 100%;
         margin-bottom: 0%;    
+        box-shadow: white;
     }
 
     .boxShadow3{
@@ -705,28 +740,15 @@ iframe{
     #wrapperForFinishedProjects{
         gap: 4%;
     }
-    .rectangle-grid-portfolio{
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 
     #wrapperForNotFinishedProjects{
         margin-top: 80%;
     }
 
-    #notFinishedProjects {
-        position: relative;
-        top: 33%;
-       }
-    
-       .rectangle-grid-portfolio{
-           position: relative;
-       }
       
       #formContainer{
           width: 100%;
-          margin-top: 20%;
-          background-color: rgb(142, 192, 233);
       }
     
       .redBorder{
@@ -791,13 +813,6 @@ iframe{
         width:auto;
     }
 
-    .rectangle-grid-omoss2{
-        margin-top: 0;  
-    }
-
-    .rectangle-grid-omoss1{
-        margin-top: 5%;
-    }
     
 #finishedProjects{
     text-align: center;
@@ -814,10 +829,6 @@ iframe{
     margin-left: 0;
 }
 
-.rectangles-kontakt{
-    margin-bottom: 0; 
-}
-
 
 #headertextForPerson{
     display: flex;
@@ -827,6 +838,10 @@ iframe{
 }
    /*tilted screen*/
 @media (max-height: 400px) and (max-width: 900px){
+
+    #mainContact{
+        margin-top: 10%;
+    }
 
      #mainOmOss{
         width: 100%;
