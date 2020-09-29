@@ -103,9 +103,10 @@ header{
     top: -12%;
     background-color: rgb(59, 131, 190);
     padding: 4%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: white;
     margin-bottom: 8%;
+    text-align: center;
 }
 
 #portfolioMain{ 
@@ -116,9 +117,10 @@ header{
     top: -6%;
     background-color: rgb(59, 131, 190);
     padding: 4%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: white;
     margin-bottom: 8%;
+    text-align: center;
 }
 
 
