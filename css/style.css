@@ -69,13 +69,6 @@ h1{
   }
 
 
-#headertextForKontakt{
-    font-size: 2.2em;
-    font-weight: bold;
-    color: white;
-    position: relative;
-    top: 35%;
-}
 
 
 #iframeContainer{
@@ -106,13 +99,38 @@ header{
     height: auto;
     margin: auto;
     position: relative;
-    bottom: 20%;
+    top: -12%;
     background-color: rgb(59, 131, 190);
     padding: 4%;
     font-size: 1.4em;
     color: white;
     margin-bottom: 8%;
 }
+
+#portfolioMain{
+        
+    width: 60%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: -6%;
+    background-color: rgb(59, 131, 190);
+    padding: 4%;
+    font-size: 1.4em;
+    color: white;
+    margin-bottom: 8%;
+}
+
+
+
+#headertextForKontakt{
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 35%;
+}
+
 
 
 #mainOmOss{
@@ -248,6 +266,15 @@ iframe{
 @media screen and (min-width: 768px)
 {
     #headertextForPortfolio{
+        font-size: 2.2em;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        top: 35%; 
+    }
+
+    #headertextForKontakt{
+
         font-size: 2.2em;
         font-weight: bold;
         color: white;
@@ -413,6 +440,13 @@ iframe{
       width: 100%;
       border-radius: 2%;
     }
+
+    #mainOmOssContact {
+        
+        margin-top: 10%;
+    }
+
+   
     
     @media(max-width: 1300px)
     {
@@ -439,6 +473,22 @@ iframe{
     
     @media(max-width: 555px) 
     {
+
+        #portfolioMain{
+            width: 60%;
+            height: auto;
+            margin: auto;
+            position: relative;
+            bottom: 20%;
+            background-color: rgb(59, 131, 190);
+            padding: 4%;
+            font-size: 1.9em;
+            color: white;
+            margin-bottom: 8%;
+            text-align: center;
+         }
+
+
 
         .grid-row {
             flex-direction: column;
@@ -545,19 +595,7 @@ iframe{
 
  /*Portfolio specific id and classes*/
 
- #portfolioMain{
-    width: 60%;
-    height: auto;
-    margin: auto;
-    position: relative;
-    bottom: 20%;
-    background-color: rgb(59, 131, 190);
-    padding: 4%;
-    font-size: 1.9em;
-    color: white;
-    margin-bottom: 8%;
-    text-align: center;
- }
+ 
 
  #portfolioMain > a{
     text-decoration: none;
@@ -665,7 +703,6 @@ iframe{
         top: 4%;
         width: 100%;
         margin-bottom: 0%;    
-        box-shadow: white;
     }
 
     .boxShadow3{
@@ -674,7 +711,7 @@ iframe{
 
     #omOssHeading{
         width: 70%;
-        font-size: 1.4em;
+        font-size: 1.2em;
         position: relative;
         top: 50%;
         text-align: center;
@@ -775,20 +812,11 @@ iframe{
         height: 12em;
     }
 
-    #headertextForKontakt{
-        width: 70%;
-        font-size: 1.4em;
-        position: relative;
-        top: 50%;
-        text-align: center;
-        display: inline-block;
-        color: white;
-    }
 
     #mainOmOssContact{
         width: 90%;
         margin-top: 2%;
-        height: 40vh;
+        height: auto;
         background-color: rgb(59, 131, 190);
         font-weight: normal;
         padding: 2%;
@@ -836,8 +864,17 @@ iframe{
     right: 6%;
 }
 }
-   /*tilted screen*/
+
+
+   /*tilted big screen*/
 @media (max-height: 400px) and (max-width: 900px){
+
+    #headerTextForKontakt, #omOssHeading, #headerTextForPortfolio{
+        position: relative;
+        top: 36% !important;
+    }
+    nav{height:20%;}
+    header{height: 60vh}
 
     #mainContact{
         margin-top: 10%;

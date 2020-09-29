@@ -8,6 +8,17 @@
     
 }
 
+@media (max-height: 400px) and (max-width: 900px){
+nav{height:25%;}
+    header{height: 60vh;}
+
+    #headerForMain
+    {margin-top: 18%!important;}
+
+   
+
+}
+
 header{
     display:none;
     height: 100%;
@@ -16,6 +27,14 @@ header{
 @font-face{
     src: url("../fonts/Roboto-Bold.ttf");
     font-family: "rob";
+}
+
+
+
+#main{
+    height: auto !important;
+    position: relative !important;
+    top: -10%;
 }
 
 h1{
@@ -187,6 +206,9 @@ img {
 
 @media screen and (max-width: 768px)
 {
+
+ 
+
     #imgSlider
     {
         height: auto;
@@ -195,9 +217,12 @@ img {
     }
 
     .imageSliderBox{
-        width: 80%;
+        width: 100%;
         height: auto;
+        margin-top: 5%;
+    
     }
+
 
     header{
         display:block;

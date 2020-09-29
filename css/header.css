@@ -93,6 +93,17 @@ a.logo:hover
     background-color: rgba(34, 42, 78, 0.822);
 }
 
+.menu  a{
+    font-size: 1.0em!important;
+
+}
+
+.menu > div > div > ul{
+   text-align: center;
+   padding:0;
+
+}
+
 .menu-wrap {
     position: fixed;
     top: 0;
@@ -163,17 +174,7 @@ a.logo:hover
       background: #fff;
   }
 
-  .menu-wrap .toggler:checked + .hamburger > div:before,
-  .menu-wrap .toggler:checked + .hamburger > div:after {
-    top: 100;
-    /*transform: rotate(90deg);*/
-}
-
-/* Rotate on hover when checked */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-    /*transform: rotate(225deg);*/
-}
-
+ 
 /* show menu */
 .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
@@ -237,14 +238,14 @@ a.logo:hover
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover {
-    color: #7ab436;
+    color: #2a37ac;
 }
 
 
 
 nav{
     background-image: url("../img/BakgrundHeader.jpg");
-    height: 10%;
+    height: 14%;
     width: 100%;
     position: fixed;
     top: 0;

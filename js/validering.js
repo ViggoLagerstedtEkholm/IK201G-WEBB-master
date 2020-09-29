@@ -21,17 +21,17 @@ $(document).ready(validateWhenLoad());
     }
 
     if (!validateInputPhoneNumber()) {
-        $("#phoneNumber").addClass("redLabel");
+        $("#phoneNumberLabel").addClass("redLabel");
         $("#phoneNumberInfo").text("Ange giltigt nr");
     }
 
     if (!validateInputMail()) {
-        $("#userMail").addClass("redLabel");
+        $("#mailLabel").addClass("redLabel");
         $("#mailInfo").text("Skriv in giltig email");
     }
 
     if (!validateInputComment()) {
-        $("#textComment").addClass("redLabel");
+        $("#commentLabel").addClass("redLabel");
         $("#commentInfo").text("Skriv mer text");
     }
 
@@ -176,7 +176,7 @@ function validateInputPhoneNumber() {
 
 
         if (validateInputComment()) {
-            $("#textComment").removeClass("redLabel");
+            $("#textLabel").removeClass("redLabel");
             $("#commentInfo").text("");
         }
 
