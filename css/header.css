@@ -45,12 +45,6 @@ a{
     color: white;
 }
 
-/* Ändra bakgrund om man placerar musen över. */
-a.logo:hover
-{
-    background-color: #ddd;
-    color: black;
-}
 
 /* Inställningarna för listan med knappar. */
 .menu ul li
@@ -127,7 +121,7 @@ a.logo:hover
     display: block;
     align-items: center;
     justify-content: center;
-    /*transition: all 0.4s ease;*/
+    
 
   }
 
@@ -152,7 +146,6 @@ a.logo:hover
   /* Toggler Animation */
 
   .menu-wrap .toggler:checked + .hamburger > div {
-    /*transform: rotate(135deg);*/
       background: #fff;
   }
 

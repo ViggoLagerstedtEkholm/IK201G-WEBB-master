@@ -244,25 +244,6 @@ label{
 }
 
 
-/*SKa vi ta bort eller lägga till?*/
-.redBorder{
-    border-style: solid;
-    border-color: red;
-    border-width: 2px;
-    border-radius: 0.2em;
-    width: 70%;
-    height: 3em;
-}
-
-/*SKa vi ta bort eller lägga till?*/
-.redBorderForTextarea{
-    border-style: solid;
-    border-color: red;
-    border-width: 2px;
-    border-radius: 0.2em;
-    width: 70%;
-    height: 10em;
-}
 
 #firstNameInfo, #lastNameInfo, #mailInfo, #phoneNumberInfo, #commentInfo{
     font-size: 0.7em;
@@ -292,10 +273,7 @@ iframe{
     h1{
         margin: 0; 
     }
-    /* Varför float left*/
-    .imageContainer{
-        float: left;
-    }
+   
 
     #fieldsetKontaktuppgifter{
         border-style: none;
@@ -462,14 +440,7 @@ iframe{
             flex-direction: column;
         }
     }
-    /*Finns bara för en person?? ska det bort*/
-  .rectangles-personligaSidan{
-    margin: 0 auto;
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-gap: 5rem;
-  }
+  
 
  .boxShadow3
  {
@@ -604,7 +575,7 @@ iframe{
 }
 
 
-/* mobil? */
+
 @media screen and (min-width: 768px)
 {
     header{
@@ -682,16 +653,13 @@ iframe{
       #formContainer{
           width: 100%;
       }
-    /* Ta bort?*/
-      .redBorder{
-          width: 90%;
-      }
-/* Ta bort?*/
+  
+
       .regularFormBorder{
         width: 90%;
         height: 2em;
     }
-/* Ta bort?*/
+
     .regularFormTextareaWithBorder{
         width: 90%;
         height: 12em;
@@ -702,7 +670,7 @@ iframe{
         height: 90vh;
         margin-bottom: 0;
     }
-/* Ta bort?*/
+
     .redBorderForTextarea{
         width: 90%;
         height: 12em;
@@ -830,17 +798,13 @@ iframe{
     #iframeContainer{
         height: 90vh;
     }
-    /*Ta bort*/
-    .redBorder{
-        width: 90%;
-        height: 4em;
-    }
-   /*Ta bort*/
+ 
+
     .regularFormBorder{
         width: 90%;
         height: 4em;
     }
-   /*Ta bort*/
+  
     .regularFormTextareaWithBorder{
         width: 90%;
     } 
