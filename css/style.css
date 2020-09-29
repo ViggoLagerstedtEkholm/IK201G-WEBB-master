@@ -208,7 +208,7 @@ textarea{
     height: 3.5em;
     margin-left: 15px;
     margin-bottom: 25px;
-    color: white;
+    color: rgb(59, 131, 190);
     font-weight: bold;
     font-size: 1.1em;
    
@@ -223,6 +223,8 @@ label{
     color: red;
 }
 
+
+/*SKa vi ta bort eller lägga till?*/
 .redBorder{
     border-style: solid;
     border-color: red;
@@ -232,6 +234,7 @@ label{
     height: 3em;
 }
 
+/*SKa vi ta bort eller lägga till?*/
 .redBorderForTextarea{
     border-style: solid;
     border-color: red;
@@ -244,16 +247,6 @@ label{
 #firstNameInfo, #lastNameInfo, #mailInfo, #phoneNumberInfo, #commentInfo{
     font-size: 0.7em;
 }
-
-.ready{
-    background-color: #1c4966;
-}
-
-.notReady{
-    background-color:  #344652;
-}
-
-
 
 iframe{
     margin-right: auto;
@@ -270,7 +263,7 @@ iframe{
         font-weight: bold;
         color: white;
         position: relative;
-        top: 35%; 
+        top: 22%; 
     }
 
     #headertextForKontakt{
@@ -279,7 +272,7 @@ iframe{
         font-weight: bold;
         color: white;
         position: relative;
-        top: 35%; 
+        top: 22%; 
     }
 
     #omOssHeading{
@@ -287,14 +280,13 @@ iframe{
         font-weight: bold;
         color: white;
         position: relative;
-        top: 35%;
-       
+        top: 22%;  
     }
 
     h1{
         margin: 0; 
     }
-
+    /* Varför float left*/
     .imageContainer{
         float: left;
     }
@@ -308,19 +300,14 @@ iframe{
         margin-top: 20px;
         margin-bottom: 20px; 
     }
-    
-    textarea{
-        width: 80%;
-        height: 8.5em;  
-    }
-    
+ 
     #formButton{
         width: 30%;
         height: 3.5em;
         margin-left: 15px;
         margin-bottom: 25px;
     }
-
+/*Ska vi ta bort? kopplad till rött runt om*/
     .regularFormBorder{
         border-style: solid;
         border-color: rgb(255, 255, 255);
@@ -329,7 +316,7 @@ iframe{
         width: 70%;
         height: 3em;
     }
-
+/*Ska vi ta bort? kopplad till rött runt om fast svart*/
     .regularFormTextareaWithBorder{
         border-style: solid;
         border-color: rgb(255, 255, 255);
@@ -343,28 +330,6 @@ iframe{
         margin: 0;
     }
 }
-
-
-  #rightTextOmOss{
-    background-color: rgb(59, 131, 190);
-    text-align: center;
-    padding-bottom: 5%;
-    font-size: 1.2em;
-  }
-
-  #leftTextOmOss{
-    background-color: rgb(142, 192, 233);  
-    text-align: center;
-    padding-bottom: 5%;
-    font-size: 1.2em;
-  }
-
-    .leftBox{
-        background-color:rgb(92, 188, 233);
-    }
-    .rightBox{
-        background-color:rgb(103, 103, 235);
-    }
 
     #leftColor{
         background-color: rgb(142, 192, 233);
@@ -386,7 +351,6 @@ iframe{
 
     .alignContentPerson{
         flex-basis: 40%;
-        
         padding: 10px;
         box-sizing: border-box;
     }
@@ -488,20 +452,11 @@ iframe{
             text-align: center;
          }
 
-
-
         .grid-row {
             flex-direction: column;
         }
     }
-
-  .rectangles-omoss{
-    margin: 0 auto;
-    display: grid;
-    width: 100%;
-    height: auto;
-  }
-
+    /*Finns bara för en person?? ska det bort*/
   .rectangles-personligaSidan{
     margin: 0 auto;
     display: grid;
@@ -510,34 +465,13 @@ iframe{
     grid-gap: 5rem;
   }
 
-  .rectangles-kontakt{
-    display: grid;
-    height: auto;
-    grid-gap: 2rem;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 10%;
-  }
-
- .boxShadow 
- {
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
- }
-
- .boxShadow2
-  {
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-    width: 280px;
-    height: 500px;
-}
  .boxShadow3
  {
     box-shadow: 2px 4px 24px -4px rgba(0,0,0,0.75);
     border-radius: 10px;
 }
 
- .imageContainer{
-    
+ .imageContainer{ 
     width: auto;
     padding: 10%;
 }
@@ -555,15 +489,10 @@ iframe{
     margin-top: 10px;
     width: 100%;
  }
-    .imgPersonalPage
-    {
+
+ .imgPersonalPage{
         border-radius: 20%;
-
     }
-
- .rectangle-grid-portfolio:hover{
-    background-color: rgb(59, 131, 190);
- }
 
   .headingForIndividualProject{
     visibility: hidden;
@@ -595,7 +524,6 @@ iframe{
 
  /*Portfolio specific id and classes*/
 
- 
 
  #portfolioMain > a{
     text-decoration: none;
@@ -617,19 +545,7 @@ iframe{
 
 
  /*  Id:s for the diffrent projects represented on the portfolio site*/
- #sortingVisualizer{
-    background-image: url("../img/projects.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
- }
-
  #interActiveDesign{
-    background-image: url("../img/projects.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
- }
-
- #sparKoll{
     background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -719,27 +635,6 @@ iframe{
         color: white;
     }
 
-    #rightImgOmOss{
-        order:2;
-    }
-
-    #leftImgOmOss{
-        order:4;
-    }
-
-    #leftTextOmOss{
-        order:3
-    }
-
-    #rightTextOmOss{
-        order:1
-    }
-
-    .rectangle-grid-omoss1{
-        
-        margin-top: 20%;
-    }
-
     #portfolioMain{
         width: 90%;
         margin-top: 2%;
@@ -774,39 +669,30 @@ iframe{
      margin-bottom: 50%;
     }
 
-    #wrapperForFinishedProjects{
-        gap: 4%;
-    }
-
-
-    #wrapperForNotFinishedProjects{
-        margin-top: 80%;
-    }
-
-      
       #formContainer{
           width: 100%;
       }
-    
+    /* Ta bort?*/
       .redBorder{
           width: 90%;
       }
-
+/* Ta bort?*/
       .regularFormBorder{
         width: 90%;
         height: 2em;
     }
-
+/* Ta bort?*/
     .regularFormTextareaWithBorder{
         width: 90%;
         height: 12em;
     }
+
     #iframeContainer
     {
         height: 90vh;
         margin-bottom: 0;
     }
-
+/* Ta bort?*/
     .redBorderForTextarea{
         width: 90%;
         height: 12em;
@@ -840,8 +726,7 @@ iframe{
     #formButton{
         width:auto;
     }
-
-    
+ 
 #finishedProjects{
     text-align: center;
     width: 100%;
@@ -857,7 +742,6 @@ iframe{
     margin-left: 0;
 }
 
-
 #headertextForPerson{
     display: flex;
     position: relative;
@@ -865,16 +749,23 @@ iframe{
 }
 }
 
-
    /*tilted big screen*/
 @media (max-height: 400px) and (max-width: 900px){
 
-    #headerTextForKontakt, #omOssHeading, #headerTextForPortfolio{
+   #omOssHeading{
         position: relative;
         top: 36% !important;
+        font-size: 1.4em;
+        position: relative;
+        top: 29%;
+        margin-left: 4%;
     }
-    nav{height:20%;}
-    header{height: 60vh}
+
+    nav{height:20%;
+    }
+    
+    header{height: 60vh
+    }
 
     #mainContact{
         margin-top: 10%;
@@ -888,12 +779,6 @@ iframe{
     .menu{
         margin-right: 13%;
         z-index: 1;
-    }
-    #omOssHeading{
-        font-size: 1.4em;
-        position: relative;
-        top: 29%;
-        margin-left: 4%;
     }
 
     #portfolioMain{
@@ -909,7 +794,6 @@ iframe{
         margin-left: -14%
     }
 
-    
     #omOssHeading{
         font-size: 1.4em;
         position: relative;
@@ -932,16 +816,17 @@ iframe{
     #iframeContainer{
         height: 90vh;
     }
+    /*Ta bort*/
     .redBorder{
         width: 90%;
         height: 4em;
     }
-
+   /*Ta bort*/
     .regularFormBorder{
         width: 90%;
         height: 4em;
     }
-
+   /*Ta bort*/
     .regularFormTextareaWithBorder{
         width: 90%;
     } 

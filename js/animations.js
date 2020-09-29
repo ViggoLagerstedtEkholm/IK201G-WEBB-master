@@ -45,11 +45,6 @@ $(function () {
     "marginLeft": "+=13%"
   }, 1000);
 
-  var $headerTextForKontakt = $("#headertextForKontakt");
-  $headerTextForKontakt.animate({
-    "marginLeft": "+=14%"
-  }, 1000);
-
   var $headerTextForPortfolio = $("#headertextForPortfolio");
   $headerTextForPortfolio.animate({
     "marginLeft": "+=14%"
