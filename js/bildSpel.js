@@ -108,7 +108,7 @@ $(document).ready(function () {
       pausa = false;
       imgBox.css({ "filter": "grayscale(0%)" });
       pausBtn.hide();
-      
+
     }
 
   })

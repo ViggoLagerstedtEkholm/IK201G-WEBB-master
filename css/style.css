@@ -169,7 +169,7 @@ figure{
 #formContainer{
     border-radius: 0.2em;
     height: auto;
-    background-color:  rgb(50, 74, 94);
+    background-color:  rgb(66, 92, 114);
     width: 100%;
 }
 
@@ -221,7 +221,7 @@ label{
 }
 
 .redLabel{
-    color: red;
+    color: rgb(187, 60, 60);
 }
 
 

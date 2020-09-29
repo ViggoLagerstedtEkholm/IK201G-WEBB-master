@@ -3,96 +3,96 @@ or returns a false value if varibles are not validated*/
 
 $(function () {
 
-$(document).ready(getFormData());
-$(window).on("unload", storeFormData);
-$(document).ready(validateWhenLoad());
+    $(document).ready(getFormData());
+    $(window).on("unload", storeFormData);
+    $(document).ready(validateWhenLoad());
 
-    function validateWhenLoad(){
+    function validateWhenLoad() {
 
-    
-    if(!validateFirstName()) {
-        $("#firstNameLabel").addClass("redLabel");
-        $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+
+        if (!validateFirstName()) {
+            $("#firstNameLabel").addClass("redLabel");
+            $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+        }
+
+        if (!validateLastName()) {
+            $("#lastNameLabel").addClass("redLabel");
+            $("#lastNameInfo").text("Efternamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+        }
+
+        if (!validateInputPhoneNumber()) {
+            $("#phoneNumberLabel").addClass("redLabel");
+            $("#phoneNumberInfo").text("Ange giltigt nr");
+        }
+
+        if (!validateInputMail()) {
+            $("#mailLabel").addClass("redLabel");
+            $("#mailInfo").text("Skriv in giltig email");
+        }
+
+        if (!validateInputComment()) {
+            $("#commentLabel").addClass("redLabel");
+            $("#commentInfo").text("Skriv mer text");
+        }
+
     }
 
-    if (!validateLastName()) {
-        $("#lastNameLabel").addClass("redLabel");
-        $("#lastNameInfo").text("Efternamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+    function validateForm() {
+        var validated = false;
+        var $textFirstName = $("#firstname").val();
+        var $textLastName = $("#lastname").val();
+        var $userMail = $("#userMail").val();
+        var $phoneNumber = $("#phoneNumber").val();
+        var $textComment = $("#textComment").val();
+        var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
+        var regExLenghtAndValidSignsForComment = /^[a-zA-Z0-9\-]{3,}$/;
+        var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;
+        var regExPhoneNumber = /^(^070|^073|^076|^072|^079)\d{7}$/;
+        var textWholeName = $textFirstName + "" + $textLastName;
+        var validatedName = regExLenghtAndValidSigns.test(textWholeName);
+        var validatedComment = regExLenghtAndValidSignsForComment.test($textComment);
+        var validatedMail = regExMail.test($userMail);
+        var validatedNumber = regExPhoneNumber.test($phoneNumber);
+
+        if (validatedName && validatedComment && validatedMail && validatedNumber) {
+            validated = true;
+        }
+        return validated;
     }
 
-    if (!validateInputPhoneNumber()) {
-        $("#phoneNumberLabel").addClass("redLabel");
-        $("#phoneNumberInfo").text("Ange giltigt nr");
+    function validateFirstName() {
+
+        var $inputValueName = $("#firstname").val();
+        console.log($inputValueName);
+        var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
+        console.log(regExLenghtAndValidSigns.test($inputValueName));
+        return regExLenghtAndValidSigns.test($inputValueName);
+
     }
 
-    if (!validateInputMail()) {
-        $("#mailLabel").addClass("redLabel");
-        $("#mailInfo").text("Skriv in giltig email");
+    function validateLastName() {
+        var $inputValueName = $("#lastname").val();
+        var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
+        return regExLenghtAndValidSigns.test($inputValueName);
     }
 
-    if (!validateInputComment()) {
-        $("#commentLabel").addClass("redLabel");
-        $("#commentInfo").text("Skriv mer text");
+    function validateInputComment() {
+        var $inputValueComment = $("#textComment").val();
+        var regExLenghtAndValidSignsForComment = /^[a-zA-Z0-9\-]{3,}$/;
+        return regExLenghtAndValidSignsForComment.test($inputValueComment);
     }
 
-}
-
-function validateForm() {
-    var validated = false;
-    var $textFirstName = $("#firstname").val();
-    var $textLastName = $("#lastname").val();
-    var $userMail = $("#userMail").val();
-    var $phoneNumber = $("#phoneNumber").val();
-    var $textComment = $("#textComment").val();
-    var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
-    var regExLenghtAndValidSignsForComment = /^[a-zA-Z0-9\-]{3,}$/;
-    var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;
-    var regExPhoneNumber = /^(^070|^073|^076|^072|^079)\d{7}$/;
-    var textWholeName = $textFirstName + "" + $textLastName;
-    var validatedName = regExLenghtAndValidSigns.test(textWholeName);
-    var validatedComment = regExLenghtAndValidSignsForComment.test($textComment);
-    var validatedMail = regExMail.test($userMail);
-    var validatedNumber = regExPhoneNumber.test($phoneNumber);
-
-    if (validatedName && validatedComment && validatedMail && validatedNumber) {
-        validated = true;
+    function validateInputMail() {
+        var $inputValueMail = $("#userMail").val();
+        var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;
+        return regExMail.test($inputValueMail);
     }
-    return validated;
-}
 
-function validateFirstName() {
-    
-    var $inputValueName = $("#firstname").val();
-    console.log($inputValueName);
-    var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
-    console.log(regExLenghtAndValidSigns.test($inputValueName));
-    return regExLenghtAndValidSigns.test($inputValueName);
-    
-}
-
-function validateLastName() {
-    var $inputValueName = $("#lastname").val();
-    var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
-    return regExLenghtAndValidSigns.test($inputValueName);
-}
-
-function validateInputComment() {
-    var $inputValueComment = $("#textComment").val();
-    var regExLenghtAndValidSignsForComment = /^[a-zA-Z0-9\-]{3,}$/;
-    return regExLenghtAndValidSignsForComment.test($inputValueComment);
-}
-
-function validateInputMail() {
-    var $inputValueMail = $("#userMail").val();
-    var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;  
-    return regExMail.test($inputValueMail);
-}
-
-function validateInputPhoneNumber() {
-    var $inputValuePhoneNumber = $("#phoneNumber").val();
-    var regExPhoneNumber = /^(^070|^073|^076|^072|^079)\d{7}$/;
-    return regExPhoneNumber.test($inputValuePhoneNumber);
-}
+    function validateInputPhoneNumber() {
+        var $inputValuePhoneNumber = $("#phoneNumber").val();
+        var regExPhoneNumber = /^(^070|^073|^076|^072|^079)+-\d{7}$/;
+        return regExPhoneNumber.test($inputValuePhoneNumber);
+    }
 
     $("form").on('submit', function (e) {
         e.preventDefault();
@@ -102,26 +102,21 @@ function validateInputPhoneNumber() {
             $("#userMail").val("");
             $("#phoneNumber").val("");
             $("#textComment").val("Skriv din text här");
-            
-            var $el = $("#formButton"),   
-            originalColor = $el.css("background");
-            $el.css("background", "green");
-            setTimeout(function(){
-        $el.css("background", originalColor);
-},  400);
+
+            var $formButtonValidated = $("#formButton"),
+                $ColorBefore = $formButtonValidated.css("background");
+            $formButtonValidated.css("background", "green");
+            setTimeout(function () {
+                $formButtonValidated.css("background", $ColorBefore);
+            }, 400);
 
 
         }
         else {
-           
-            var $el = $("#formButton"),
-               
-            originalColor = $el.css("background");
-
-            $el.css("background", "red");
-            setTimeout(function(){
-        $el.css("background", originalColor);
-},  400);
+            var $formButtonValidated = $("#formButton"),
+                $ColorBefore = $formButtonValidated.css("background");
+            $formButtonValidated.css("background", " rgb(187, 60, 60)");
+            setTimeout(function () { $formButtonValidated.css("background", $ColorBefore); }, 400);
 
         }
 
@@ -197,7 +192,7 @@ function validateInputPhoneNumber() {
 
         else if (!validateInputPhoneNumber("#phoneNumber")) {
             $("#phoneNumberLabel").addClass("redLabel");
-            $("#phoneNumberInfo").text("Ange giltigt nr");
+            $("#phoneNumberInfo").text("Ange giltigt nr (XXX-XXXXXXX)");
         }
 
     })
@@ -290,7 +285,7 @@ function validateInputPhoneNumber() {
 
     };
 
-   
+
 
 
 })
