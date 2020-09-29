@@ -3,42 +3,44 @@ or returns a false value if varibles are not validated*/
 
 $(function () {
 
+    $(window).on("unload", storeFormData)
+    if(localStorage.getItem("localData") !=null){$(document).ready(getFormData());}
 
-    $(document).ready(getFormData());
-    $(window).on("unload", storeFormData);
     $(document).ready(validateWhenLoad());
-    
+
     function validateWhenLoad() {
 
+        if (!($("#firstname").val() != "" && $("#lastname").val() != "" && $("#userMail").val() != "" && $("#phoneNumber").val() != "" && $("#textComment").val() != "")) {
+        if (localStorage.getItem("localData") != null) {
+            if (!validateFirstName()) {
+                $("#firstNameLabel").addClass("redLabel");
+                $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+            }
 
-        if (!validateFirstName()) {
-            $("#firstNameLabel").addClass("redLabel");
-            $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+            if (!validateLastName()) {
+                $("#lastNameLabel").addClass("redLabel");
+                $("#lastNameInfo").text("Efternamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
+            }
+
+            if (!validateInputPhoneNumber()) {
+                $("#phoneNumberLabel").addClass("redLabel");
+                $("#phoneNumberInfo").text("Ange giltigt nr");
+            }
+
+            if (!validateInputMail()) {
+                $("#mailLabel").addClass("redLabel");
+                $("#mailInfo").text("Skriv in giltig email");
+            }
+
+            if (!validateInputComment()) {
+                $("#commentLabel").addClass("redLabel");
+                $("#commentInfo").text("Skriv mer text");
+            }
         }
-
-
-        if (!validateLastName()) {
-            $("#lastNameLabel").addClass("redLabel");
-            $("#lastNameInfo").text("Efternamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
-        }
-
-        if (!validateInputPhoneNumber()) {
-            $("#phoneNumberLabel").addClass("redLabel");
-            $("#phoneNumberInfo").text("Ange giltigt nr");
-        }
-
-        if (!validateInputMail()) {
-            $("#mailLabel").addClass("redLabel");
-            $("#mailInfo").text("Skriv in giltig email");
-        }
-
-        if (!validateInputComment()) {
-            $("#commentLabel").addClass("redLabel");
-            $("#commentInfo").text("Skriv mer text");
-        }
-
     }
-/* Validate the whole form*/
+    }
+
+    /* Validate the whole form*/
     function validateForm() {
         var validated = false;
         var $textFirstName = $("#firstname").val();
@@ -104,7 +106,7 @@ $(function () {
             $("#userMail").val("");
             $("#phoneNumber").val("");
             $("#textComment").val("");
-
+            localStorage.clear();
             var $formButtonValidated = $("#formButton"),
                 $ColorBefore = $formButtonValidated.css("background");
             $formButtonValidated.css("background", "green");
@@ -201,11 +203,6 @@ $(function () {
 
 
 
-    /* Store data as a JSON-file*/
-    function storeFormData() {
-        var storedData = $("#firstname").val();
-        localStorage.setItem("localData", JSON.stringify(storedData));
-    }
     /*Get data and parse it to JSON-format then inserts data into the loaded form*/
     function getFormData() {
         var storageFormData = (localStorage.getItem("localData"));
