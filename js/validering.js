@@ -3,6 +3,7 @@ or returns a false value if varibles are not validated*/
 
 $(function () {
 
+
     $(document).ready(getFormData());
     $(window).on("unload", storeFormData);
     $(document).ready(validateWhenLoad());
@@ -36,7 +37,7 @@ $(function () {
         }
 
     }
-
+/* Validate the whole form*/
     function validateForm() {
         var validated = false;
         var $textFirstName = $("#firstname").val();

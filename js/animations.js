@@ -1,3 +1,8 @@
+
+
+
+
+  /* Removes background-image and shows text for the diffrent projects, hover for mouse and click for mobile*/
 $(function () {
   function mouseHoverOverProject(projectId) {
     $(projectId).mouseenter(function () {
@@ -20,6 +25,8 @@ $(function () {
     });
   }
 
+
+  /*Diffren animation, sliding text, sliding containers and filling up skillbars*/
   var $animatedHeaderForMain = $("#headerForMain");
   $animatedHeaderForMain.fadeIn(2750);
 
@@ -64,6 +71,8 @@ $(function () {
   $portfolioMain.animate({
     "marginTop": "+=-4%"
   }, 1000);
+
+
 
   mouseLeavingProject("#sortingVisualizer", "url(img/projects.jpg)");
 
