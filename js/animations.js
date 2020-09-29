@@ -3,7 +3,7 @@ $(function () {
     $(projectId).mouseenter(function () {
       var $projectDiv = $(projectId);
       $projectDiv.css("background-image", "none");
-      $projectDiv.css("background-color", "teal");
+      $projectDiv.css("background-color", "rgb(59, 131, 190)");
       $projectDiv.children().removeClass("notVisible");
       $projectDiv.children().addClass("visible");
     });
@@ -14,7 +14,7 @@ $(function () {
       console.log("MouseLeave");
       var $projectDiv = $(projectId);
       $projectDiv.css("background-image", backgroundImage);
-      $projectDiv.css("background-color", "teal");
+      $projectDiv.css("background-color", "rgb(59, 131, 190)");
       $projectDiv.children().removeClass("visible");
       $projectDiv.children().addClass("notVisible");
     });
@@ -47,6 +47,11 @@ $(function () {
 
   var $headerTextForPortfolio = $("#headertextForPortfolio");
   $headerTextForPortfolio.animate({
+    "marginLeft": "+=14%"
+  }, 1000);
+
+  var $headerTextForContact = $("#headertextForKontakt");
+  $headerTextForContact.animate({
     "marginLeft": "+=14%"
   }, 1000);
 

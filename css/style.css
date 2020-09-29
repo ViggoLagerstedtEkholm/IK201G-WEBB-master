@@ -32,6 +32,8 @@
     }
 }
 
+
+
 html, body
 {
     /* Välj en font. */
@@ -47,14 +49,13 @@ html, body
 }
 
 @font-face{
-    font-family: "roboto";
+    font-family: "rob";
     src: url("../fonts/Roboto-Bold.ttf");
     font-style:normal;
 }
 
 
 h1{
-   font-family: roboto;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
@@ -107,8 +108,7 @@ header{
     margin-bottom: 8%;
 }
 
-#portfolioMain{
-        
+#portfolioMain{ 
     width: 60%;
     height: auto;
     margin: auto;
@@ -124,6 +124,7 @@ header{
 
 
 #headertextForKontakt{
+    font-family: rob!important;
     font-size: 2.2em;
     font-weight: bold;
     color: white;
@@ -168,7 +169,7 @@ figure{
 #formContainer{
     border-radius: 0.2em;
     height: auto;
-    background-color: rgb(6, 71, 124);
+    background-color:  rgb(50, 74, 94);
     width: 100%;
 }
 
@@ -259,15 +260,15 @@ iframe{
 @media screen and (min-width: 768px)
 {
     #headertextForPortfolio{
+        font-family: rob!important;
         font-size: 2.2em;
         font-weight: bold;
         color: white;
         position: relative;
         top: 22%; 
     }
-
+/* Är inte detta en kopia?*/
     #headertextForKontakt{
-
         font-size: 2.2em;
         font-weight: bold;
         color: white;
@@ -276,6 +277,7 @@ iframe{
     }
 
     #omOssHeading{
+        font-family: rob!important;
         font-size: 2.2em;
         font-weight: bold;
         color: white;
@@ -549,18 +551,21 @@ iframe{
     background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
  }
 
  #dataVisualizer{
     background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
  }
 
  #collision{
     background-image: url("../img/projects.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
  }
 
  #inDev
@@ -569,6 +574,7 @@ iframe{
     background-size: cover; 
     background-repeat: no-repeat;
     margin-bottom: 10%;
+    text-align: center;
  
  }
 

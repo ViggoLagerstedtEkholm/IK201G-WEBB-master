@@ -176,13 +176,13 @@ function validateInputPhoneNumber() {
 
 
         if (validateInputComment()) {
-            $("#textLabel").removeClass("redLabel");
+            $("#commentLabel").removeClass("redLabel");
             $("#commentInfo").text("");
         }
 
         else if (!validateInputComment()) {
-            $("#textComment").addClass("redLabel");
-            $("#commentInfo").text("Skriv mer text");
+            $("#commentLabel").addClass("redLabel");
+            $("#commentLabel").text("Skriv mer text");
         }
 
 
