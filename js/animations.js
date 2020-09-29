@@ -1,8 +1,4 @@
-
-
-
-
-  /* Removes background-image and shows text for the diffrent projects, hover for mouse and click for mobile*/
+ /* Removes background-image and shows text for the diffrent projects, hover for mouse and click for mobile*/
 $(function () {
   function mouseHoverOverProject(projectId) {
     $(projectId).mouseenter(function () {

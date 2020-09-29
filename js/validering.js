@@ -7,7 +7,7 @@ $(function () {
     $(document).ready(getFormData());
     $(window).on("unload", storeFormData);
     $(document).ready(validateWhenLoad());
-
+    
     function validateWhenLoad() {
 
 
@@ -15,6 +15,7 @@ $(function () {
             $("#firstNameLabel").addClass("redLabel");
             $("#firstNameInfo").text("Förnamnet måste innehålla minst tre bokstäver och inga tecken förutom bindesstreck");
         }
+
 
         if (!validateLastName()) {
             $("#lastNameLabel").addClass("redLabel");
@@ -48,7 +49,7 @@ $(function () {
         var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
         var regExLenghtAndValidSignsForComment = /^[a-zA-Z0-9\-]{3,}$/;
         var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;
-        var regExPhoneNumber = /^(^070|^073|^076|^072|^079)\d{7}$/;
+        var regExPhoneNumber = /^(^070|^073|^076|^072|^079)+-\d{7}$/;
         var textWholeName = $textFirstName + "" + $textLastName;
         var validatedName = regExLenghtAndValidSigns.test(textWholeName);
         var validatedComment = regExLenghtAndValidSignsForComment.test($textComment);
@@ -102,7 +103,7 @@ $(function () {
             $("#lastname").val("");
             $("#userMail").val("");
             $("#phoneNumber").val("");
-            $("#textComment").val("Skriv din text här");
+            $("#textComment").val("");
 
             var $formButtonValidated = $("#formButton"),
                 $ColorBefore = $formButtonValidated.css("background");
@@ -116,7 +117,7 @@ $(function () {
         else {
             var $formButtonValidated = $("#formButton"),
                 $ColorBefore = $formButtonValidated.css("background");
-            $formButtonValidated.css("background", " rgb(187, 60, 60)");
+            $formButtonValidated.css("background", "rgb(187, 60, 60)");
             setTimeout(function () { $formButtonValidated.css("background", $ColorBefore); }, 400);
 
         }

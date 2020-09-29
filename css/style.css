@@ -124,14 +124,31 @@ header{
 }
 
 
-
-#headertextForKontakt{
+#omOssHeading{
     font-family: rob!important;
-    font-size: 2.2em;
+    font-size: 1.6em!important;
     font-weight: bold;
     color: white;
     position: relative;
-    top: 35%;
+    top: 52%;
+}
+
+#headertextForKontakt{
+    font-family: rob!important;
+    font-size: 1.6em!important;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 52%;
+}
+
+#headertextForPortfolio{
+    font-family: rob!important;
+    font-size: 1.6em!important;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 52%;
 }
 
 
@@ -261,22 +278,7 @@ iframe{
 /* Widescreen size */
 @media screen and (min-width: 768px)
 {
-    #headertextForPortfolio{
-        font-family: rob!important;
-        font-size: 2.2em;
-        font-weight: bold;
-        color: white;
-        position: relative;
-        top: 22%; 
-    }
-/* Är inte detta en kopia?*/
-    #headertextForKontakt{
-        font-size: 2.2em;
-        font-weight: bold;
-        color: white;
-        position: relative;
-        top: 22%; 
-    }
+  
 
     #omOssHeading{
         font-family: rob!important;
@@ -769,6 +771,17 @@ iframe{
         margin-left: 4%;
     }
 
+    
+    #headertextForPortfolio{
+        position: relative;
+        top: 36% !important;
+        font-size: 1.4em;
+        position: relative;
+        top: 29%;
+        margin-left: 4%;
+    }
+
+
     nav{height:20%;
     }
     
@@ -794,13 +807,6 @@ iframe{
         width:90%;
     }
 
-    #headertextForPortfolio{
-        font-size: 1.4em;
-        position: relative;
-        top: 29%;
-        width: min-content;
-        margin-left: -14%
-    }
 
     #omOssHeading{
         font-size: 1.4em;
