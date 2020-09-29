@@ -39,19 +39,6 @@ a{
   
 }
 
-
-/* Detta är självaste loggan, denna ska ha andra egenskaper än de andra knapparna. Den ska placeras till vänster.*/
-a.logo
-{
-    float:right;
-    margin:0 0 0 20px;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: transparent;
-    margin-top: 12px;
-
-}
-
 /* Om man sätter musen över knappen så ändrar den färg. */
 .menu a:hover{
     background-color: dodgerblue;
@@ -68,8 +55,6 @@ a.logo:hover
 /* Inställningarna för listan med knappar. */
 .menu ul li
 {
-   
-
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -79,9 +64,6 @@ a.logo:hover
 .toggler{
     display: none;
 }  
-
-
-
 
 @media only screen and (max-width: 768px) {
 
@@ -240,8 +222,6 @@ a.logo:hover
 .menu-wrap .menu > div > div > ul > li > a:hover {
     color: #2a37ac;
 }
-
-
 
 nav{
     background-image: url("../img/BakgrundHeader.jpg");
