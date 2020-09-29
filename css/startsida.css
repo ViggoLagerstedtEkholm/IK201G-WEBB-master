@@ -1,6 +1,6 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    #main{
+    main{
         height: auto !important;
         position: relative !important;
         top: -10%;
@@ -26,7 +26,7 @@ header{
     font-family: "rob";
 }
 
-#main{
+main{
     height: auto;
     position: relative !important;
     top: -10%;
@@ -176,7 +176,7 @@ img {
 
 @media screen and (max-width: 1200px) 
 {
-    #main{
+    main{
         height: min-content;
     }
 

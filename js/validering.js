@@ -48,7 +48,7 @@ $(function () {
         var $userMail = $("#userMail").val();
         var $phoneNumber = $("#phoneNumber").val();
         var $textComment = $("#textComment").val();
-        var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
+        var regExLenghtAndValidSigns = /^[a-zA-Z\-]{3,35}$/;
         var regExLenghtAndValidSignsForComment = /^[a-zA-Z0-9\-]{3,}$/;
         var regExMail = /^[a-zA-Z0-9.%#$!&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z]{2,})$/;
         var regExPhoneNumber = /^(^070|^073|^076|^072|^079)+-\d{7}$/;
@@ -68,7 +68,7 @@ $(function () {
 
         var $inputValueName = $("#firstname").val();
         console.log($inputValueName);
-        var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
+        var regExLenghtAndValidSigns = /^[a-zA-Z\-]{3,35}$/;
         console.log(regExLenghtAndValidSigns.test($inputValueName));
         return regExLenghtAndValidSigns.test($inputValueName);
 
@@ -76,7 +76,7 @@ $(function () {
 
     function validateLastName() {
         var $inputValueName = $("#lastname").val();
-        var regExLenghtAndValidSigns = /^[a-zA-Z0-9\-]{3,35}$/;
+        var regExLenghtAndValidSigns = /^[a-zA-Z\-]{3,35}$/;
         return regExLenghtAndValidSigns.test($inputValueName);
     }
 

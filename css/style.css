@@ -261,6 +261,9 @@ iframe{
 {
   
 
+    
+
+
     #omOssHeading{
         font-family: rob!important;
         font-size: 2.2em;
@@ -591,6 +594,16 @@ iframe{
 
 @media screen and (max-width: 768px)
 {
+
+    #headertextForPerson{
+        width: 70%;
+        font-size: 0.6em!important;
+        position: relative;
+        top: 40%;
+        text-align: center;
+        display: inline-block;
+        color: white;
+}
     #mainContact{
         margin-top: 15%;
     }
@@ -608,7 +621,7 @@ iframe{
 
     #omOssHeading{
         width: 70%;
-        font-size: 1.2em;
+        font-size: 0.6em!important;
         position: relative;
         top: 50%;
         text-align: center;
@@ -629,9 +642,14 @@ iframe{
         top: 6%;
     }
 
+
+    #headertextForKontakt{
+        font-size: 0.6em!important;
+    }
+
     #headertextForPortfolio{
         width: 70%;
-        font-size: 1.4em;
+        font-size: 0.6em!important;
         position: relative;
         top: 50%;
         text-align: center;
@@ -721,10 +739,15 @@ iframe{
 }
 
 #headertextForPerson{
-    display: flex;
+    display: flex!important;
     position: relative;
     right: 6%;
 }
+}
+
+@media (max-height: 340px) and (max-width: 570px){
+    #headertextForKontakt{
+    top: 52%!important;}
 }
 
    /*tilted big screen*/
@@ -810,7 +833,7 @@ iframe{
     } 
 
     #headertextForPerson{
-        display: inline-block;
         position: static;
+        display: inline-block;
     }
 }
